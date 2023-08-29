@@ -1,0 +1,151 @@
+body {
+    background-color: grey;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.cabecera {
+    background: #458d78;
+    border: 1px solid #999999;
+    padding: 20px;
+}
+
+.menu {
+    background: #00a9e0;
+    padding: 5px 15px;
+    text-align: left;
+}
+
+.menu li {
+    padding: 10px 20px;
+    font: bold 14px verdana;
+    display: inline-block;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.menu li:hover {
+    background-color: #0a2bb2;
+    transition: background-color 0.3s ease;
+}
+
+.lista {
+    
+    list-style-type: disc;
+    padding-left: 200px;
+}
+
+.lista li {
+    margin: 5px 0;
+    padding-left: 10px;
+   text-align: left;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    color: rgb(176, 28, 28);
+    background-color: rgb(41, 71, 53);
+    border: 1px solid rgb(255, 255, 255);
+    padding: 30px;
+}
+
+h2 {
+    color: brown;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    border: 1px solid black;
+    width: 960px;
+    margin: 15px auto;
+    background: white;
+}
+
+.blue-text {
+    color: blue;
+}
+
+.celeste {
+    color: aquamarine;
+}
+
+.Tipos {
+    color: rgb(26, 25, 24);
+}
+
+.river {
+    color: #d3e8e8;
+    text-align: center;
+}
+
+.Advertencia {
+    background-color: #f1c40f;
+    text-align: center;
+}
+
+.Codigo {
+    background-color: #1E1E1E; 
+    color: #FFFFFF; 
+    border: 1px solid #333; 
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    font-family: Consolas, monospace;
+    white-space: pre-wrap;
+    text-align: left; 
+}
+
+
+.seccionestilo {
+    background-color: #a8b8d0;
+    padding: 1px;
+    border-radius: 5%;
+    }
+
+.seccionlinks {
+    background-color: #c0d6e4;
+    padding: 1px;
+    border-radius: 5%;
+}
+
+#botonContenedor {
+    text-align: center;
+}
+
+#botonTop {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#botonTop:hover {
+    background-color: #0056b3;
+}

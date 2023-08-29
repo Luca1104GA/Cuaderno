@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Esta es mi primer pagina web">
+    <title>
+        Cuaderno
+    </title>
+    <link rel="stylesheet" href="estilos.css">
+    
+</head>
+
+<body>
+    <div class="container">
+
+        <header class="cabecera">
+            <h1 title="El titulo">Cosas que pruebo </h1>
+        </header>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="#C1" title="Styles">Estilos</a></li>
+                <li><a href="#C2" title="Enlaces">Links</a></li>
+                <li><a href="#C3" title="Elements">Elementos</a></li>
+                <li><a href="#C4" title="Quotatios">Quotes y citas</a></li>
+            </ul>
+        </nav>
+
+        <script>
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+    
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        </script>
+
+        <h2 title="Subtitulo">Aca voy probando las cosas que voy viendo</h3>
+    
+        <p>
+            Primero se empieza por el "<span class="blue-text"> &lt!DOCTYPE html&gt"</span> <br> 
+            Segundo <span class="blue-text">&lthtml&gt</span>con cierre <span class="blue-text">&lt/html&gt</span> <br>dentro de este va el <span class="blue-text">&lthead&gt</span> <br>
+            y dentro del <span class="blue-text">&lthead&gt</span> va el <span class="blue-text">&lttitle&gt</span> <br>
+            El <span class="blue-text">&lthead&gt</span> Es la pestaña de arriba de todo y el <span class="blue-text">&lttitle&gt</span> es el nombre que se va a ver en el. <br>
+            Luego va el <span class="blue-text">&ltbody&gt</span> que es el cuerpo que contiene toda la informacion
+        </p>
+    
+        <hr>
+    
+        <h2 title="Separador">Separadores</h2>
+    
+        <p>
+                <span class="blue-text">&lthr&gt</span> es linea horizontal ,<br> <span class="blue-text">&ltbr&gt</span> es un salto de linea <br>
+                <span class="blue-text">&ltpre&gt</span> era como para escribir poemas o algo asi je
+                <br><br>
+        </p>
+    
+        <hr>
+    
+        <h2 title="Estilos">Estilos</h2>
+    
+        <p>
+            Use el <span class="blue-text">&ltstyle&gt</span>  para diseñar elementos HTML <br>
+            Utilizar <span class="blue-text">&ltbackground-color&gt</span> para el color de fondo <br>
+            Usar <span class="blue-text">&ltcolor&gt</span> para colores de texto <br>
+            Usar <span class="blue-text">&ltfont-family&gt</span> para fuentes de texto <br>
+            Usar <span class="blue-text">&ltfont-size&gt</span> para tamaños de texto <br>
+            Uso <span class="blue-text">&lttext-align&gt</span> para alineación de texto
+        </p>
+    
+        <hr>
+    
+        <h2 id="C3" title="Elementos de Formato">Elementos de Formato</h2>
+    
+        <p>
+            <b>Los elementos de formato son tipos especiales de texto</b></p>
+    
+        <p>
+            <span class="blue-text">&ltb&gt</span> Texto en negrita <br>
+            <span class="blue-text">&ltstrong&gt</span> Texto importante <br>
+            <span class="blue-text">&lti&gt</span> Texto en cursiva <br>
+            <span class="blue-text">&ltem&gt</span> Texto enfatizado <br>
+            <span class="blue-text">&ltmark&gt</span> Texto marcado <br>
+            <span class="blue-text">&ltsmall&gt</span> Texto más pequeño <br>
+            <span class="blue-text">&ltdel&gt</span> Texto eliminado <br>
+            <span class="blue-text">&ltins&gt</span> Texto insertado <br>
+            <span class="blue-text">&ltsub&gt</span> Texto de subíndice <br>
+            <span class="blue-text">&ltsup&gt</span> Texto en superíndice
+        </p>
+        
+        <hr>
+    
+        <h2 id="C4">Elementos de Citación y Citas </h2>
+    
+        <p>
+            <span class="blue-text">&ltblockquote&gt</span> Define una seccion que se cita de otra fuente, ademas de dar un efecto de "sangrado" agregando un margen izquierdo adicional. <br>
+            <span class="blue-text">&ltq&gt</span> Cita corta que inserta comillas alrededor de la cita. <br>
+            <span class="blue-text">&ltabbr&gt</span> Abreviatura- Acronimo, se recomienda su uso con el atributo de "title =" para mostrar la descripcion cuando se pase el Mouse. <br>
+            <span class="blue-text">&ltaddress&gt</span> Este elemento define informacion del contacto/autor/dueño del documento o articulo, ademas de presentarlo en cursiva se agregara un salto de linea antes y despues. <br>
+            <span class="blue-text">&ltcite&gt</span> define el título de un trabajo creativo (por ejemplo, un libro, un poema, una canción, una película, una pintura, una escultura, etc.). <br>
+            <span class="blue-text">&ltbdo&gt</span> se utiliza para anular la dirección del texto actual. <span class="blue-text">&ltbdo dir="rtl"&gt</span>: para derecha a izquierda (bastante al pedo la verdad) <br>
+        </p>
+    
+        <hr>
+    
+        <h2> Comentarios</h2>
+    
+        <p>
+            <b>Los comentarios no se muestran en el navegador, pero pueden ayudar a documentar su código fuente.</b></p>
+        <h4 style="color: rgb(14, 146, 36); text-align: center;">
+            Añadir comentario</h4>
+            
+        <p>
+            Con los comentarios puedes colocar notificaciones y recordatorios en tu código usando <span style="color: green;">&lt!--y --&gt</span> <br> 
+            También puede ocultar más de una línea. Todo lo que esté entre <span style="color: green;">&lt!--y --&gt</span> se ocultará de la pantalla.
+        </p>
+        
+        <hr>
+        
+        <h2>Colores Html</h2>
+        <h3>Nombres de colores</h3>
+            
+        <p>
+            Un color se puede especificar usando un nombre de color <br>
+            <strong><i><q>HTML admite 140 nombres de colores</q></i></strong>
+        </p>
+    
+        <hr>
+    
+        <div class="seccionestilo">
+            
+            <h2 id="C1">Estilos CSS</h2>
+            <h3>¿Qué es CSS?</h3>
+        
+            <p>
+                <mark>CSS</mark> significa hojas de estilo en cascada. <br>
+                <mark>CSS</mark> ahorra mucho trabajo. Puede controlar el diseño de varias páginas web a la vez. <br>
+                Con <mark>CSS</mark>, puede controlar el color, la fuente, el tamaño del texto, <br> el espaciado entre elementos, 
+                cómo se colocan y distribuyen los elementos, <br> qué imágenes de fondo o colores de fondo se utilizarán etc.
+            </p>
+                
+            <p class="Advertencia">
+                <b>Sugerencia:</b> La palabra <b><strong><em>en cascada</em></strong></b> significa que un estilo aplicado a un elemento principal también se aplicará a <br>
+                todos los elementos secundarios dentro del elemento principal.Por lo tanto, si establece el color del cuerpo del <br>
+                texto en "azul", todos los encabezados, párrafos y otros elementos de texto dentro del cuerpo también obtendrán <br>
+                el mismo color (a menos que especifique algo más).
+            </p>
+            
+            <h3>Usando CSS</h3>
+        
+            <p>
+                <mark>CSS</mark> se puede agregar a documentos HTML de 3 maneras: <br><br>
+                <b>En línea</b>: mediante el uso del atributo <span class="blue-text">&ltstyle&gt</span> dentro de los elementos HTML. <br>
+                <b>Interno</b>: mediante el uso de un elemento <span class="blue-text">&ltstyle&gt</span> en la sección <span class="blue-text">&lthead&gt</span> <br>
+                <b>Externo</b>: mediante el uso de un elemento <span class="blue-text">&ltlink&gt</span> para vincular a un archivo <mark>CSS</mark> externo
+            </p>
+        
+            <h3 class="Tipos"><q>CSS en linea</q></h3>
+        
+            <p>
+                Se utiliza un CSS en línea para aplicar un estilo único a un único elemento HTML. <br>
+                Un CSS en línea usa el atributo <span class="blue-text">&ltstyle&gt</span> de un elemento HTML.
+            </p>
+        
+            <h3 class="Tipos"><q>CSS interno</q></h3>
+        
+            <p>
+                Se utiliza un CSS interno para definir un estilo para una sola página HTML. <br>
+                Un CSS interno se define en la sección <span class="blue-text">&lthead&gt</span> de una página HTML, dentro de un elemento <span class="blue-text">&ltstyle&gt</span>.
+            </p>
+        
+            <h3 class="Tipos"><q>CSS externo</q></h3>
+        
+            <p>
+                Se utiliza una hoja de estilo externa para definir el estilo de muchas páginas HTML. <br>
+                Para usar una hoja de estilo externa, agregue un link en la sección <span class="blue-text">&lthead&gt</span> de cada página HTML
+            </p>
+        
+            <p class="Advertencia">
+                La hoja de estilo externa se puede escribir en cualquier editor de texto. <br> El archivo no debe contener ningún código
+                HTML <br> y debe guardarse con una extensión .css
+            </p>
+        
+            <h3 class="river">CSS Borde</h3>
+        
+            <p>
+                La propiedad CSS <span class="blue-text">border</span> define un borde alrededor de un elemento HTML <br>
+                    puede definir un borde para casi todos los elementos
+            </p>
+                
+            <h3 class="river">CSS Padding</h3>
+        
+            <p>
+                La propiedad CSS <span class="blue-text">padding</span> define un relleno (espacio) entre el texto y el borde.
+            </p>
+        
+            <h3 class="river">CSS Margin</h3>
+        
+            <p>
+                La propiedad CSS <span class="blue-text">margin</span> define un margen (espacio) fuera del borde.
+            </p>
+        </div>
+    
+        <hr>
+    
+        <div class="seccionlinks">
+    
+            <h2 id="C2">Links CSS</h2>
+    
+            <P>
+                Los links HTML son hipervínculos. <br>
+                Los links se encuentran en casi todas las páginas web. <br>
+                Los links permiten a los usuarios hacer clic para pasar de una página a otra. <br>
+                Cuando mueves el mouse sobre un link, la flecha del mouse se convertirá en una manita. <br>
+                La etiqueta HTML <span class="blue-text">&lta&gt</span> define un hipervínculo.
+            </P>
+    
+            <p class="Advertencia">
+                <b>Nota:</b> Un link no tiene que ser texto. ¡Un link puede ser una imagen o cualquier otro elemento HTML!
+            </p>
+    
+            <p>
+                El atributo más importante del elemento <span class="blue-text">&lta&gt</span> es el atributo <span class="blue-text">href</span>, que indica el destino del link. <br>
+                El texto del link es la parte que será visible para el lector. <br>
+                Al hacer clic en el texto del link, se enviará al lector a la dirección URL especificada. <br> <br>
+                De forma predeterminada, los Links aparecerán de la siguiente manera en todos los navegadores:
+            </p>
+    
+            <p>
+                Un link no visitado está subrayado y en azul. <br>
+                Un link visitado está subrayado y en color violeta. <br>
+                Un link activo está subrayado y en rojo. <br>
+            </p>
+    
+            <p class="Advertencia">
+                <b>Consejo:</b> Por supuesto, los links se pueden diseñar con CSS para darle otro aspecto.
+            </p>
+    
+            <h2> El atributo Target</h2>
+    
+            <p>
+                De forma predeterminada, la página vinculada se mostrará en la ventana actual del navegador. <br>
+                Para cambiar esto, se debe especificar otro destino para el link. <br>
+                El atributo <span class="blue-text">target</span> especifica dónde abrir el documento vinculado. <br>
+                El atributo <span class="blue-text">target</span> puede tener uno de los siguientes valores:
+            </p>
+    
+            <p>
+                <span class="blue-text">_self</span> -Por defecto. Abre el documento en la misma ventana/pestaña en la que se hizo clic. <br>
+                <span class="blue-text">_blank</span> -Abre el documento en una nueva ventana o pestaña. <br>
+                <span class="blue-text">_parent</span> -Abre el documento en el marco principal. <br>
+                <span class="blue-text">_top</span> -Abre el documento en el cuerpo completo de la ventana.
+            </p>
+            
+            <p class="Advertencia">
+                Para usar una imagen como link, simplemente coloque la etiqueta <span class="blue-text">&ltimg&gt</span> dentro de la etiqueta <span class="blue-text">&lta&gt</span>
+            </p>
+    
+            <p>
+                Use <span class="blue-text">mailto:</span> dentro del atributo <span class="blue-text">href</span> <br>
+                para crear un link que abra el programa de correo electrónico del usuario <br>
+                (para permitirle enviar un nuevo correo electrónico)
+            </p>
+    
+            <p class="Advertencia">
+                <span class="blue-text">&lta href="mailto:someone@example.com"&gt</span>Send email<span class="blue-text">&lt/a&gt</span>
+            </p>
+        
+            <h2>Botón como Link</h2>
+    
+            <p>
+                Para utilizar un botón HTML como link, debe agregar algún código JavaScript. <br>
+                JavaScript le permite especificar qué sucede en ciertos eventos, como hacer clic en un botón:
+            </p>
+    
+            <p>
+                El siguiente boton lo creamos de esta manera <br>
+                Primero dentro del <span class="blue-text">body</span> creamos una division con el id"botoncontenedor" <br>
+                a este le damos una funcion de boton con el id "botontop" para despues personalizarlos en CSS. <br>
+                Luego hay que darle codigo JavaScript y eso lo hacemos utilizando el elemento <span class="blue-text">&ltscript&gt</span> dentro del body. <br>
+            </p>
+    
+            <p class="Codigo">
+                <span class="blue-text">&lt;script&gt;</span> <br>
+                    <span class="celeste">const botonTop</span> = document.getElementById("botonTop"); <br>
+                    <span class="celeste">botonTop</span>.addEventListener("click", () => { <br>
+                        <span class="celeste">window</span>.scrollTo({ top: 0, behavior: "smooth" }); <br>
+                    });
+                <span class="blue-text">&lt;/script&gt;</span>
+            </p>
+    
+            <p style="text-align: left;">
+                1. <b><em>const botonTop = document.getElementById("botonTop");</em></b> :Esto busca el elemento del botón con el ID "botonTop" en el documento HTML y lo almacena en la variable <br>
+                2. <b><em>botonTop.</em></b> Esto te permite interactuar con el botón utilizando JavaScript. <br>
+                3. <b><em>botonTop.addEventListener("click", () => { ... });</em></b> :Esto agrega un escuchador de eventos al botón. En este caso, estamos escuchando el evento "click", lo que significa que cuando el botón se hace clic, se ejecutará el código que se encuentra dentro de la función de flecha <b><em>() => { ... }</em></b> <br>
+                4. <b>window.scrollTo({ top: 0, behavior: "smooth" });<em></em></b> :Dentro de la función de flecha, estamos utilizando el método <b><em>scrollTo</em></b> en el objeto <b><em>window</em></b>  para desplazar la ventana hacia la parte superior de la página. <br>
+                <b><em>{ top: 0, behavior: "smooth" }</em></b> son opciones que se pasan al método. <b><em>top: 0</em></b> significa que queremos desplazarnos hasta la posición vertical 0, es decir, la parte superior de la página. <br>
+                <b><em>behavior: "smooth</em></b> agrega un efecto de desplazamiento suave en lugar de un salto abrupto.
+            </p>
+    
+            <p>
+                Un Link también puede tener el estilo de un botón mediante CSS:
+            </p>
+    
+            <p class="Codigo">
+                <span class="blue-text">&lt;style&gt;</span>
+                    a:link, a:visited {
+                      <span class="celeste">background-color</span>: #f44336;
+                      <span class="celeste">color</span>: white;
+                      <span class="celeste">padding</span>: 15px 25px;
+                      <span class="celeste">text-align</span>: center;
+                      <span class="celeste">text-decoration</span>: none;
+                      <span class="celeste">display</span>: inline-block;
+                    }
+                    
+                    a:hover, a:active {
+                      <span class="celeste">background-color</span>: red;
+                    }
+                    &lt;/style&gt;
+    
+            </p>
+            
+            <div id="botonContenedor">
+                <button id="botonTop">Ir al inicio</button>
+            </div>
+    
+            <script>
+                const botonTop = document.getElementById("botonTop");
+                botonTop.addEventListener("click", () => {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                });
+            </script>
+    
+            <h2 title="Link Titles">Títulos de enlaces</h2>
+    
+            <p>
+                El atributo <span class="blue-text">title</span> especifica información adicional sobre un elemento. <br>
+                La información suele mostrarse como texto de información sobre herramientas <br> cuando el ratón se mueve sobre el elemento.
+            </p>
+    
+            <h2 title="Bookmarks">Crear Marcadores</h2>
+    
+            <p>
+                Los links se pueden utilizar para crear marcadores,<br> de modo que los lectores puedan saltar a partes específicas de una página web. <br>
+                Los marcadores pueden resultar útiles si una página web es muy larga. <br>
+                Para crear un marcador, primero cree el marcador y luego agréguele un enlace. <br>
+                Cuando se hace clic en el enlace, la página se desplazará hacia abajo o hacia arriba hasta la ubicación con el marcador.
+            </p>
+    
+            <p>
+                Primero use el atributo <span class="celeste">id</span> para crear un marcador.
+            </p>
+    
+            <p class="Codigo">
+                <span class="celeste">&lt;h2 id="C4"&gt;</span>Capítulo 4<span class="celeste">&lt;/h2&gt;</span>
+            </p>
+
+            <p>
+                Luego, agregue un link al marcador ("Saltar al Capítulo 4"), desde la misma página:
+            </p>
+
+            <p class="Codigo">
+                <span class="celeste">&lt;a href="#C4"&gt;</span>Saltar al Capítulo 4<span class="celeste">&lt;/a&gt;</span>
+            </p>
+        
+            <h2 title="The target Attribute">Atributos de Destino</h2>
+
+            <p>
+                De forma predeterminada, la página vinculada se mostrará en la ventana actual del navegador. <br>
+                Para cambiar esto, debe especificar otro destino para el enlace. <br>
+                El atributo <span class="blue-text">target</span> especifica dónde abrir el documento vinculado. <br>
+                puede tener uno de los siguientes valores:
+            </p>
+
+            <ul class="lista">
+                <li><span class="blue-text">_self</span>- Por defecto. Abre el documento en la misma ventana/pestaña en la que se hizo clic.</li>
+                <li><span class="blue-text">_blank</span>- Abre el documento en una nueva ventana o pestaña.</li>
+                <li><span class="blue-text">_parent</span>- Abre el documento en el marco principal.</li>
+                <li><span class="blue-text">_top</span>- Abre el documento en el cuerpo completo de la ventana.</li>
+            </ul>
+        
+        </div>
+    </div>
+
+    
+
+
+
+
+
+    
+</body>
+
+</html>
