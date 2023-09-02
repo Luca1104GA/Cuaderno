@@ -53,9 +53,42 @@ body {
    text-align: left;
 }
 
+#liboton {
+    background-color: #508dd2;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #458d78;
+}
+
+#imgaside {
+    display: flex;
+    justify-content: center;
+    background-color: #353b48;
+}
+
+#imgaside2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #353b48;
+}
+
+.seccion {
+    margin: 20px;
+    width: 60%;
+}
+
 a {
     color: white;
     text-decoration: none;
+}
+
+header, section, footer, aside, nav, article, hgroup {
+    display: block;
 }
 
 h1 {
@@ -78,6 +111,13 @@ p {
     text-align: center;
 }
 
+article {
+    background: #fffbcc;
+    border: 1px solid #999;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
 .container {
     max-width: 1200px;
     border: 1px solid black;
@@ -86,8 +126,24 @@ p {
     background: white;
 }
 
+.columna {
+    width: 30%;
+    margin: 20px 0px;
+}
+
+.columna blockquote {
+    border: 1px solid black;
+    padding: 40px;
+    background: #fffbb9;
+    margin-bottom: 20px;
+}
+
 .blue-text {
     color: blue;
+}
+
+.red-text {
+    color: red;
 }
 
 .celeste {
@@ -99,7 +155,7 @@ p {
 }
 
 .river {
-    color: #d3e8e8;
+    color: #ffffff;
     text-align: center;
 }
 
@@ -108,7 +164,7 @@ p {
     text-align: center;
 }
 
-.Codigo {
+.codigo {
     background-color: #1E1E1E; 
     color: #FFFFFF; 
     border: 1px solid #333; 
@@ -133,6 +189,17 @@ p {
     border-radius: 5%;
 }
 
+.seccionimagenes {
+    color: white;
+    background-color: #353b48;
+    padding: 1px;
+    border-radius: 5%;
+}
+
+.seccionimagenes p.Advertencia {
+    color: black;
+}
+
 #botonContenedor {
     text-align: center;
 }
@@ -148,4 +215,11 @@ p {
 
 #botonTop:hover {
     background-color: #0056b3;
+}
+
+#h3codigo{
+    color: #007bff;
+    text-align: center;
+    margin-left: 300px;
+    margin-right: 300px;
 }
