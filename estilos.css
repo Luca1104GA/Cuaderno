@@ -1,5 +1,5 @@
 body {
-    background-color: grey;
+    background-image:  url("https://img.freepik.com/free-vector/software-engineering-background_1284-3394.jpg?w=740&t=st=1694025228~exp=1694025828~hmac=029a794e845fe7805a10d787c0ce68748ea0c90a7d0376f9191003a8f3fc8408");
     text-align: center;
     margin: 0;
     padding: 0;
@@ -9,40 +9,55 @@ body {
     font-family: Arial, sans-serif;
 }
 
+#primerimagen {
+    background-image: url("https://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-72043.jpg?w=1060&t=st=1694028439~exp=1694029039~hmac=678dad221434153a728a56f18ff4aff220d4f0d3bc593d739222cedb79b8996f");
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-size: 100% 100%;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    width: 100%;
+    height: auto;
+}
+
 .cabecera {
-    background: #458d78;
-    border: 1px solid #999999;
+    background-image: url("https://img.freepik.com/free-vector/dark-hall-interior-with-neon-red-illumination_107791-17036.jpg?w=1060&t=st=1694029589~exp=1694030189~hmac=6975f0542b49d07a17ccf91c5f2ec057da3d4df439d43c24e15de3e4093062af");
+    background-size: cover;
     padding: 20px;
+    font-family: cursive;
 }
 
 .menu {
-    background: #00a9e0;
     padding: 5px 15px;
     text-align: left;
 }
 
 .menu li {
+    min-width: 10px;
+    height: 20px;
+    color: #fff;
     padding: 10px 20px;
-    font: bold 14px verdana;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
     display: inline-block;
+    outline: none;
     border-radius: 5px;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    background-color: #007bff;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    border: none;
+    background-size: 120% auto;
+    background-image: linear-gradient(315deg, #43cea2 0%, #185a9d 75%);
 }
 
 .menu li:hover {
-    background-color: #0a2bb2;
-    transition: background-color 0.3s ease;
+    background-position: right center;
 }
 
-.lista {
-    
+.menu li:active {
+    top: 2px;
+}
+
+.lista { 
     list-style-type: disc;
     padding-left: 200px;
 }
@@ -50,17 +65,28 @@ body {
 .lista li {
     margin: 5px 0;
     padding-left: 10px;
-   text-align: left;
+    text-align: left;
 }
 
 #liboton {
-    background-color: #508dd2;
+    background-image: url("https://img.freepik.com/free-vector/bokeh-background_23-2148486863.jpg?w=996&t=st=1694027736~exp=1694028336~hmac=7118739d3b67a8d121dfce2004ea2271123147427efa1baee8d5ead57fa205ac");
+}
+
+.container {
+    max-width: 1200px;
+    border: 1px solid black;
+    width: 960px;
+    margin: 15px auto;
+    background-image: url(https://img.freepik.com/free-vector/binary-code-pattern-background_1142-902.jpg?w=740&t=st=1694026132~exp=1694026732~hmac=cb411d4b00524730041e74cd360346798917f4364cc9daa65dcfc3e8b7d613ba);
 }
 
 .flexContainer {
     display: flex;
     justify-content: space-between;
-    background-color: #458d78;
+    background-image: url(https://img.freepik.com/premium-vector/abstract-black-background-with-dark-green-gradient_565554-159.jpg);
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-size: 100% 100%;
 }
 
 #imgaside {
@@ -92,10 +118,8 @@ header, section, footer, aside, nav, article, hgroup {
 }
 
 h1 {
+    background-color: transparent;
     color: rgb(176, 28, 28);
-    background-color: rgb(41, 71, 53);
-    border: 1px solid rgb(255, 255, 255);
-    padding: 30px;
 }
 
 h2 {
@@ -112,18 +136,23 @@ p {
 }
 
 article {
-    background: #fffbcc;
+    background-image: url("https://img.freepik.com/free-photo/perspective-exterior-nobody-empty-box_1258-260.jpg?w=900&t=st=1694026401~exp=1694027001~hmac=4330f141060edf2dcd7f9fe33fd86465c319fe88152d7cfb83ca1d8d84d710a2");
     border: 1px solid #999;
     padding: 20px;
     margin-bottom: 15px;
 }
 
-.container {
-    max-width: 1200px;
-    border: 1px solid black;
-    width: 960px;
-    margin: 15px auto;
-    background: white;
+article img {
+    display: block;
+    margin: 0 auto;
+}
+
+#ejemplo {
+    background: #9096a3;
+    color: #1E1E1E;
+    text-align: left;
+    border: #1b1d1e 10px solid;
+    margin: 15px;
 }
 
 .columna {
@@ -134,8 +163,9 @@ article {
 .columna blockquote {
     border: 1px solid black;
     padding: 40px;
-    background: #fffbb9;
+    background-image: url("https://img.freepik.com/free-photo/perspective-exterior-nobody-empty-box_1258-260.jpg?w=900&t=st=1694026401~exp=1694027001~hmac=4330f141060edf2dcd7f9fe33fd86465c319fe88152d7cfb83ca1d8d84d710a2");
     margin-bottom: 20px;
+    background-size: cover;
 }
 
 .blue-text {
@@ -157,10 +187,12 @@ article {
 .river {
     color: #ffffff;
     text-align: center;
+    -webkit-text-stroke: 1px black;
 }
 
 .Advertencia {
     background-color: #f1c40f;
+    color: black;
     text-align: center;
 }
 
@@ -178,26 +210,120 @@ article {
 
 
 .seccionestilo {
-    background-color: #a8b8d0;
+    background-image: url("https://img.freepik.com/free-vector/abstract-business-blue-circle_1182-693.jpg?w=740&t=st=1694028042~exp=1694028642~hmac=e734ef8da347069526a301c6a8e8b02933c3702c4411b4f95e9df9d2a63c2fb9");
     padding: 1px;
     border-radius: 5%;
+    background-size: cover;
     }
 
 .seccionlinks {
-    background-color: #c0d6e4;
+    background-image: url("https://img.freepik.com/free-vector/paper-style-wavy-background_23-2149116135.jpg?w=996&t=st=1694027679~exp=1694028279~hmac=150a13c362a18135a236a754f67c0937ebb1fb19a0dac2e822660212a3c1ff5c");
     padding: 1px;
     border-radius: 5%;
 }
 
 .seccionimagenes {
     color: white;
-    background-color: #353b48;
+    background-image: url("https://img.freepik.com/free-vector/abstract-blue-light-pipe-speed-zoom-black-background-technology_1142-9980.jpg?w=996&t=st=1694028840~exp=1694029440~hmac=b4a260cbbfbc0d02266fc6e9583ff493cdcfcf1062b54816853020734ca1e9d0");
     padding: 1px;
     border-radius: 5%;
+    background-size: contain;
 }
 
 .seccionimagenes p.Advertencia {
     color: black;
+}
+
+.seccioncosas {
+    color: white;
+    background-image: url("https://img.freepik.com/free-vector/gradient-black-background-with-wavy-lines_23-2149145960.jpg?w=996&t=st=1694030349~exp=1694030949~hmac=14d52797f557b573569cd7a8cbd6f30abfbfc1073f788583e25c5562069373bc");
+    padding: 1px;
+    border-radius: 5%;
+    background-size: cover;
+}
+
+#botonIrAbajo {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0;
+    background: #fff;
+    overflow: hidden;
+    border: 2px solid #212529;
+    color: #212529;
+    position: fixed;
+    bottom: 20px; /* Puedes ajustar la distancia desde abajo */
+    right: 20px; /* Puedes ajustar la distancia desde la derecha */
+}
+
+#botonIrAbajo:hover {
+    color: #fff;
+}
+
+#botonIrAbajo:hover::after {
+    width: 100%;
+}
+
+#botonIrAbajo::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #212529;
+}
+
+#botonVolverArriba {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0;
+    background: #fff;
+    overflow: hidden;
+    border: 2px solid #212529;
+    color: #212529;
+    position: fixed;
+    bottom: 20px; /* Ajusta la distancia desde el borde inferior según tus preferencias */
+    left: 20px; /* Ajusta la distancia desde el borde izquierdo según tus preferencias */
+}
+
+#botonVolverArriba:hover {
+    color: #fff;
+}
+
+#botonVolverArriba:hover::after {
+    width: 100%;
+}
+
+#botonVolverArriba::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #212529;
 }
 
 #botonContenedor {
@@ -223,3 +349,28 @@ article {
     margin-left: 300px;
     margin-right: 300px;
 }
+
+
+
+.css-button-gradient--4 {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background-size: 120% auto;
+    background-image: linear-gradient(315deg, #43cea2 0%, #185a9d 75%);
+  }
+  .css-button-gradient--4:hover {
+    background-position: right center;
+  }
+  .css-button-gradient--4:active {
+    top: 2px;
+  }

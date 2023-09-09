@@ -3,53 +3,47 @@
 <head>
     <meta charset="utf-8">
     <meta name="description" content="Esta es mi primer pagina web">
-    <title>
-        Cuaderno
-    </title>
+    <title>Cuaderno</title>
     <link rel="stylesheet" href="estilos.css">
-    
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAD29vYAMWv4ACAfIwD///8A87UAAADDkQAAw/8A/Pz8APX19QAsaPgAJiUpAP7+/gAhHyQAAMKQADw8PgBGRkkA8bQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwMDAwMDAwMDAwMDAwMDAwMDAwMDCwMDAwMDAwMDAwMDAwMDAwMCAgsDAwMDAwMDAwMDDgICAgICDwMDAwMCAwMDAgMQEBACBAICAgICAgMDAwMQEBAQAhAQEAIGBgIDAwMQBwMQEAIQEBACBgYCAwsDAwICAgICEBAQAgYGAgMLAwIDAQEBAgICAgICAgIDCwMDAQEBAQIJCQkCBQUCAwsDAQMDAQkCCQkJAgUFAgMLAwMCAgICCgkJCQIFBQIDCwMCAwMDDAICAgICDQUCAwsLAwMDAwMIAwICAgICAwsLCwMDAwMDAwMDCwAHAwMDAwMDAwMDAwMDAwMDAwMDAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=" rel="icon" type="image/x-icon">
 </head>
 
 <body>
     <div class="container">
 
+        
         <header class="cabecera">
             <h1 title="El titulo">Cosas que pruebo </h1>
         </header>
 
-        <nav class="menu">
-            <ul>
-                <li><a href="#C1" title="Styles">Estilos</a></li>
-                <li><a href="#C2" title="Enlaces">Links</a></li>
-                <li><a href="#C3" title="Elements">Elementos</a></li>
-                <li><a href="#C4" title="Quotatios">Quotes y citas</a></li>
-                <li><a href="#C5" title="Images">Imagenes</a></li>
-            </ul>
-        </nav>
 
-        <script>
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-    
-                    document.querySelector(this.getAttribute('href')).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                });
-            });
-        </script>
 
-        <h2 title="Subtitulo">Aca voy probando las cosas que voy viendo</h3>
+        <div id="primerimagen">
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="#C1" title="Styles">Estilos</a></li>
+                    <li><a href="#C2" title="Enlaces">Links</a></li>
+                    <li><a href="#C3" title="Elements">Elementos</a></li>
+                    <li><a href="#C4" title="Quotatios">Quotes y citas</a></li>
+                    <li><a href="#C5" title="Images">Imagenes</a></li>
+                    <li><a href="#C6" title="Favicon">Favicon</a></li>
+                </ul>
+            </nav>
+
+            <button id="botonIrAbajo">Ir al Final</button>
+            <button id="botonVolverArriba">Volver al inicio</button>   
+
+            <h2 title="Subtitulo">Aca voy probando las cosas que voy viendo</h3>
     
-        <p>
-            Primero se empieza por el "<span class="blue-text"> &lt!DOCTYPE html&gt"</span> <br> 
-            Segundo <span class="blue-text">&lthtml&gt</span>con cierre <span class="blue-text">&lt/html&gt</span> <br>dentro de este va el <span class="blue-text">&lthead&gt</span> <br>
-            y dentro del <span class="blue-text">&lthead&gt</span> va el <span class="blue-text">&lttitle&gt</span> <br>
-            El <span class="blue-text">&lthead&gt</span> Es la pestaña de arriba de todo y el <span class="blue-text">&lttitle&gt</span> es el nombre que se va a ver en el. <br>
-            Luego va el <span class="blue-text">&ltbody&gt</span> que es el cuerpo que contiene toda la informacion
-        </p>
-    
-        <hr>
+            <p>
+                    Primero se empieza por el "<span class="blue-text"> &lt!DOCTYPE html&gt"</span> <br> 
+                    Segundo <span class="blue-text">&lthtml&gt</span>con cierre <span class="blue-text">&lt/html&gt</span> <br>dentro de este va el <span class="blue-text">&lthead&gt</span> <br>
+                    y dentro del <span class="blue-text">&lthead&gt</span> va el <span class="blue-text">&lttitle&gt</span> <br>
+                    El <span class="blue-text">&lthead&gt</span> Es la pestaña de arriba de todo y el <span class="blue-text">&lttitle&gt</span> es el nombre que se va a ver en el. <br>
+                    Luego va el <span class="blue-text">&ltbody&gt</span> que es el cuerpo que contiene toda la informacion
+            </p>
+        </div>     
     
         <div class="flexContainer">
             <section class="seccion">
@@ -141,6 +135,8 @@
             </aside>
         </div>
     
+        <br>
+
         <div class="seccionestilo">
             
             <h2 id="C1">Estilos CSS</h2>
@@ -348,11 +344,11 @@
 
             <ul class="lista" id="liboton">
                 <li>a:link a:visited : Estilos para enlaces antes y despues de ser visitados, Cambia el color y subrayado del texto para resaltar los enlaces.</li>
-                <li><span class="celeste">background-color</span>: Color de fondo</li>
-                <li><span class="celeste">padding</span>: Espacio interno alrededor del contenido. Ajusta la distancia entre el contenido y el borde.</li>
-                <li><span class="celeste">text-align</span>: Controla la alineacion horizontal del texto.</li>
-                <li><span class="celeste">text-decoration</span>: Modifica la apariencia de la decoración del texto, como subrayar, tachar, resaltar o quitar la decoración </li>
-                <li><span class="celeste">display</span>: Controla como se muestra un elemento. (en linea bloque o de otra manera )</li>
+                <li><span class="red-text">background-color</span>: Color de fondo</li>
+                <li><span class="red-text">padding</span>: Espacio interno alrededor del contenido. Ajusta la distancia entre el contenido y el borde.</li>
+                <li><span class="red-text">text-align</span>: Controla la alineacion horizontal del texto.</li>
+                <li><span class="red-text">text-decoration</span>: Modifica la apariencia de la decoración del texto, como subrayar, tachar, resaltar o quitar la decoración </li>
+                <li><span class="red-text">display</span>: Controla como se muestra un elemento. (en linea bloque o de otra manera )</li>
                 <li>a:hover: Cambia el estilo cuando el cursor del mouse se coloca sobre él. Proporciona retroalimentación visual al usuario antes de hacer clic en un enlace. </li>
                 <li>a:active:  Estilo que se aplica cuando un enlace está siendo activamente presionado (haciendo clic) por el usuario. Puede ser útil para mostrar el momento en que se hace clic.</li>
             </ul>
@@ -360,13 +356,6 @@
             <div id="botonContenedor">
                 <button id="botonTop">Ir al inicio</button>
             </div>
-    
-            <script>
-                const botonTop = document.getElementById("botonTop");
-                botonTop.addEventListener("click", () => {
-                    window.scrollTo({ top: 0, behavior: "smooth" });
-                });
-            </script>
     
             <h2 title="Link Titles">Títulos de enlaces</h2>
     
@@ -402,6 +391,8 @@
         
         
         </div>
+
+        <br>
 
         <div class="seccionimagenes">
 
@@ -460,11 +451,11 @@
 
                 <img src="https://www.w3schools.com/html/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
 
-            <map name="workmap">
-                <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://es.wikipedia.org/wiki/Computadora_port%C3%A1til" target="_blank">
-                <area shape="rect" coords="290,172,333,250" alt="Phone" href="https://es.wikipedia.org/wiki/Tel%C3%A9fono_m%C3%B3vil" target="_blank">
-                <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="https://es.wikipedia.org/wiki/Taza" target="_blank">
-            </map>
+                <map name="workmap">
+                    <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://es.wikipedia.org/wiki/Computadora_port%C3%A1til" target="_blank">
+                    <area shape="rect" coords="290,172,333,250" alt="Phone" href="https://es.wikipedia.org/wiki/Tel%C3%A9fono_m%C3%B3vil" target="_blank">
+                    <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="https://es.wikipedia.org/wiki/Taza" target="_blank">
+                </map>
 
             <aside class="columna">
                 <blockquote style="color: black;">
@@ -556,7 +547,7 @@
             </div>
 
             <p class="codigo">
-                <span class="blue-text">&lt;area</span> <span class="red-text">shape</span><span class="celeste">="circle"</span> <span class="red-text">coords</span><span class="celeste">=="337,300,44"</span> <span class="red-text">href</span><span class="celeste">="coffee.htm"</span><span class="blue-text">&gt;</span>
+                <span class="blue-text">&lt;area</span> <span class="red-text">shape</span><span class="celeste">="circle"</span> <span class="red-text">coords</span><span class="celeste">="337,300,44"</span> <span class="red-text">href</span><span class="celeste">="coffee.htm"</span><span class="blue-text">&gt;</span>
             </p>
 
             <p>
@@ -567,18 +558,211 @@
 
             <h3 class="codigo" id="h3codigo" title="Forma poligonal">Shape="poly"</h3>
 
+            <div class="flexContainer" id="imgaside2">
+                <p>
+                    <span class="red-text">shape="poly"</span> Contiene varios puntos de coordenadas, lo que crea una Zona formada con líneas rectas (un polígono).
+                    <img src="D:\Codigos de Programacion\Cuaderno de anotaciones\imagenes\factura.png" alt="Medialuna" width="400" height="379">
+                </p>
 
+                <p>
+                    Tenemos que encontrar las coordenadas clave para todos los bordes de la Medialuna:
+                    <img src="D:\Codigos de Programacion\Cuaderno de anotaciones\imagenes\factura 1.png" alt="Claves en la media luna" width="400" height="379"> 
+                </p>
+            </div>
 
+            <p class="codigo">
+                <span class="blue-text">&lt;area</span> <span class="red-text">shape</span><span class="celeste">="poly"</span> <span class="red-text">coords</span><span class="celeste">="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147"</span> <span class="red-text">href</span><span class="celeste">="medialuna.htm"</span><span class="blue-text">&gt;</span>
+            </p>
 
+            <p>
+                Esta es el área en la que se puede hacer clic y enviará al usuario a la página:
+            </p>
 
+            <img src="D:\Codigos de Programacion\Cuaderno de anotaciones\imagenes\factura final.png" alt="Medialuna" width="400" height="379">
 
+            <p class="Advertencia">
+                <b><em>Nota:</em></b> Para identificar las coordenadas correctamente, debemos usar un software de edicion de imagenes <br>
+                Photoshop GIMP etc.  Estos programas te permiten seleccionar áreas en la imagen y proporcionar las coordenadas exactas de esos puntos.
+            </p>
 
+            <h2 title="Image Map and JavaScript">Mapa de imágenes y JavaScript</h2>
 
+            <p>
+                Un área en la que se puede hacer clic también puede activar una función de JavaScript. <br>
+                Agregue un evento <span class="red-text">click</span> al elemento <span class="red-text">&lt;area&gt;</span> para ejecutar una función de JavaScript:
+            </p>
 
+            <div class="flexContainer" id="imgaside2">
+                    <article id="ejemplo">
+                        Ejemplo: <br> <br>
+                        <img src="https://www.w3schools.com/html/workplace.jpg" alt="Workplace" usemap="#workmap2" width="400" height="379">
+
+                        <map name="workmap2">
+                            <area shape="circle" coords="337,300,44" href="https://es.wikipedia.org/wiki/Taza" onclick="myFunction()" target="_blank">
+                        </map>
+
+                        <script>
+                        function myFunction() {
+                            alert("Toma por curioso! .I.");
+                        }
+                        </script>
+                        <br>
+
+                        Aquí, usamos el atributo onclick para ejecutar una función de JavaScript cuando se hace clic en la Taza:
+
+                        <p class="codigo">
+                            <span class="blue-text">&lt;map</span> <span class="red-text">name</span><span class="celeste">="workmap"&gt;</span>
+                               <span class="blue-text">&lt;area</span> <span class="red-text">shape</span><span class="celeste">="circle"</span> <span class="red-text">coords</span><span class="celeste">="337,300,44"</span> <span class="red-text">href</span><span class="celeste">="coffee.htm"</span> 
+                               <span class="red-text">onclick</span><span class="celeste">="myFunction()"&gt;</span>
+                            <span class="blue-text">&lt;/map&gt;</span>
+                              
+                            <span class="blue-text">&lt;script&gt;</span>
+                               <span class="celeste">function</span> myFunction() {
+                                 alert(<span class="red-text">"You clicked the coffee cup!"</span>);
+                               }
+                            <span class="blue-text">&lt;/script&gt;</span>
+                        </p>
+                    </article>
+
+            </div>
+
+            <h2 title="Background Images">Imágenes de fondo</h2>
+
+            <p>
+                Se puede especificar una imagen de fondo para casi cualquier elemento. <br>
+                Para agregar una imagen de fondo en un elemento, use el atributo <span class="red-text">style</span>  y la propiedad CSS <span class="red-text">background-image</span>.
+            </p>
+
+            <hr>
+
+            <h3 title="Background Image on a Page">Imagen de fondo en una página</h3>
+
+            <p>
+                Si desea que toda la página tenga una imagen de fondo, debe especificar la imagen de fondo en el elemento <span class="red-text">&lt;body&gt;</span> <br><br>
+                Si la imagen de fondo es más pequeña que el elemento, la imagen se repetirá, horizontal y verticalmente,<br> hasta llegar al final del elemento. <br>
+                Para evitar que la imagen de fondo se repita, establezca la propiedad <span class="red-text">background-repeat</span> en <span class="red-text">no-repeat</span>
+            </p>
+
+            <h3 title="Background Cover">Portada de fondo</h3>
+
+            <p>
+                Si desea que la imagen de fondo cubra todo el elemento, puede establecer la propiedad <span class="red-text">background-size</span> en <span class="red-text">cover</span>. <br><br>
+                Además, para asegurarse de que todo el elemento esté siempre cubierto, establezca la propiedad <span class="red-text">background-attachment</span> en <span class="red-text">fixed</span> <br>
+                De esta forma, la imagen de fondo cubrirá todo el elemento, sin estirarse (la imagen mantendrá sus proporciones originales)
+            </p>
+
+            <h3 title="Background Stretch">Estiramiento de fondo</h3>
+
+            <p>
+                Si desea que la imagen de fondo se estire para ajustarse a todo el elemento, puede establecer la propiedad <br> <span class="red-text">background-size</span> en <span class="red-text">100% 100%</span> la imagen se estirará, pero siempre cubrirá todo el elemento.
+            </p>
+
+            <h2 title="&lt;picture&gt; Element">El elemento &lt;picture&gt;</h2>
+
+            <p><em>Te permite mostrar diferentes imágenes para diferentes dispositivos o tamaños de pantalla.</em> <br><br>
+            
+                El elemento <span class="red-text">&lt;picture&gt;</span> contiene uno o más elementos <span class="red-text">&lt;source&gt;</span>,<br>
+                cada uno de los cuales hace referencia a diferentes imágenes a través del atributo <span class="red-text">srcset</span>.<br> 
+                De esta manera el navegador puede elegir la imagen que mejor se ajuste a la vista y/o dispositivo actual.
+            </p>
+
+            <div class="flexContainer" id="imgaside2">
+                <article id="ejemplo">
+
+                    Ejemplo: <br> <br>
+                    Muestra diferentes imágenes para diferentes tamaños de pantalla:
+                    
+                    <picture>
+                        <source media="(min-width: 650px)" srcset="https://www.w3schools.com/html/img_car.jpg">
+                        <source media="(min-width: 465px)" srcset="https://www.w3schools.com/html/img_food.jpg">
+                        <img src="https://www.w3schools.com/html/img_girl.jpg" style="width:auto;">
+                    </picture>
+
+                    <p class="codigo">
+                        <span class="blue-text">&lt;picture&gt;</span>
+                            <span class="blue-text">&lt;source</span> <span class="red-text">media</span><span class="celeste">="(min-width: 650px)"</span> <span class="red-text">srcset</span><span class="celeste">="img_food.jpg"</span><span class="blue-text">&gt;</span>
+                            <span class="blue-text">&lt;source</span> <span class="red-text">media</span><span class="celeste">="(min-width: 465px)"</span> <span class="red-text">srcset</span><span class="celeste">="img_car.jpg"</span><span class="blue-text">&gt;</span>
+                            <span class="blue-text">&lt;img</span> <span class="red-text">src</span><span class="celeste">="img_girl.jpg"</span><span class="blue-text">&gt;</span>
+                        <span class="blue-text">&lt;/picture&gt;</span>
+                    </p>
+                </article>
+            </div>
+
+            <p class="Advertencia">
+                <em><b>Nota:</b></em> Especifique siempre un elemento <span class="blue-text">&lt;img&gt;</span> como el último elemento secundario del elemento <span class="blue-text">&lt;picture&gt;</span>.<br>
+                El elemento <span class="blue-text">&lt;img&gt;</span> lo utilizan navegadores que no permiten el <span class="blue-text">&lt;picture&gt;</span> <br>
+                o si ninguna de las etiquetas <span class="blue-text">&lt;source</span> coincide.
+            </p>
+
+            <h3>Cuando utilizar el elemento picture</h3>
+
+            <p>
+                <em>Hay dos propósitos principales para el elemento <span class="blue-text">&lt;picture&gt;</span>:</em> <br><br>
+
+                <em><b>1. Ancho de banda</b></em> <br><br>
+                Si tienes una pantalla o dispositivo pequeño, no es necesario cargar un archivo de imagen grande. <br>
+                El navegador utilizará el primer elemento <span class="blue-text">&lt;source&gt;</span> con valores de atributos coincidentes <br>
+                e ignorará cualquiera de los siguientes elementos. <br><br>
+                <em><b>2. Soporte de formato</b></em> <br><br>
+                Es posible que algunos navegadores o dispositivos no admitan todos los formatos de imagen. <br>
+                Al usar el elemento <span class="blue-text">&lt;picture&gt;</span>, puede agregar imágenes de todos los formatos <br>
+                y el navegador usará el primer formato que reconozca e ignorará cualquiera de los siguientes elementos.
+            </p>
+
+            <p class="Advertencia">
+                <b><em>Nota:</em></b> El navegador utilizará el primer elemento <span class="blue-text">&lt;source&gt;</span> con valores de atributos coincidentes <br>
+                e ignorará los siguientes elementos <span class="blue-text">&lt;source&gt;</span>.
+            </p>
 
         </div>
 
+        <br>
 
+        <div class="seccioncosas">
+
+            <h2 title="HTML Favicon" id="C6">Favicon</h2>
+
+            <p>
+                Un favicon es una pequeña imagen que se muestra junto al título de la página en la pestaña del navegador. <br>
+                Puedes usar cualquier imagen que quieras como tu favicon. También puedes crear tu propio favicon en sitios como <a href="https://www.favicon.cc/" target="_blank" style="text-decoration-line: underline; color: red;" ><i><em>www.favicon.cc</em></i></a> .
+            </p>
+
+            <p class="Advertencia">
+                <b><em>Consejo:</em></b> un favicon es una imagen pequeña, por lo que debe ser una imagen simple con alto contraste.
+            </p>
+
+            <p>
+                Una imagen fabicon se muestra a la izquierda de la pagina en la pestaña del navegador asi: 
+            </p>
+            
+            <img src="https://www.w3schools.com/html/img_favicon.png" alt="favicon en pestaña">
+
+            <p>
+                Para agregar un favicon a su sitio web, guarde su imagen de favicon en el directorio raíz de su servidor web o cree una carpeta <br>
+                en el directorio raíz llamada imágenes y guarde su imagen de favicon en esta carpeta.<br>
+                Un nombre común para una imagen de favicon es "favicon.ico". <br><br>
+                A continuación, agregue un elemento <span class="red-text">&lt;link&gt;</span> a su archivo <b><em>"index.html"</em></b>, después del elemento <span class="red-text">&lt;title&gt;</span>, así:
+
+            </p>
+
+            
+            <article id="ejemplo">
+                Ejemplo: <br>
+
+                <p class="codigo">
+                    &lt;head&gt;
+                        &lt;title&gt;My Page Title&lt;/title&gt;
+                        &lt;link rel="icon" type="image/x-icon" href="/images/favicon.ico"&gt;
+                    &lt;/head&gt;
+                </p>
+
+
+
+            </article>
+
+            
+
+        </div>
 
 
     </div>
@@ -588,7 +772,7 @@
 
 
 
-
+    <script src="script.js"></script>
     
 </body>
 
