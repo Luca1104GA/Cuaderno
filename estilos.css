@@ -47,6 +47,7 @@ body {
     border: none;
     background-size: 120% auto;
     background-image: linear-gradient(315deg, #43cea2 0%, #185a9d 75%);
+    margin-right: 30px;
 }
 
 .menu li:hover {
@@ -72,27 +73,44 @@ body {
     background-image: url("https://img.freepik.com/free-vector/bokeh-background_23-2148486863.jpg?w=996&t=st=1694027736~exp=1694028336~hmac=7118739d3b67a8d121dfce2004ea2271123147427efa1baee8d5ead57fa205ac");
 }
 
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+caption {
+    margin-bottom: 20px;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+  
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
 .container {
     max-width: 1200px;
     border: 1px solid black;
     width: 960px;
     margin: 15px auto;
-    background-image: url(https://img.freepik.com/free-vector/binary-code-pattern-background_1142-902.jpg?w=740&t=st=1694026132~exp=1694026732~hmac=cb411d4b00524730041e74cd360346798917f4364cc9daa65dcfc3e8b7d613ba);
+    background-image: url("https://img.freepik.com/free-vector/gradient-black-background-with-wavy-lines_23-2149151737.jpg?w=900&t=st=1694286920~exp=1694287520~hmac=18cfff1903afa375c0b99c3f4f05fe6641206d9347cd557785ec8a689d6d19b5");
 }
 
 .flexContainer {
     display: flex;
     justify-content: space-between;
-    background-image: url(https://img.freepik.com/premium-vector/abstract-black-background-with-dark-green-gradient_565554-159.jpg);
-    background-repeat: no-repeat;
-    background-attachment: local;
-    background-size: 100% 100%;
+    background-color: transparent;
 }
 
 #imgaside {
     display: flex;
     justify-content: center;
-    background-color: #353b48;
+    background-color: transparent;
 }
 
 #imgaside2 {
@@ -100,7 +118,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: #353b48;
+    background-color: transparent;
 }
 
 .seccion {
@@ -169,7 +187,7 @@ article img {
 }
 
 .blue-text {
-    color: blue;
+    color: rgb(115, 115, 205);
 }
 
 .red-text {
@@ -214,12 +232,14 @@ article img {
     padding: 1px;
     border-radius: 5%;
     background-size: cover;
+    margin-bottom: 50px;
     }
 
 .seccionlinks {
     background-image: url("https://img.freepik.com/free-vector/paper-style-wavy-background_23-2149116135.jpg?w=996&t=st=1694027679~exp=1694028279~hmac=150a13c362a18135a236a754f67c0937ebb1fb19a0dac2e822660212a3c1ff5c");
     padding: 1px;
     border-radius: 5%;
+    margin-bottom: 50px;
 }
 
 .seccionimagenes {
@@ -228,6 +248,7 @@ article img {
     padding: 1px;
     border-radius: 5%;
     background-size: contain;
+    margin-bottom: 50px;
 }
 
 .seccionimagenes p.Advertencia {
@@ -240,6 +261,15 @@ article img {
     padding: 1px;
     border-radius: 5%;
     background-size: cover;
+    margin-bottom: 50px;
+}
+
+.secciontablas {
+    color: white;
+    background-image: url("https://img.freepik.com/free-photo/3d-geometric-abstract-background_1048-15986.jpg?w=1060&t=st=1694286828~exp=1694287428~hmac=47fb19b5c66006cb6afe84284a5dc399ea694a1cf54159cd5e8b7a8db6939a2b");
+    padding: 1px;
+    border-radius: 5%;
+    margin-bottom: 50px;
 }
 
 #botonIrAbajo {
@@ -343,34 +373,102 @@ article img {
     background-color: #0056b3;
 }
 
-#h3codigo{
+#h3codigo {
     color: #007bff;
     text-align: center;
     margin-left: 300px;
     margin-right: 300px;
 }
 
+.table1, .table1 th, .table1 td {
+    border: 1px solid white;
+    width: 30%;
+    margin: 0 auto;
+}
 
+.table1 {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
 
-.css-button-gradient--4 {
-    min-width: 130px;
-    height: 40px;
-    color: #fff;
-    padding: 5px 10px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-    outline: none;
-    border-radius: 5px;
-    border: none;
-    background-size: 120% auto;
-    background-image: linear-gradient(315deg, #43cea2 0%, #185a9d 75%);
-  }
-  .css-button-gradient--4:hover {
-    background-position: right center;
-  }
-  .css-button-gradient--4:active {
-    top: 2px;
-  }
+.table1 td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+.table2, .table2 th, .table2 td {
+    border: 1px solid white;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.table2 {
+    border-collapse: collapse;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+
+.table2 td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+.table3, .table3 th, .table3 td {
+    border: 2px solid #34495e;
+    border-collapse: collapse;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.table3 td {
+    background-color: #96D4D4;
+}
+
+.table4, .table4 th, .table4 td {
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.table4 {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+
+.table4 td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+.table5 th, .table5 td {
+    border: 1px solid white;
+    border-radius: 10px;
+
+}
+
+.table5 {
+    width: 30%;
+    margin: 0 auto;
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+
+.table5 td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+.table7, .table7 th, .table7 td {
+    border-collapse: collapse;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.table7 th, .table7 td {
+    border: 2px solid white;
+    border-style: dotted;
+}

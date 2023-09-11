@@ -601,11 +601,6 @@
                             <area shape="circle" coords="337,300,44" href="https://es.wikipedia.org/wiki/Taza" onclick="myFunction()" target="_blank">
                         </map>
 
-                        <script>
-                        function myFunction() {
-                            alert("Toma por curioso! .I.");
-                        }
-                        </script>
                         <br>
 
                         Aquí, usamos el atributo onclick para ejecutar una función de JavaScript cuando se hace clic en la Taza:
@@ -744,25 +739,411 @@
                 A continuación, agregue un elemento <span class="red-text">&lt;link&gt;</span> a su archivo <b><em>"index.html"</em></b>, después del elemento <span class="red-text">&lt;title&gt;</span>, así:
 
             </p>
-
             
             <article id="ejemplo">
-                Ejemplo: <br>
+                <b><em>Ejemplo:</em></b> <br>
 
                 <p class="codigo">
-                    &lt;head&gt;
-                        &lt;title&gt;My Page Title&lt;/title&gt;
-                        &lt;link rel="icon" type="image/x-icon" href="/images/favicon.ico"&gt;
-                    &lt;/head&gt;
+                    <span class="blue-text">&lt;head&gt;</span>
+                        <span class="blue-text">&lt;title&gt;</span>My Page Title<span class="blue-text">&lt;/title&gt;</span>
+                        <span class="blue-text">&lt;link</span> <span class="red-text">rel</span><span class="celeste">="icon"</span> <span class="red-text">type</span><span class="celeste">="image/x-icon"</span> <span class="red-text">href</span><span class="celeste">="/images/favicon.ico"</span><span class="blue-text">&gt;</span>
+                    <span class="blue-text">&lt;/head&gt;</span>
                 </p>
+            </article>
 
+            <h2 title="Page Title">Título de la página</h2>
 
+            <p>
+                Cada página web debe tener un título para describir el significado de la página. <br>
+                El elemento <span class="blue-text">&lt;title&gt;</span> agrega un título a su página:
+            </p>
+
+            <article id="ejemplo">
+                <b><em>Ejemplo:</em></b> <br>
+    
+                <p class="codigo">
+                    <span class="blue-text">&lt;!DOCTYPE</span> <span class="red-text">html</span><span class="blue-text">&gt;</span>
+                    <span class="blue-text">&lt;html&gt;</span>
+                    <span class="blue-text">&lt;head&gt;</span>
+                        <span class="blue-text">&lt;title&gt;</span>HTML Tutorial<span class="blue-text">&lt;/title&gt;</span>
+                    <span class="blue-text">&lt;/head&gt;</span>
+                    <span class="blue-text">&lt;body&gt;</span>
+    
+                    The content of the document......
+    
+                    <span class="blue-text">&lt;/body&gt;</span>
+                    <span class="blue-text">&lt;/html&gt;</span>
+                </p>
+    
+                <p>
+                    El título se muestra en la barra de título del navegador:
+                </p>
+    
+                <img src="https://www.w3schools.com/html/pagetitle.jpg" alt="title" width="650" height="300">
 
             </article>
 
+            <p>
+                El título debe describir el contenido y el significado de la página. <br>
+                El título de la página es muy importante para la optimización de motores de búsqueda (SEO). <br>
+                Los algoritmos de los motores de búsqueda utilizan el texto para decidir el orden al enumerar las páginas en los resultados de búsqueda. <br> <br>
+                El elemento <span class="blue-text">&lt;title&gt;</span>:
+            </p>
             
+            <ul class="lista">
+                <li><b><em>define un título en la barra de herramientas del navegador</em></b></li>
+                <li><b><em>proporciona un título para la página cuando se agrega a favoritos</em></b></li>
+                <li><b><em>muestra un título para la página en los resultados del motor de búsqueda</em></b></li>
+            </ul>
+
+            <p>
+                Por lo tanto, ¡intenta que el título sea lo más preciso y significativo posible!
+            </p>
 
         </div>
+
+        <div class="secciontablas">
+
+            <h2 title="Tables">Tablas</h2>
+
+            <p>
+                Las tablas HTML permiten a los desarrolladores web organizar los datos en filas y columnas.
+            </p>
+
+            <article id="ejemplo">
+                <b><em>Ejemplo:</em></b>
+
+                <table>
+                    <tr>
+                        <th>Compania</th>
+                        <th>Contacto</th>
+                        <th>Nacionalidad</th>
+                    </tr>
+                    <tr>
+                        <td>Alfreds Futtekisten</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                    </tr>
+                    <tr>
+                        <td>Centro comercial Moctezuma</td>
+                        <td>Francisco Chang</td>
+                        <td>Mexico</td>
+                      </tr>
+                      <tr>
+                        <td>Ernst Handel</td>
+                        <td>Roland Mendel</td>
+                        <td>Austria</td>
+                      </tr>
+                      <tr>
+                        <td>Island Trading</td>
+                        <td>Helen Bennett</td>
+                        <td>UK</td>
+                      </tr>
+                      <tr>
+                        <td>Laughing Bacchus Winecellars</td>
+                        <td>Yoshi Tannamuri</td>
+                        <td>Canada</td>
+                      </tr>
+                      <tr>
+                        <td>Magazzini Alimentari Riuniti</td>
+                        <td>Giovanni Rovelli</td>
+                        <td>Italy</td>
+                      </tr>
+                </table>
+            </article>
+
+            <h3 title="Define an HTML Table">Definir una tabla</h3>
+
+            <p>
+                Una tabla en HTML consta de celdas de tabla dentro de filas y columnas.
+            </p>
+
+            <article id="ejemplo">
+                <b><em>Ejemplo:</em></b>
+
+                <p class="codigo">
+                    &lt;<span class="blue-text">table</span>&gt;
+                        &lt;<span class="blue-text">tr</span>&gt;
+                          &lt;<span class="blue-text">th</span>&gt;Company&lt;<span class="blue-text">/th</span>&gt;
+                          &lt;<span class="blue-text">th</span>&gt;Contact&lt;<span class="blue-text">/th</span>&gt;
+                          &lt;<span class="blue-text">th</span>&gt;Country&lt;<span class="blue-text">/th</span>&gt;
+                        &lt;<span class="blue-text">/tr</span>&gt;
+                        &lt;<span class="blue-text">tr</span>&gt;
+                          &lt;<span class="blue-text">td</span>&gt;Alfreds Futterkiste&lt;<span class="blue-text">/td</span>&gt;
+                          &lt;<span class="blue-text">td</span>&gt;Maria Anders&lt;<span class="blue-text">/td</span>&gt;
+                          &lt;<span class="blue-text">td</span>&gt;Germany&lt;<span class="blue-text">/td</span>&gt;
+                        &lt;<span class="blue-text">/tr</span>&gt;
+                        &lt;<span class="blue-text">tr</span>&gt;
+                          &lt;<span class="blue-text">td</span>&gt;Centro comercial Moctezuma&lt;<span class="blue-text">/td</span>&gt;
+                          &lt;<span class="blue-text">td</span>&gt;Francisco Chang&lt;<span class="blue-text">/td</span>&gt;
+                          &lt;<span class="blue-text">td</span>&gt;Mexico&lt;<span class="blue-text">/td</span>&gt;
+                        &lt;<span class="blue-text">/tr</span>&gt;
+                    &lt;<span class="blue-text">/table</span>&gt;
+                </p>
+            </article>
+
+            <h3 title="Table Headers">Encabezados de tabla</h3>
+
+            <p>
+                Para crear las celdas que seran el encabezado se utiliza la etiqueta &lt;<span class="blue-text">th</span>&gt; <br>
+                De forma predeterminada, el texto de &lt;<span class="blue-text">th</span>&gt; está en negrita y centrado, pero puedes cambiarlo con CSS.
+            </p>
+            
+            <p class="Advertencia">
+                <span class="blue-text">th</span> significa <em><b>table header</b></em>
+            </p>
+
+            <h3 title="Table Rows">Filas de tabla</h3>
+
+            <p>
+                Cada fila de la tabla comienza con una etiqueta &lt;<span class="blue-text">tr</span>&gt; y termina con &lt;<span class="blue-text">/tr</span>&gt; <br>
+                Puedes tener tantas filas como quieras en una tabla; solo asegúrese de que el número de celdas sea el mismo en cada fila.
+            </p>
+
+            <p class="Advertencia">
+                <span class="blue-text">tr</span> significa <b><em>table row</em></b>. <br>
+                <b><em>Nota:</em></b> Hay ocasiones en las que una fila puede tener menos o más celdas que otra.
+            </p>
+
+            <h3 title="Table Cells">Celdas de tabla</h3>
+
+            <p>
+                Cada celda de la tabla está definida por una etiqueta &lt;<span class="blue-text">td</span>&gt; y una &lt;<span class="blue-text">/td</span>&gt;. <br>
+                Todo lo que está entre ellos es el contenido de la celda de la tabla.
+            </p>
+
+            <p class="Advertencia">
+                <span class="blue-text">td</span> significa <b><em>table data</em></b>. <br>
+                <b><em>Nota:</em></b> una celda de una tabla puede contener todo tipo de elementos HTML: <br>
+                texto, imágenes, listas, enlaces, otras tablas, etc.
+            </p>
+
+            <article id="ejemplo">
+                <table>
+                    <caption title="Table Tags"><b><em>Etiquetas de tabla</em></b></caption>
+                    <tr>
+                        <th title="tag">Etiqueta</th>
+                        <th title="Description">Descripción</th>
+                    </tr>
+                    <tr>
+                        <td>&lt;table&gt;</td>
+                        <td>Define una tabla</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;th&gt;</td>
+                        <td>Define una celda como encabezado de una tabla</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;tr&gt;</td>
+                        <td>Define una fila en una tabla</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;td&gt;</td>
+                        <td>Define una celda en la tabla</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;caption&gt;</td>
+                        <td> Proporciona una etiqueta o título para la tabla</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;colgroup&gt;</td>
+                        <td>Agrupa columnas en una tabla y permite aplicar estilos a grupos de columnas</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;col&gt;</td>
+                        <td>Define las propiedades de formato para una o más columnas en una tabla</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;colspan &gt;</td>
+                        <td>especifica cuántas columnas debe ocupar una celda</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;rowspan&gt;</td>
+                        <td>especifica cuántas filas debe ocupar una celda</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;thead&gt;</td>
+                        <td>Define la sección de encabezado de una tabla</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;tbody&gt;</td>
+                        <td>Define la sección de cuerpo de una tabla</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;tfoot&gt;</td>
+                        <td>Define la sección de pie de una tabla, generalmente para resúmenes o totales</td>
+                    </tr>
+                </table>
+            </article>
+            
+            <h2 title="Table Borders">Bordes de tabla</h2>
+
+            <p>
+                <em>Las tablas pueden tener bordes de diferentes estilos y formas.</em> <br> <br>
+                Para agregar un borde, use la propiedad CSS <span class="red-text">border</span> en los elementos <span class="red-text">table</span>, <span class="red-text">th</span> y <span class="red-text">td</span>
+            </p>
+
+            <table class="table1">
+                <tbody>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 title="Collapsed Table Borders">Bordes de tabla colapsados</h3>
+
+            <p>
+                Para evitar tener bordes dobles, establezca la propiedad CSS <span class="red-text">border-collapse</span> en <span class="red-text">collapse</span>
+            </p>
+
+            <table class="table2">
+                <tbody>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 title="Style Table Borders">Estilo de bordes de tabla</h3>
+
+            <p>
+                Si establece un color de fondo para cada celda y le da al borde un color blanco (o el mismo que el fondo del documento), <br>
+                obtendrá la impresión de un borde invisible:
+            </p>
+
+            <table class="table3">
+                <tbody>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 title="Round Table Borders">Bordes de tabla redondedeados </h3>
+
+            <p>
+                Con la propiedad <span class="red-text">border-radius</span>, los bordes adquieren esquinas redondeadas:
+            </p>
+
+            <table class="table4">
+                <tbody>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>
+                Evita el borde alrededor dejando fuera el <span class="red-text">table</span> del selector CSS:
+            </p>
+
+            <table class="table5">
+                <tbody>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 title="Dotted Table Borders">Bordes de tabla punteados</h3>
+
+            <p>
+                Con la propiedad <span class="red-text">border-style</span>, puedes establecer la apariencia del borde:
+            </p>
+
+            <table class="table7">
+                <tbody>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>
+                <em>Se permiten los siguientes valores</em> 
+            </p>
+
+            <ul class="lista">
+                <li><span class="red-text">dotted</span>  <span style="border:2px solid white;border-style:dotted">&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+                <li><span class="red-text">dashed</span>  <span style="border:2px solid white;border-style:dashed">&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+            </ul>
+
+
+        </div>
+
 
 
     </div>
