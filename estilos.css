@@ -21,8 +21,9 @@ body {
 }
 
 .cabecera {
-    background-image: url("https://img.freepik.com/free-vector/dark-hall-interior-with-neon-red-illumination_107791-17036.jpg?w=1060&t=st=1694029589~exp=1694030189~hmac=6975f0542b49d07a17ccf91c5f2ec057da3d4df439d43c24e15de3e4093062af");
-    background-size: cover;
+    background-image: url("imagenes\Banner1.png");
+    background-size: 100% 100%;
+    background-attachment: local;
     padding: 20px;
     font-family: cursive;
 }
@@ -36,7 +37,7 @@ body {
     min-width: 10px;
     height: 20px;
     color: #fff;
-    padding: 10px 20px;
+    padding: 5px 10px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -380,6 +381,18 @@ article img {
     margin-right: 300px;
 }
 
+.ultable {
+    list-style: disc; color: black;
+    background-color: white;
+    margin: 0px 350px 20px 350px;
+    
+}
+
+.litable {
+    padding:  5px 0px 5px 0px;
+    text-align: left;
+}
+
 .table1, .table1 th, .table1 td {
     border: 1px solid white;
     width: 30%;
@@ -472,3 +485,26 @@ article img {
     border: 2px solid white;
     border-style: dotted;
 }
+
+.table8, .table8 th, .table8 td {
+    border-collapse: collapse;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.table8 th, .table8 td {
+    border: 2px solid #96D4D4;
+}
+
+.table6 {
+    border: 1px solid white;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.table9 {
+    border: 1px solid white;
+    width: 30%;
+    margin: 0 auto;
+}
+

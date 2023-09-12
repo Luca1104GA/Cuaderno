@@ -28,6 +28,7 @@
                     <li><a href="#C4" title="Quotatios">Quotes y citas</a></li>
                     <li><a href="#C5" title="Images">Imagenes</a></li>
                     <li><a href="#C6" title="Favicon">Favicon</a></li>
+                    <li><a href="#C7" title="Table">Tablas</a></li>
                 </ul>
             </nav>
 
@@ -804,7 +805,7 @@
 
         <div class="secciontablas">
 
-            <h2 title="Tables">Tablas</h2>
+            <h2 title="Tables" id="C7">Tablas</h2>
 
             <p>
                 Las tablas HTML permiten a los desarrolladores web organizar los datos en filas y columnas.
@@ -1136,11 +1137,168 @@
                 <em>Se permiten los siguientes valores</em> 
             </p>
 
-            <ul class="lista">
-                <li><span class="red-text">dotted</span>  <span style="border:2px solid white;border-style:dotted">&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
-                <li><span class="red-text">dashed</span>  <span style="border:2px solid white;border-style:dashed">&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+            <ul class="ultable">
+                <li class="litable"><span style="display:inline-block;width:70px;"><span class="red-text">dotted</span></span> <span style="border:2px solid black;border-style:dotted">&nbsp;&nbsp;&nbsp;&nbsp;</span></li>        
+                <li class="litable"><span style="display:inline-block;width:70px;"><span class="red-text">dashed</span></span> <span style="border:2px solid black;border-style:dashed">&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+                <li class="litable"><span style="display:inline-block;width:70px;"><span class="red-text">solid</span></span> <span style="border:2px solid black;border-style:solid">&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+                <li class="litable"><span style="display:inline-block;width:70px;"><span class="red-text">double</span></span> <span style="border:2px solid black;border-style:double">&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+                <li class="litable"><span style="display:inline-block;width:70px;"><span class="red-text">groove</span></span> <span style="border:2px solid black;border-style:groove">&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+                <li class="litable"><span style="display:inline-block;width:70px;"><span class="red-text">ridge</span></span> <span style="border:2px solid black;border-style:ridge">&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+                <li class="litable"><span style="display:inline-block;width:70px;"><span class="red-text">inset</span></span> <span style="border:2px solid black;border-style:inset">&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+                <li class="litable"><span style="display:inline-block;width:70px;"><span class="red-text">outset</span></span> <span style="border:2px solid black;border-style:outset">&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+                <li class="litable"><span style="display:inline-block;width:70px;"><span class="red-text">none</span></span> <span style="border:2px solid black;border-style:none">&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+                <li class="litable"><span style="display:inline-block;width:70px;"><span class="red-text">hidden</span></span> <span style="border:2px solid black;border-style:hidden">&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
             </ul>
 
+            <h3 title="Border Color">Color del borde</h3>
+
+            <p>
+                Con la propiedad <span class="red-text">border-color</span>, puedes establecer el color del borde.
+            </p>
+
+            <table class="table8">
+                <tbody>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2 title="Table Sizes">Tamaños de tablas</h2>
+
+            <p>
+                <em>Las tablas pueden tener diferentes tamaños para cada columna, fila o la tabla completa.</em>
+            </p>
+
+            <div style="overflow:auto;">
+                <table style="width:20%;float:left;">
+                    <tbody>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td style="width:80%">&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table style="width:50%;float:left;margin-left:5%;">
+                    <tbody>
+                        <tr>
+                            <td style="width:40%">&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td style="width:40%">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table style="width:20%;float:right;">
+                    <tbody>
+                        <tr>
+                            <td style="width:70%">&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr style="height:50px;">
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p>
+                Utilice el atributo <span class="red-text">style</span> con las propiedades <span class="celeste">width</span> o <span class="celeste">height</span> para especificar el tamaño de una tabla, fila o columna.
+            </p>
+
+            <p class="Advertencia">
+                <b><em>Nota:</em></b> Usar un porcentaje como unidad de tamaño para un ancho significa qué ancho será este elemento <br>
+                en comparación con su elemento principal, que en este caso es el elemento <span class="blue-text">&lt;body&gt;</span>.
+            </p>
+
+            <h3 title="Table Column Width">Ancho de columna de tabla</h3>
+
+            <p>
+                Para establecer el tamaño de una columna específica, agregue el atributo <span class="red-text">style</span><span class="celeste">="width: ;"</span> en un elemento <span class="red-text">th</span> o <span class="red-text">td</span>:
+            </p>
+
+            <table class="table6">
+                <tbody>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td style="width:60%;background-color:rgba(150, 212, 212,0.3)">&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td style="background-color:rgba(150, 212, 212,0.3)">&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td style="background-color:rgba(150, 212, 212,0.3)">&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 title="Table Row Height">Altura de fila de tabla</h3>
+
+            <p>
+                Para establecer la altura de una fila específica, agregue el atributo <span class="red-text">style</span><span class="celeste">="height: ;"</span> en un elemento de fila de la tabla:
+            </p>
+
+            <table class="table9">
+                <tbody>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr style="height:100px;background-color:rgba(150, 212, 212,0.3)">
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2 title="Table Headers">Encabezados de tabla</h2>
 
         </div>
 
