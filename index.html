@@ -594,7 +594,7 @@
             </p>
 
             <div class="flexContainer" id="imgaside2">
-                    <article id="ejemplo">
+                    <article class="ejemplo">
                         Ejemplo: <br> <br>
                         <img src="https://www.w3schools.com/html/workplace.jpg" alt="Workplace" usemap="#workmap2" width="400" height="379">
 
@@ -663,7 +663,7 @@
             </p>
 
             <div class="flexContainer" id="imgaside2">
-                <article id="ejemplo">
+                <article class="ejemplo">
 
                     Ejemplo: <br> <br>
                     Muestra diferentes imágenes para diferentes tamaños de pantalla:
@@ -741,7 +741,7 @@
 
             </p>
             
-            <article id="ejemplo">
+            <article class="ejemplo">
                 <b><em>Ejemplo:</em></b> <br>
 
                 <p class="codigo">
@@ -759,7 +759,7 @@
                 El elemento <span class="blue-text">&lt;title&gt;</span> agrega un título a su página:
             </p>
 
-            <article id="ejemplo">
+            <article class="ejemplo">
                 <b><em>Ejemplo:</em></b> <br>
     
                 <p class="codigo">
@@ -811,7 +811,7 @@
                 Las tablas HTML permiten a los desarrolladores web organizar los datos en filas y columnas.
             </p>
 
-            <article id="ejemplo">
+            <article class="ejemplo">
                 <b><em>Ejemplo:</em></b>
 
                 <table>
@@ -859,7 +859,7 @@
                 Una tabla en HTML consta de celdas de tabla dentro de filas y columnas.
             </p>
 
-            <article id="ejemplo">
+            <article class="ejemplo">
                 <b><em>Ejemplo:</em></b>
 
                 <p class="codigo">
@@ -919,7 +919,7 @@
                 texto, imágenes, listas, enlaces, otras tablas, etc.
             </p>
 
-            <article id="ejemplo">
+            <article class="ejemplo">
                 <table>
                     <caption title="Table Tags"><b><em>Etiquetas de tabla</em></b></caption>
                     <tr>
@@ -1473,7 +1473,7 @@
                 Para utilizar la primera columna como encabezados de tabla, defina la primera celda de cada fila como elemento <span class="red-text">&lt;th&gt;</span>:
             </p>
 
-            <article id="ejemplo">
+            <article class="ejemplo">
 
                 <p class="codigo">
                     &lt;<span class="blue-text">table</span>&gt;
@@ -1534,7 +1534,7 @@
                         <td>50</td>
                     </tr>
                     <tr>
-                        <td>Víspera</td>
+                        <td>Eva</td>
                         <td>jackson</td>
                         <td>94</td>
                     </tr>
@@ -1545,7 +1545,7 @@
                 Para alinear a la izquierda los encabezados de la tabla, use la propiedad CSS <span class="blue-text">text-align</span>:
             </p>
 
-            <article id="ejemplo">
+            <article class="ejemplo">
                 Ejemplo:
                 <p class="codigo">
                     <span class="blue-text">th</span> {
@@ -1573,23 +1573,82 @@
                         <td>50</td>
                     </tr>
                     <tr>
-                        <td>Víspera</td>
+                        <td>Eva</td>
                         <td>jackson</td>
                         <td>94</td>
                     </tr>
               </tbody>
             </table>
 
-            <article id="ejemplo">
+            <article class="ejemplo">
+
                 Ejemplo
                 <p class="codigo">
-
+                    &lt;<span class="blue-text">table</span>&gt;
+                        &lt;<span class="blue-text">tr</span>&gt;
+                          &lt;<span class="blue-text">th</span> <span class="red-text">colspan</span><span class="celeste">="2"</span>&gt;Nombre&lt;/<span class="blue-text">/th</span>&gt;
+                          &lt;<span class="blue-text">th</span>&gt;Edad&lt;/<span class="blue-text">/th</span>&gt;
+                        &lt;/<span class="blue-text">/tr</span>&gt;
+                        &lt;<span class="blue-text">tr</span>&gt;
+                          &lt;<span class="blue-text">td</span>&gt;Jill&lt;/<span class="blue-text">/td</span>&gt;
+                          &lt;<span class="blue-text">td</span>&gt;Herrero&lt;/<span class="blue-text">/td</span>&gt;
+                          &lt;<span class="blue-text">td</span>&gt;50&lt;/<span class="blue-text">/td</span>&gt;
+                        &lt;/<span class="blue-text">/tr</span>&gt;
+                        &lt;<span class="blue-text">tr</span>&gt;
+                          &lt;<span class="blue-text">td</span>&gt;Eva&lt;/<span class="blue-text">/td</span>&gt;
+                          &lt;<span class="blue-text">td</span>&gt;Jackson&lt;/<span class="blue-text">/td</span>&gt;
+                          &lt;<span class="blue-text">td</span>&gt;94&lt;/<span class="blue-text">/td</span>&gt;
+                        &lt;/<span class="blue-text">/tr</span>&gt;
+                    &lt;<span class="blue-text">/table</span>&gt;
                 </p>
+
             </article>
 
+            <h3 title="Table Caption">Titulño de tabla</h3>
 
+            <p>
+                Puede agregar un titulo que sirva como emcabezado para toda la tabla.
+            </p>
 
+            <table class="table6">
+                <caption>Ahorro mensual</caption>
+                <tbody>
+                    <tr>
+                        <th>>Mes</th>
+                        <th>>Ahorros</th>
+                    </tr>
+                    <tr>
+                        <td>>Enero</td>
+                        <td>>$100</td>
+                    </tr>
+                    <tr>
+                        <td>>Febrero</td>
+                        <td>>$50</td>
+                    </tr>
+              </tbody>
+            </table>
 
+            <article class="ejemplo">
+                Ejemplo:
+                <p class="codigo">
+                    &lt;<span class="blue-text">table</span>&gt;
+                        &lt;<span class="blue-text">caption</span>&gt;Ahorro Mensual&lt;<span class="blue-text">/caption</span>&gt;
+                        &lt;<span class="blue-text">tr</span>&gt;
+                          &lt;<span class="blue-text">th</span>&gt;Mes&lt;/<span class="blue-text">/th</span>&gt;
+                          &lt;<span class="blue-text">th</span>&gt;Ahorros&lt;/<span class="blue-text">/th</span>&gt;
+                        &lt;/<span class="blue-text">/tr</span>&gt;
+                        &lt;<span class="blue-text">tr</span>&gt;
+                          &lt;<span class="blue-text">td</span>&gt;Enero&lt;/<span class="blue-text">/td</span>&gt;
+                          &lt;<span class="blue-text">td</span>&gt;$100&lt;/<span class="blue-text">/td</span>&gt;
+                        &lt;/<span class="blue-text">/tr</span>&gt;
+                        &lt;<span class="blue-text">tr</span>&gt;
+                          &lt;<span class="blue-text">td</span>&gt;Febrero&lt;/<span class="blue-text">/td</span>&gt;
+                          &lt;<span class="blue-text">td</span>&gt;$50&lt;/<span class="blue-text">/td</span>&gt;
+                        &lt;/<span class="blue-text">/tr</span>&gt;
+                    &lt;<span class="blue-text">/table</span>&gt;
+                </p>
+
+            </article>
 
 
         </div>
