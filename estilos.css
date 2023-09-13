@@ -90,9 +90,9 @@ td, th {
     padding: 8px;
 }
   
-tr:nth-child(even) {
+/* tr:nth-child(even) {
     background-color: #dddddd;
-}
+} error */
 
 .container {
     max-width: 1200px;
@@ -508,3 +508,41 @@ article img {
     margin: 0 auto;
 }
 
+#tableborders {
+    overflow: auto;
+    display: block;
+}
+
+.mqtable1 {
+    width: 22%;
+    float: left;
+    border: 1px solid #282A35;
+    border-collapse: collapse;
+    font-size: 8px;
+}
+
+.mqtable2 {
+    width: 20%;
+    float: left;
+    margin-left: 3%;
+    border: 1px solid #282A35;
+    border-collapse: collapse;
+    font-size: 8px;
+}
+
+.mqtable3 {
+    width: 26%;
+    float: left;
+    margin-left: 3%;
+    border: 1px solid #282A35;
+    border-collapse: collapse;
+    font-size: 8px;
+}
+
+.mqtable4 {
+    width: 22%;
+    float: right;
+    border: 1px solid #282A35;
+    border-collapse: collapse;
+    font-size: 8px;
+}
