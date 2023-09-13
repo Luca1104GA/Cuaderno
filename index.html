@@ -1308,9 +1308,9 @@
                 <table class="mqtable1">
                     <tbody>
                         <tr>
-                            <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Luca</font></font></th>
-                            <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tomas</font></font></th>
-                            <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Laura</font></font></th>
+                            <th>Luca</th>
+                            <th>Tomas</th>
+                            <th>Laura</th>
                         </tr>
                         <tr>
                             <td>&nbsp;</td>
@@ -1342,32 +1342,32 @@
                 <table class="mqtable2">
                     <tbody>
                         <tr>
-                            <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">8:00</font></font></th>
+                            <th>8:00</th>
                             <td>&nbsp;</td>
                             <td>&nbsp;</td>
                         </tr>
                         <tr>
-                            <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">9:00</font></font></th>
+                            <th>9:00</th>
                             <td>&nbsp;</td>
                             <td>&nbsp;</td>
                         </tr>
                         <tr>
-                            <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">10:00</font></font></th>
+                            <th>10:00</th>
                             <td>&nbsp;</td>
                             <td>&nbsp;</td>
                         </tr>
                         <tr>
-                            <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">11:00</font></font></th>
+                            <th>11:00</th>
                             <td>&nbsp;</td>
                             <td>&nbsp;</td>
                         </tr>
                         <tr>
-                            <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">12:00</font></font></th>
+                            <th>12:00</th>
                             <td>&nbsp;</td>
                             <td>&nbsp;</td>
                         </tr>
                         <tr>
-                            <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">13:00</font></font></th>
+                            <th>13:00</th>
                             <td>&nbsp;</td>
                             <td>&nbsp;</td>
                         </tr>
@@ -1377,22 +1377,14 @@
                     <tbody>
                         <tr>
                             <th></th>
-                            <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LUN</font></font></th>
-                            <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MAR</font></font></th>
-                            <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MIER</font></font></th>
-                            <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">JUE</font></font></th>
-                            <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">VIE</font></font></th>
+                            <th>LUN</th>
+                            <th>MAR</th>
+                            <th>MIER</th>
+                            <th>JUE</th>
+                            <th>VIE</th>
                         </tr>
                         <tr>
-                            <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">8:00</font></font></th>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">9:00</font></font></th>
+                            <th>8:00</th>
                             <td>&nbsp;</td>
                             <td>&nbsp;</td>
                             <td>&nbsp;</td>
@@ -1400,7 +1392,7 @@
                             <td>&nbsp;</td>
                         </tr>
                         <tr>
-                            <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">10:00</font></font></th>
+                            <th>9:00</th>
                             <td>&nbsp;</td>
                             <td>&nbsp;</td>
                             <td>&nbsp;</td>
@@ -1408,7 +1400,7 @@
                             <td>&nbsp;</td>
                         </tr>
                         <tr>
-                            <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">11:00</font></font></th>
+                            <th>10:00</th>
                             <td>&nbsp;</td>
                             <td>&nbsp;</td>
                             <td>&nbsp;</td>
@@ -1416,7 +1408,15 @@
                             <td>&nbsp;</td>
                         </tr>
                         <tr>
-                            <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">12:00</font></font></th>
+                            <th>11:00</th>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <th>12:00</th>
                             <td>&nbsp;</td>
                             <td>&nbsp;</td>
                             <td>&nbsp;</td>
@@ -1428,7 +1428,7 @@
                 <table class="mqtable4">
                     <tbody>
                         <tr>
-                            <th colspan="3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">DICIEMBRE</font></font></th>
+                            <th colspan="3">DICIEMBRE</th>
                         </tr>
                         <tr>
                             <td>&nbsp;</td>
@@ -1463,10 +1463,132 @@
 
             </div>
 
+            <p>
+                Los encabezados de las tablas se definen con elementos <span class="red-text">th</span>. Cada elemento <span class="red-text">th</span> representa una celda de la tabla.
+            </p>
+
+            <h3 title="Vertical Table Headers">Encabezados Verticales</h3>
+
+            <p>
+                Para utilizar la primera columna como encabezados de tabla, defina la primera celda de cada fila como elemento <span class="red-text">&lt;th&gt;</span>:
+            </p>
+
+            <article id="ejemplo">
+
+                <p class="codigo">
+                    &lt;<span class="blue-text">table</span>&gt;
+                        &lt;<span class="blue-text">tr</span>&gt;
+                          &lt;<span class="blue-text">th</span>&gt;Firstname&lt/<span class="blue-text">/th</span>&gt;
+                          &lt;<span class="blue-text">td</span>&gt;Jill&lt;/<span class="blue-text">/td</span>&gt;
+                          &lt;<span class="blue-text">td</span>&gt;Eve&lt;/<span class="blue-text">/td</span>&gt;
+                        &lt;/<span class="blue-text">/tr</span>&gt;
+                        &lt;<span class="blue-text">tr</span>&gt;
+                          &lt;<span class="blue-text">th</span>&gt;Lastname&lt;/<span class="blue-text">/th</span>&gt;
+                          &lt;<span class="blue-text">td</span>&gt;Smith&lt;/<span class="blue-text">/td</span>&gt;
+                          &lt;<span class="blue-text">td</span>&gt;Jackson&lt;/<span class="blue-text">/td</span>&gt;
+                        &lt;/<span class="blue-text">/tr</span>&gt;
+                        &lt;<span class="blue-text">tr</span>&gt;
+                          &lt;<span class="blue-text">th</span>&gt;Age&lt;/<span class="blue-text">/th</span>&gt;
+                          &lt;<span class="blue-text">td</span>&gt;94&lt;/<span class="blue-text">/td</span>&gt;
+                          &lt;<span class="blue-text">td</span>&gt;50&lt;/<span class="blue-text">/td</span>&gt;
+                        &lt;/<span class="blue-text">/tr</span>&gt;
+                    &lt;<span class="blue-text">/table</span>&gt;
+                </p>
+
+                <table class="table2">
+                    <tr>
+                      <th>Firstname</th>
+                      <td>Jill</td>
+                      <td>Eve</td>
+                    </tr>
+                    <tr>
+                      <th>Lastname</th>
+                      <td>Smith</td>
+                      <td>Jackson</td>
+                    </tr>
+                    <tr>
+                      <th>Age</th>  
+                      <td>50</td>
+                      <td>94</td>
+                    </tr>
+                </table>
+
+            </article>
+
+            <h3 title="Align Table Headers">Alinear encabezados de tabla</h3>
+
+            <p>
+                De forma predeterminada, los encabezados de las tablas están en negrita y centrados:
+            </p>
+
+            <table class="table6">
+                <tbody>
+                    <tr>
+                        <th>Nombre de pila</th>
+                        <th>Apellido</th>
+                        <th>Edad</th>
+                    </tr>
+                    <tr>
+                        <td>Jill</td>
+                        <td>Herrero</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Víspera</td>
+                        <td>jackson</td>
+                        <td>94</td>
+                    </tr>
+              </tbody>
+            </table>
+
+            <p>
+                Para alinear a la izquierda los encabezados de la tabla, use la propiedad CSS <span class="blue-text">text-align</span>:
+            </p>
+
+            <article id="ejemplo">
+                Ejemplo:
+                <p class="codigo">
+                    <span class="blue-text">th</span> {
+                      <span class="red-text">text-align:</span> <span class="celeste">left;</span>
+                    }
+                </p>
+            </article>
+
+            <h3 title="Header for Multiple Columns">Encabezado para varias columnas</h3>
+
+            <p>
+                Puede tener un encabezado que abarque dos o más columnas. <br>
+                Para hacer esto, use el atributo <span class="red-text">colspan</span> en el elemento <span class="blue-text">&lt;th&gt;</span>:
+            </p>
+
+            <table class="table6">
+                <tbody>
+                    <tr>
+                        <th colspan="2">Nombre</th>
+                        <th>Edad</th>
+                    </tr>
+                    <tr>
+                        <td>Jill</td>
+                        <td>Herrero</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Víspera</td>
+                        <td>jackson</td>
+                        <td>94</td>
+                    </tr>
+              </tbody>
+            </table>
+
+            <article id="ejemplo">
+                Ejemplo
+                <p class="codigo">
+
+                </p>
+            </article>
 
 
 
-            <p>jejejeejejejejeje</p>
 
 
 
