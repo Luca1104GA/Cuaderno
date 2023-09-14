@@ -86,11 +86,6 @@ caption {
     margin-bottom: 20px;
 }
 
-td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-}
   
 /* tr:nth-child(even) {
     background-color: #dddddd;
@@ -397,6 +392,8 @@ article img {
 
 .table1, .table1 th, .table1 td {
     border: 1px solid white;
+    text-align: left;
+    padding: 8px;
     width: 30%;
     margin: 0 auto;
 }
@@ -407,13 +404,12 @@ article img {
     border-spacing: 2px;
 }
 
-.table1 td {
-    display: table-cell;
-    vertical-align: inherit;
-}
+
 
 .table2, .table2 th, .table2 td {
-    border: 1px solid white;
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
     width: 30%;
     margin: 0 auto;
 }
@@ -424,12 +420,9 @@ article img {
     border-spacing: 2px;
 }
 
-.table2 td {
-    display: table-cell;
-    vertical-align: inherit;
-}
-
 .table3, .table3 th, .table3 td {
+    text-align: left;
+    padding: 8px;
     border: 2px solid #34495e;
     border-collapse: collapse;
     width: 30%;
@@ -441,7 +434,9 @@ article img {
 }
 
 .table4, .table4 th, .table4 td {
-    border: 1px solid white;
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
     border-radius: 10px;
     width: 30%;
     margin: 0 auto;
@@ -453,15 +448,11 @@ article img {
     border-spacing: 2px;
 }
 
-.table4 td {
-    display: table-cell;
-    vertical-align: inherit;
-}
-
 .table5 th, .table5 td {
-    border: 1px solid white;
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
     border-radius: 10px;
-
 }
 
 .table5 {
@@ -472,42 +463,47 @@ article img {
     border-spacing: 2px;
 }
 
-.table5 td {
-    display: table-cell;
-    vertical-align: inherit;
-}
-
 .table7, .table7 th, .table7 td {
+    border: 2px solid #dddddd;
+    text-align: left;
+    padding: 8px;
     border-collapse: collapse;
     width: 30%;
     margin: 0 auto;
-}
-
-.table7 th, .table7 td {
-    border: 2px solid white;
     border-style: dotted;
 }
 
 .table8, .table8 th, .table8 td {
+    border: 2px solid #96D4D4;
+    text-align: left;
+    padding: 8px;
     border-collapse: collapse;
     width: 30%;
     margin: 0 auto;
 }
 
-.table8 th, .table8 td {
-    border: 2px solid #96D4D4;
-}
-
-.table6 {
-    border: 1px solid white;
+.table6, .table6 th, .table6 td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
     width: 30%;
     margin: 0 auto;
 }
 
-.table9 {
-    border: 1px solid white;
+.table9, .table9 th, .table9 td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
     width: 30%;
     margin: 0 auto;
+}
+
+.table10, .table10 th, .table10 td {
+    border: 1px solid black;
+    padding: 8px;
+    color: black;
+    margin-top: 10px;
+
 }
 
 #tableborders {
@@ -515,36 +511,95 @@ article img {
     display: block;
 }
 
+#tableborders2 {
+    display: flex;
+    justify-content: space-between;
+}
+
 .mqtable1 {
     width: 22%;
     float: left;
-    border: 1px solid #282A35;
+    border: 1px solid #dddddd;
     border-collapse: collapse;
     font-size: 8px;
+}
+
+.mqtable1 th, .mqtable1 td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
 }
 
 .mqtable2 {
     width: 20%;
     float: left;
     margin-left: 3%;
-    border: 1px solid #282A35;
+    border: 1px solid #dddddd;
     border-collapse: collapse;
     font-size: 8px;
+}
+
+.mqtable2 th, .mqtable2 td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
 }
 
 .mqtable3 {
     width: 26%;
     float: left;
     margin-left: 3%;
-    border: 1px solid #282A35;
+    border: 1px solid #dddddd;
     border-collapse: collapse;
     font-size: 8px;
+}
+
+.mqtable3 th, .mqtable3 td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
 }
 
 .mqtable4 {
     width: 22%;
     float: right;
-    border: 1px solid #282A35;
+    border: 1px solid #dddddd;
     border-collapse: collapse;
     font-size: 8px;
+}
+
+.mqtable4 th, .mqtable4 td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.divtablasparalelas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tablaparalela1 {
+    border: 1px solid #dddddd;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.tablaparalela1 td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 5px;
+}
+
+.tablaparalela2 {
+    border-collapse: separate; /* Asegura que se aplique border-spacing */
+    border-spacing: 30px;
+    border: 1px solid #dddddd;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.tablaparalela2 td {
+    border: 1px solid #dddddd;
+    text-align: center;
 }

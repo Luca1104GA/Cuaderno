@@ -22,13 +22,13 @@
 
             <nav class="menu">
                 <ul>
-                    <li><a href="#C1" title="Styles">Estilos</a></li>
-                    <li><a href="#C2" title="Enlaces">Links</a></li>
-                    <li><a href="#C3" title="Elements">Elementos</a></li>
-                    <li><a href="#C4" title="Quotatios">Quotes y citas</a></li>
-                    <li><a href="#C5" title="Images">Imagenes</a></li>
-                    <li><a href="#C6" title="Favicon">Favicon</a></li>
-                    <li><a href="#C7" title="Table">Tablas</a></li>
+                    <a href="#C1" title="Styles"><li>Estilos</li></a>                    
+                    <a href="#C2" title="Enlaces"><li>Links</li></a>
+                    <a href="#C3" title="Elementos"><li>Elementos</li></a>
+                    <a href="#C4" title="Quotatios"><li>Quotes y citas</li></a>
+                    <a href="#C5" title="Images"><li>Imágenes</li></a>
+                    <a href="#C6" title="Favicon"><li>Favicon</li></a>
+                    <a href="#C7" title="Table"><li>Tablas</li></a>                    
                 </ul>
             </nav>
 
@@ -814,7 +814,7 @@
             <article class="ejemplo">
                 <b><em>Ejemplo:</em></b>
 
-                <table>
+                <table class="table10">
                     <tr>
                         <th>Compania</th>
                         <th>Contacto</th>
@@ -920,7 +920,7 @@
             </p>
 
             <article class="ejemplo">
-                <table>
+                <table class="table10">
                     <caption title="Table Tags"><b><em>Etiquetas de tabla</em></b></caption>
                     <tr>
                         <th title="tag">Etiqueta</th>
@@ -1182,8 +1182,8 @@
                 <em>Las tablas pueden tener diferentes tamaños para cada columna, fila o la tabla completa.</em>
             </p>
 
-            <div style="overflow:auto;">
-                <table style="width:20%;float:left;">
+            <div id="tableborders2">
+                <table class="mqtable1">
                     <tbody>
                         <tr>
                             <td>&nbsp;</td>
@@ -1202,7 +1202,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <table style="width:50%;float:left;margin-left:5%;">
+                <table class="mqtable1">
                     <tbody>
                         <tr>
                             <td style="width:40%">&nbsp;</td>
@@ -1221,7 +1221,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <table style="width:20%;float:right;">
+                <table class="mqtable1">
                     <tbody>
                         <tr>
                             <td style="width:70%">&nbsp;</td>
@@ -1256,17 +1256,17 @@
                 <tbody>
                     <tr>
                         <td>&nbsp;</td>
-                        <td style="width:60%;background-color:rgba(150, 212, 212,0.3)">&nbsp;</td>
+                        <td>&nbsp;</td>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
-                        <td style="background-color:rgba(150, 212, 212,0.3)">&nbsp;</td>
+                        <td>&nbsp;</td>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
-                        <td style="background-color:rgba(150, 212, 212,0.3)">&nbsp;</td>
+                        <td>&nbsp;</td>
                         <td>&nbsp;</td>
                     </tr>
                 </tbody>
@@ -1285,7 +1285,7 @@
                         <td>&nbsp;</td>
                         <td>&nbsp;</td>
                     </tr>
-                    <tr style="height:100px;background-color:rgba(150, 212, 212,0.3)">
+                    <tr">
                         <td>&nbsp;</td>
                         <td>&nbsp;</td>
                         <td>&nbsp;</td>
@@ -1604,7 +1604,7 @@
 
             </article>
 
-            <h3 title="Table Caption">Titulño de tabla</h3>
+            <h3 title="Table Caption">Titulo de tabla</h3>
 
             <p>
                 Puede agregar un titulo que sirva como emcabezado para toda la tabla.
@@ -1649,6 +1649,57 @@
                 </p>
 
             </article>
+
+            <h2 title="Table Padding & Spacing">Relleno y espaciado de tablas</h2>
+
+            <p>
+                Las tablas pueden ajustar el relleno (padding) dentro de las celdas y también el espacio (Spacing) entre las celdas.
+            </p>
+
+            <div class="divtablasparalelas">
+
+                <table class="tablaparalela1">
+                    <caption>Con Padding</caption>
+                    <tbody>
+                        <tr>
+                            <td>hello</td>
+                            <td>hello</td>
+                            <td>hello</td>
+                        </tr>
+                        <tr>
+                            <td>hello</td>
+                            <td>hello</td>
+                            <td>hello</td>
+                        </tr>
+                        <tr>
+                            <td>hello</td>
+                            <td>hello</td>
+                            <td>hello</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="tablaparalela2">
+                    <caption>Con Spacing</caption>
+                    <tbody>
+                        <tr>
+                            <td>hello</td>
+                            <td>hello</td>
+                            <td>hello</td>
+                        </tr>
+                        <tr>
+                            <td>hello</td>
+                            <td>hello</td>
+                            <td>hello</td>
+                        </tr>
+                        <tr>
+                            <td>hello</td>
+                            <td>hello</td>
+                            <td>hello</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
 
 
         </div>
