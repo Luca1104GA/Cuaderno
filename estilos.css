@@ -606,3 +606,34 @@ article img {
     border: 1px solid #dddddd;
     text-align: center;
 }
+
+.tablecebra, .tablecebra th, .tablecebra td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.tablecebra tr:nth-child(even) {
+    background-color: #D6EEEE;
+    color: #1E1E1E;
+}
+
+.tablecebra2 {
+    border-collapse: collapse;
+    text-align: left;
+    margin: 0 auto;
+    width: 30%;
+}
+
+.tablecebra2 th, .tablecebra2 td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    width: 1fr;
+}
+
+.tablecebra2 td:nth-child(even),.tablecebra2 th:nth-child(even) {
+    background-color: #D6EEEE;
+    color: #1b1d1e;
+}

@@ -510,12 +510,12 @@
             <div class="flexContainer" id="imgaside2">
                 <p>
                     Entonces las coordenadas <span class="red-text">34,44</span> se ubica a 34 pixeles del margen ezquierdo y 44 de la parte superior: 
-                    <img src="D:\Codigos de Programacion\Cuaderno de anotaciones\imagenes\34 44.png" alt="3444" width="400" height="379">
+                    <img src="imagenes\34-44.png" alt="3444" width="400" height="379">
                 </p>
                 
                 <p>
                     y las coordenadas <span class="red-text">270,350</span> estan a 270px del margen izquierdo y a 350 de la parte superior:
-                    <img src="D:\Codigos de Programacion\Cuaderno de anotaciones\imagenes\270 350.png" alt="270350" width="400" height="379">
+                    <img src="imagenes/270-350.png" alt="270350" width="400" height="379">
                 </p>  
             </div>
 
@@ -528,7 +528,7 @@
                 <span class="blue-text">&lt;area</span> <span class="red-text">shape</span><span class="celeste">="rect"</span> <span class="red-text">coords</span><span class="celeste">="34,44,270,350"</span> <span class="red-text">href</span><span class="celeste">="computer.htm"</span><span class="blue-text">&gt;</span>
             </p>
 
-            <img src="D:\Codigos de Programacion\Cuaderno de anotaciones\imagenes\resultado.png" alt="resultado" width="400" height="379">
+            <img src="imagenes/resultado.png" alt="resultado" width="400" height="379">
 
             <h3 class="codigo" id="h3codigo" title="Forma circular">Shape="circle"</h3>
 
@@ -1901,6 +1901,175 @@
                 <em>Utilice CSS para que sus tablas se vean mejor!</em>
             </p>
 
+            <h3 title="Zebra Stripes">Rayas de cebra</h3>
+
+            <p>
+                Si agrega un color de fondo en cada fila de la tabla, obtendrá un bonito efecto de rayas de cebra. <br>
+                Para aplicar estilo a todos los demás elementos de fila de la tabla, use el selector <span class="blue-text">:nth-child(even)</span> de esta manera:
+            </p>
+
+            <table class="tablecebra">
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <article class="ejemplo">
+                Ejemplo:
+                <p class="codigo">
+                    <span class="blue-text">tr:nth-child(even)</span> {
+                        <span class="red-text">background-color</span><span class="celeste">: #D6EEEE</span>;
+                    }
+                </p>
+            </article>
+
+            <p class="advertencia">
+                <b><em>Nota:</em></b> Si usa <span class="red-text">(odd)</span> en lugar de <span class="red-text">(even)</span>, el estilo se producira en las filas 1,3,5 etc. <br>
+                en lugar de 2,4,6 etc.
+            </p>
+
+            <h3 title="Vertical Zebra Stripes">rayas verticales de cebra</h3>
+
+            <p>
+                Para hacer rayas de cebra verticales, de estilo a cada columna, en lugar de cada otra fila. <br>
+                Configure los elementos <span>:nth-child(even)</span> de esta manera:
+            </p>
+
+            <table class="tablecebra2">
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p class="advertencia">
+                <b><em>Nota:</em></b> Coloque el selector <span class="blue-text">:nth-child()</span> en los elementos <span class="blue-text">th</span> y <span class="blue-text">td</span> si desea tener el estilo <br>
+                tanto en los encabezados como en las celdas normales de la tabla.
+            </p>
+
+            <h3 title="Combine Vertical and Horizontal Zebra Stripes">Combina rayas de cebra verticales y horizontales</h3>
+
+            <p>
+                Puede combinar el estilo de los dos ejemplos anteriores y tendrá rayas en filas y columnas alternas. <br>
+                Si utilizas un color transparente conseguirás un efecto de superposición.
+            </p>
+
+            <table class="tablecebra tablecebra2">
+                <tbody>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
 
 
 
