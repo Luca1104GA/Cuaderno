@@ -61,6 +61,53 @@ body {
     top: 2px;
 }
 
+.menu li:hover ul {
+    display: block;
+}
+
+.menu ul.submenu {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+    background: #4433ff;
+    z-index: 1; 
+    position: absolute;
+    top: 100%; /* Coloca el submenú justo debajo del botón principal */  
+    display: none;
+}
+
+.menu ul.submenu:hover:after {
+    width: 100%;
+    left: 0;
+  }
+
+.menu ul.submenu:after {
+    border-radius: 5px;
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+    transition: all 0.3s ease;
+    background-color: #3a86ff;
+    right: 0;
+}
+
+.menu ul.submenu:active {
+    top: 2px;
+}
+
 .lista { 
     list-style-type: disc;
     padding-left: 200px;
@@ -607,12 +654,17 @@ article img {
     text-align: center;
 }
 
-.tablecebra, .tablecebra th, .tablecebra td {
-    border: 1px solid #dddddd;
+.tablecebra {
+    border-collapse: collapse;
     text-align: left;
-    padding: 8px;
-    width: 30%;
     margin: 0 auto;
+    width: 35%;
+}
+
+.tablecebra th, .tablecebra td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    width: 1fr;
 }
 
 .tablecebra tr:nth-child(even) {
@@ -624,7 +676,7 @@ article img {
     border-collapse: collapse;
     text-align: left;
     margin: 0 auto;
-    width: 30%;
+    width: 35%;
 }
 
 .tablecebra2 th, .tablecebra2 td {
@@ -636,4 +688,40 @@ article img {
 .tablecebra2 td:nth-child(even),.tablecebra2 th:nth-child(even) {
     background-color: #D6EEEE;
     color: #1b1d1e;
+    
+}
+
+.tablecebra3 tr:nth-child(even), .tablecebra3 td:nth-child(even),.tablecebra3 th:nth-child(even) {
+    background-color: rgba(150, 212, 212, 0.4);
+}
+
+.tabletest {
+    border-collapse: collapse;
+    text-align: left;
+    margin: 0 auto;
+    width: 35%;
+}
+
+.tabletest tr, .tabletest td,.tabletest th {
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.tabletest2 {
+    border-collapse: collapse;
+    text-align: left;
+    margin: 0 auto;
+    width: 35%;
+}
+
+.tabletest2 tr, .tabletest2 td,.tabletest2 th {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    width: 1fr;
+}
+
+.tabletest2 tr:hover {
+    background-color: #D6EEEE;
+    color: black;
 }

@@ -25,7 +25,12 @@
                     <a href="#C4" title="Quotatios"><li>Quotes y citas</li></a>
                     <a href="#C5" title="Images"><li>Imágenes</li></a>
                     <a href="#C6" title="Favicon"><li>Favicon</li></a>
-                    <a href="#C7" title="Table"><li>Tablas</li></a>                    
+                    <a href="#C7" title="Table">
+                        <li>Tablas
+                            <ul class="submenu">
+                                <a href="#sublink1"><li class="submenu">Bordes</li></a>
+                            </ul>
+                        </li></a>                    
                 </ul>
             </nav>
 
@@ -535,12 +540,12 @@
             <div class="flexContainer" id="imgaside2">
                 <p>
                     Para agregar un area circular Primero localizar las coordenadas del centro del circulo,en este caso <span class="red-text">337,300</span> <br>
-                    <img src="D:\Codigos de Programacion\Cuaderno de anotaciones\imagenes\circulo 337 300.png" alt="337,300" width="400" height="379">
+                    <img src="imagenes\circulo-337-300.png" alt="337,300" width="400" height="379">
                 </p>
 
                 <p>
                     Despues especifique el radio del circulo en pixeles <span class="red-text">44</span>
-                    <img src="D:\Codigos de Programacion\Cuaderno de anotaciones\imagenes\circulo 44px.png" alt="44" width="400" height="379">
+                    <img src="imagenes\circulo-44px.png" alt="44" width="400" height="379">
                 </p>
             </div>
 
@@ -552,19 +557,19 @@
                 Esta es el área en la que se puede hacer clic y enviará al usuario al link:
             </p>
 
-            <img src="D:\Codigos de Programacion\Cuaderno de anotaciones\imagenes\circulo resultado.png" alt="circle result" width="400" height="379">
+            <img src="imagenes\circulo-resultado.png" alt="circle result" width="400" height="379">
 
             <h3 class="codigo" id="h3codigo" title="Forma poligonal">Shape="poly"</h3>
 
             <div class="flexContainer" id="imgaside2">
                 <p>
                     <span class="red-text">shape="poly"</span> Contiene varios puntos de coordenadas, lo que crea una Zona formada con líneas rectas (un polígono).
-                    <img src="D:\Codigos de Programacion\Cuaderno de anotaciones\imagenes\factura.png" alt="Medialuna" width="400" height="379">
+                    <img src="imagenes\factura.png" alt="Medialuna" width="400" height="379">
                 </p>
 
                 <p>
                     Tenemos que encontrar las coordenadas clave para todos los bordes de la Medialuna:
-                    <img src="D:\Codigos de Programacion\Cuaderno de anotaciones\imagenes\factura 1.png" alt="Claves en la media luna" width="400" height="379"> 
+                    <img src="imagenes\factura-1.png" alt="Claves en la media luna" width="400" height="379"> 
                 </p>
             </div>
 
@@ -576,7 +581,7 @@
                 Esta es el área en la que se puede hacer clic y enviará al usuario a la página:
             </p>
 
-            <img src="D:\Codigos de Programacion\Cuaderno de anotaciones\imagenes\factura final.png" alt="Medialuna" width="400" height="379">
+            <img src="imagenes\factura-final.png" alt="Medialuna" width="400" height="379">
 
             <p class="advertencia">
                 <b><em>Nota:</em></b> Para identificar las coordenadas correctamente, debemos usar un software de edicion de imagenes <br>
@@ -974,7 +979,7 @@
                 </table>
             </article>
             
-            <h2 title="Table Borders">Bordes de tabla</h2>
+            <h2 title="Table Borders" id="sublink1">Bordes de tabla</h2>
 
             <p>
                 <em>Las tablas pueden tener bordes de diferentes estilos y formas.</em> <br> <br>
@@ -1787,7 +1792,7 @@
                             <td>&nbsp;</td>
                         </tr>
                         <tr>
-                            <th colspan="2" rowspan="2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">FIESTA</font></font></th>
+                            <th colspan="2" rowspan="2">FIESTA</th>
                             <td>&nbsp;</td>
                         </tr>
                         <tr>
@@ -1999,6 +2004,15 @@
                 </tbody>
             </table>
 
+            <article class="ejemplo">
+                Ejemplo:
+                <p class="codigo">
+                    <span class="blue-text">td:nth-child(even)</span>, <span class="blue-text">th:nth-child(even)</span> {
+                        <span class="red-text">background-color</span><span class="celeste">: #D6EEEE;</span>
+                    }
+                </p>
+            </article>
+
             <p class="advertencia">
                 <b><em>Nota:</em></b> Coloque el selector <span class="blue-text">:nth-child()</span> en los elementos <span class="blue-text">th</span> y <span class="blue-text">td</span> si desea tener el estilo <br>
                 tanto en los encabezados como en las celdas normales de la tabla.
@@ -2011,7 +2025,7 @@
                 Si utilizas un color transparente conseguirás un efecto de superposición.
             </p>
 
-            <table class="tablecebra tablecebra2">
+            <table class="tablecebra tablecebra2 tablecebra3">
                 <tbody>
                     <tr>
                         <td>&nbsp;</td>
@@ -2071,9 +2085,150 @@
                 </tbody>
             </table>
 
+            <article class="ejemplo">
+
+                Ejemplo:
+                <p class="codigo">
+                    <span class="blue-text">tr:nth-child(even)</span> {
+                        <span class="red-text">background-color</span><span class="celeste">: rgba(150, 212, 212, 0.4);</span>
+                      }
+                      
+                    <span class="blue-text">th:nth-child(even)</span>,<span class="blue-text">td:nth-child(even)</span> {
+                        <span class="red-text">background-color</span><span class="celeste">: rgba(150, 212, 212, 0.4);</span>
+                    }
+                </p>
+
+            </article>
+
+            <p class="advertencia">
+                <b><em>Nota:</em></b> Utilice un color <span class="blue-text">rgba()</span> para especificar la transparencia del color.
+            </p>
+
+            <h3 title="Horizontal Dividers">Divisores Horizontales</h3>
+
+            <p title="If you specify borders only at the bottom of each table row, you will have a table with horizontal dividers.">
+                Si especifica bordes solo en la parte inferior de cada fila de la tabla, tendrá una tabla con divisores horizontales. <br>
+                Agregue la propiedad <span class="red-text">border-bottom</span> a todos los elementos <span class="blue-text">tr</span> para obtener divisores horizontales:
+            </p>
+
+            <table class="tabletest">
+                <thead>
+                    <tr>
+                        <th>Nombre de pila</th>
+                        <th>Apellido</th>
+                        <th>Ahorros</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pedro</td>
+                        <td>Grifo</td>
+                        <td>$100</td>
+                    </tr>
+                    <tr>
+                        <td>Luis</td>
+                        <td>Grifo</td>
+                        <td>$150</td>
+                    </tr>
+                    <tr>
+                        <td>José</td>
+                        <td>Swanson</td>
+                        <td>$300</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <article class="ejemplo">
+                Ejemplo:
+                <p class="codigo">
+                    <span class="blue-text">tr</span> {
+                        <span class="red-text">border-bottom</span><span class="celeste">: 1px solid #ddd;</span>
+                    }
+                </p>
+            </article>
+
+            <h3 title="Hoverable Table">Tabla flotante</h3>
+
+            <p>
+                Utilice el selector <span class="blue-text">:hover</span> en <span class="blue-text">tr</span> para resaltar las filas de la tabla al pasar el mouse sobre el
+            </p>
+
+            <table class="tabletest2">
+                <tbody>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Savings</th>
+                    </tr>
+                    <tr>
+                        <td>Peter</td>
+                        <td>Griffin</td>
+                        <td>$100</td>
+                    </tr>
+                    <tr>
+                        <td>Lois</td>
+                        <td>Griffin</td>
+                        <td>$150</td>
+                    </tr>
+                    <tr>
+                        <td>Joe</td>
+                        <td>Swanson</td>
+                        <td>$300</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <article class="ejemplo">
+                Ejemplo:
+                <p class="codigo">
+                    <span class="blue-text">tr:hover</span> {
+                        <span class="red-text">background-color</span><span class="celeste">: #D6EEEE;</span>
+                    }
+                </p>
+            </article>
+
+            <h2 title="Table Colgroup">Grupo de columnas</h2>
+
+            <p>
+                <b><em>El elemento <span class="blue-text">&lt;colgroup&gt;</span> se utiliza para diseñar columnas específicas de una tabla.</em></b>
+            </p>
+
+
+
+
+
+
+
+
+
 
 
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
