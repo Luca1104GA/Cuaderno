@@ -6,6 +6,7 @@
     <title>Cuaderno</title>
     <link rel="stylesheet" href="estilos.css">
     <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAD29vYAMWv4ACAfIwD///8A87UAAADDkQAAw/8A/Pz8APX19QAsaPgAJiUpAP7+/gAhHyQAAMKQADw8PgBGRkkA8bQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwMDAwMDAwMDAwMDAwMDAwMDAwMDCwMDAwMDAwMDAwMDAwMDAwMCAgsDAwMDAwMDAwMDDgICAgICDwMDAwMCAwMDAgMQEBACBAICAgICAgMDAwMQEBAQAhAQEAIGBgIDAwMQBwMQEAIQEBACBgYCAwsDAwICAgICEBAQAgYGAgMLAwIDAQEBAgICAgICAgIDCwMDAQEBAQIJCQkCBQUCAwsDAQMDAQkCCQkJAgUFAgMLAwMCAgICCgkJCQIFBQIDCwMCAwMDDAICAgICDQUCAwsLAwMDAwMIAwICAgICAwsLCwMDAwMDAwMDCwAHAwMDAwMDAwMDAwMDAwMDAwMDAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
@@ -17,20 +18,26 @@
 
         <div id="primerimagen">
 
-            <nav class="menu">
-                <ul>
-                    <a href="#C1" title="Styles"><li>Estilos</li></a>                    
-                    <a href="#C2" title="Enlaces"><li>Links</li></a>
-                    <a href="#C3" title="Elementos"><li>Elementos</li></a>
-                    <a href="#C4" title="Quotatios"><li>Quotes y citas</li></a>
-                    <a href="#C5" title="Images"><li>Imágenes</li></a>
-                    <a href="#C6" title="Favicon"><li>Favicon</li></a>
-                    <a href="#C7" title="Table">
-                        <li>Tablas
-                            <ul class="submenu">
-                                <a href="#sublink1"><li class="submenu">Bordes</li></a>
-                            </ul>
-                        </li></a>                    
+            <span class="nav-bar" id="btnmenu"><i class="fa-solid fa-bars fa-beat-fade"></i>Menu</span>
+            <nav class="main-nav">
+                <ul class="menu" id="menu">
+                    <li class="menu__item"><a href="" class="menu__link">Basico</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">Links</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">Imagenes</a></li>
+                    <li class="menu__item container-submenu">
+                        <a href="#" class="menu__link submenu-btn">Tablas <i class="fa-solid fa-down-long"></i></a>
+                        <ul class="submenu">
+                            <li class="menu__item"><a href="" class="menu__link">Tamaños</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">Encabezados</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">Relleno</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">Colspan y Rowspan</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">Estilos</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">colgroup</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="menu__item"><a href="" class="menu__link">Listas</a></li>
+                    <li class="menu__item"><a href="" class="menu__link"></a></li>
                 </ul>
             </nav>
 
