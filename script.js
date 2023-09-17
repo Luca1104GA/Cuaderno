@@ -1,3 +1,33 @@
+const btnMenu = document.querySelector("#btnMenu");
+const menu = document.querySelector("#menu");
+btnMenu.addEventListener("click", function(){
+    menu.classList.toggle("mostrar");
+});
+
+const subMenuBtn = document.querySelectorAll(".submenu-btn");
+for(let i=0; i<subMenuBtn.length; i++) {
+    subMenuBtn[i].addEventListener("click", function(){
+        if(window.innerWidth < 1024){
+            const subMenu = this.nextElementSibling
+        }
+    });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const botonVolverArriba = document.getElementById('botonVolverArriba');
 const botonIrAbajo = document.getElementById('botonIrAbajo');
 
@@ -24,7 +54,7 @@ window.addEventListener('scroll', () => {
 });
 
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+/* document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
@@ -32,7 +62,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             behavior: 'smooth'
         });
     });
-});
+}); */ /* antiguos botones del menu */
 
 const botonTop = document.getElementById("botonTop");
 botonTop.addEventListener("click", () => {

@@ -50,6 +50,7 @@ body {
     background: #555;
     width: 100%;
     margin-left: -100%;
+    transition: all 0.5s;
 }
 
 .menu__link {
@@ -58,6 +59,14 @@ body {
     color: white;
     font-size: 1.2em;
     text-decoration: none;
+}
+
+.menu__link:hover {
+    background: #444;
+}
+
+.submenu .menu__link:hover {
+    background: #222;
 }
 
 .submenu {
@@ -69,6 +78,10 @@ body {
 .submenu .menu__link {
     background: #333;
     padding-left: 40px;
+}
+
+.mostrar {
+    margin-left: 0;
 }
 
 @media(min-width:1024px) {
