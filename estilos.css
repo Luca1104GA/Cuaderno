@@ -113,7 +113,6 @@ body {
 
 
 .lista { 
-    list-style-type: disc;
     padding-left: 200px;
 }
 
@@ -317,6 +316,14 @@ article img {
 .secciontablas {
     color: white;
     background-image: url("https://img.freepik.com/free-photo/3d-geometric-abstract-background_1048-15986.jpg?w=1060&t=st=1694286828~exp=1694287428~hmac=47fb19b5c66006cb6afe84284a5dc399ea694a1cf54159cd5e8b7a8db6939a2b");
+    padding: 1px;
+    border-radius: 5%;
+    margin-bottom: 50px;
+}
+
+.seccionlistas {
+    color: black;
+    background-image: url("imagenes/3d-background-with-white-cubes.jpg");
     padding: 1px;
     border-radius: 5%;
     margin-bottom: 50px;
@@ -624,6 +631,13 @@ article img {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
+}
+
+.divlistasparalelas {
+    display: flex;
+    justify-content: stretch;
+    background-color: white;
+    margin-top: 10px;
 }
 
 .divtablasparalelas {
