@@ -2587,7 +2587,7 @@
 
         </div>
 
-        <ul class="seccionlistas" id="e1">
+        <div class="seccionlistas" id="e1">
 
             <h2 title="list">Listas</h2>
 
@@ -2626,6 +2626,7 @@
             </p>
 
             <article class="ejemplo">
+
                 Ejemplo:
 
                 <p class="codigo">
@@ -2635,34 +2636,145 @@
                         &lt;<span class="blue-text">li</span>&gt;Milk&lt;/<span class="blue-text">/li</span>&gt;
                     &lt;<span class="blue-text">/ul</span>&gt;
                 </p>
+
             </article>
 
             <h3 title="Ordered List">Lista ordenada</h3>
 
             <p>
                 Una lista ordenada comienza con la etiqueta <span class="blue-text">&lt;ol&gt;</span>. Cada elemento de la lista comienza con la etiqueta <span class="blue-text">&lt;li&gt;</span> <br>
-                Los elementos de la lista estar
+                Los elementos de la lista estarán marcados con números de forma predeterminada.
             </p>
 
+            <article class="ejemplo">
 
+                Ejemplo:
 
+                <p class="codigo">
+                    &lt;<span class="blue-text">ol</span>&gt;
+                        &lt;<span class="blue-text">li</span>&gt;Coffee&lt;/<span class="blue-text">/li</span>&gt;
+                        &lt;<span class="blue-text">li</span>&gt;Tea&lt;/<span class="blue-text">/li</span>&gt;
+                        &lt;<span class="blue-text">li</span>&gt;Milk&lt;/<span class="blue-text">/li</span>&gt;
+                    &lt;<span class="blue-text">/ol</span>&gt;
+                </p>
 
+            </article>
 
+            <h3 title="Description Lists">Listas de descripción</h3>
 
+            <p>
+                HTML también admite listas de descripciones. <br>
+                Una lista de descripción es una lista de términos, con una descripción de cada término. <br> <br>
+                La etiquea <span class="blue-text">&lt;dl&gt;</span> define la lista de descripción, la etiqueta <span class="blue-text">&lt;dt&gt;</span> define el término (nombre) <br>
+                y la etiqueta <span class="blue-text">&lt;dd&gt;</span> describe cata término.
+            </p>
 
+            <article class="ejemplo">
+                Ejemplo: 
 
+                <dl>
+                    <dt>Cafe</dt>
+                    <dd>- Bebida negra caliente</dd>
+                    <dt>Leche</dt>
+                    <dd>- Bebida blanca fria</dd>
+                  </dl>
 
+                  <p class="codigo">
+                    &lt;<span class="blue-text">dl</span>&gt;
+                        &lt;<span class="blue-text">dt</span>&gt;Cafe&lt;/<span class="blue-text">/dt</span>&gt;
+                        &lt;<span class="blue-text">dd</span>&gt;- Bebida negra caliente&lt;/<span class="blue-text">/dd</span>&gt;
+                        &lt;<span class="blue-text">dt</span>&gt;Leche&lt;/<span class="blue-text">/dt</span>&gt;
+                        &lt;<span class="blue-text">dd</span>&gt;- Bebida blanca fria&lt;/<span class="blue-text">/dd</span>&gt;
+                    &lt;/<span class="blue-text">/dl</span>&gt;
+                  </p>
 
+            </article>
 
+            <table class="tabletest2black">
+                <tbody>
+                    <tr>
+                        <th>Tag</th>
+                        <th>descripcion</th>
+                    </tr>
+                    <tr>
+                        <td>&lt;ul&gt;</td>
+                        <td>Lista desordenada</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;ol&gt;</td>
+                        <td>Lista ordenada</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;li&gt;</td>
+                        <td>define un item de la lista</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;dl&gt;</td>
+                        <td>define una descripcion de la lista</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;dt&gt;</td>
+                        <td>define un termino en una lista de descripcion</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;dd&gt;</td>
+                        <td>describe el termino en una lista de descripcion</td>
+                    </tr>
+                </tbody>
+            </table>
 
+            <h2 title="Unordered Lists">Listas desordenadas</h2>
 
+            <p>
+                <b><em>La etiqueta <span class="blue-text">&lt;ul&gt;</span> define una lista desordenada (con viñetas).</em></b> <br><br>
+                Una lista desordenada comienza con la etiqueta <span class="blue-text">&lt;ul&gt;</span>. Cada elemento de la lista comienza con la etiqueta <span class="blue-text">&lt;li&gt;</span>. <br>
+                Los elementos de la lista estaran marcados con viñetas (pequeños circulos negros) de forma predeterminada:
+            </p>
 
+            <article class="ejemplo">
 
+                Ejemplo:
+                <p class="codigo">
+                    &lt;<span class="blue-text">ul</span>&gt;
+                        &lt;<span class="blue-text">li</span>&gt;Coffee&lt;/<span class="blue-text">/li</span>&gt;
+                        &lt;<span class="blue-text">li</span>&gt;Tea&lt;/<span class="blue-text">/li</span>&gt;
+                        &lt;<span class="blue-text">li</span>&gt;Milk&lt;/<span class="blue-text">/li</span>&gt;
+                    &lt;<span class="blue-text">/ul</span>&gt;
+                </p>
 
+            </article>
 
+            <h3 title="Unordered List - Choose List Item Marker">Lista desordenada: elija el marcador de elemento de lista</h3>
 
+            <p>
+                La propiedad CSS <span class="red-text">list-style-type</span> se utiliza para definir el estilo del marcador de elementos de la lista. <br>
+                Puede tener uno de los siguientes valores:
+            </p>
 
-
+            <table class="tabletest2black">
+                <tbody>
+                    <tr>
+                        <th>Valor</th>
+                        <th>descripción</th>
+                    </tr>
+                    <tr>
+                        <td>disc</td>
+                        <td>Estable el marcador del elemento de la lista en una viñeta (predeterminado)</td>
+                    </tr>
+                    <tr>
+                        <td>circle</td>
+                        <td>Estable el marcador del elemento de la lista en un circulo</td>
+                    </tr>
+                    <tr>
+                        <td>square</td>
+                        <td>Estable el marcador del elemento de la lista en un cuadrado</td>
+                    </tr>
+                    <tr>
+                        <td>none</td>
+                        <td>Los elementos de la lista no se marcaran</td>
+                    </tr>
+                </tbody>
+            </table>
 
 
 
