@@ -76,12 +76,11 @@
                         <a href="#" class="menu__link submenu-btn">Listas <i class="fa-solid fa-down-long"></i></a>
                         <ul class="submenu">
                             <li class="menu__item"><a href="#e1" class="menu__link">Inicio</a></li>
-                            <li class="menu__item"><a href="#e2" class="menu__link">Comentarios</a></li>
-                            <li class="menu__item"><a href="#e3" class="menu__link">Estilos</a></li>
-                            <li class="menu__item"><a href="#e4" class="menu__link">Formato</a></li>
-                            <li class="menu__item"><a href="#e5" class="menu__link">Citaciónes</a></li>
-                            <li class="menu__item"><a href="#e6" class="menu__link">Estilos CSS</a></li>
-                            <li class="menu__item"><a href="#e7" class="menu__link">Favicon</a></li>
+                            <li class="menu__item"><a href="#e2" class="menu__link">Desordenadas</a></li>
+                            <li class="menu__item"><a href="#e3" class="menu__link">Ordenadas</a></li>
+                            <li class="menu__item"><a href="#e4" class="menu__link">Lista horizontal con CSS</a></li>
+                            <li class="menu__item"><a href="#e5" class="menu__link">Listas anidadas</a></li>
+                            <li class="menu__item"><a href="#e6" class="menu__link">Listas de descripción</a></li>
                         </ul>
                     </li>
 
@@ -192,12 +191,10 @@
     
             </aside>
         </div>
-    
-        <br>
 
-        <div class="seccionestilo">
+        <div class="seccionestilo" id="c6">
             
-            <h2 id="c6">Estilos CSS</h2>
+            <h2>Estilos CSS</h2>
             <h3>¿Qué es CSS?</h3>
         
             <p>
@@ -268,12 +265,10 @@
                 La propiedad CSS <span class="blue-text">margin</span> define un margen (espacio) fuera del borde.
             </p>
         </div>
-
-        <br>
     
-        <div class="seccionlinks">
+        <div class="seccionlinks" id="l1">
     
-            <h2 id="l1">Links CSS</h2>
+            <h2>Links CSS</h2>
     
             <P>
                 Los links HTML son hipervínculos. <br>
@@ -450,11 +445,9 @@
         
         </div>
 
-        <br>
+        <div class="seccionimagenes" id="i1">
 
-        <div class="seccionimagenes">
-
-            <h2 title="Images" id="i1">Imagenes</h2>
+            <h2 title="Images">Imagenes</h2>
             <h3>Las imágenes pueden mejorar el diseño y la apariencia de una página web.</h3>
 
             <p>
@@ -769,11 +762,9 @@
 
         </div>
 
-        <br>
+        <div class="seccioncosas" id="c7">
 
-        <div class="seccioncosas">
-
-            <h2 title="HTML Favicon" id="c7">Favicon</h2>
+            <h2 title="HTML Favicon">Favicon</h2>
 
             <p>
                 Un favicon es una pequeña imagen que se muestra junto al título de la página en la pestaña del navegador. <br>
@@ -860,9 +851,9 @@
 
         </div>
 
-        <div class="secciontablas">
+        <div class="secciontablas" id="t1">
 
-            <h2 title="Tables" id="t1">Tablas</h2>
+            <h2 title="Tables">Tablas</h2>
 
             <p>
                 Las tablas HTML permiten a los desarrolladores web organizar los datos en filas y columnas.
@@ -2161,7 +2152,7 @@
 
             <h3 title="Horizontal Dividers">Divisores Horizontales</h3>
 
-            <p title="If you specify borders only at the bottom of each table row, you will have a table with horizontal dividers.">
+            <p>
                 Si especifica bordes solo en la parte inferior de cada fila de la tabla, tendrá una tabla con divisores horizontales. <br>
                 Agregue la propiedad <span class="red-text">border-bottom</span> a todos los elementos <span class="blue-text">tr</span> para obtener divisores horizontales:
             </p>
@@ -2660,7 +2651,7 @@
 
             </article>
 
-            <h3 title="Description Lists">Listas de descripción</h3>
+            <h3 title="Description Lists" id="e6">Listas de descripción</h3>
 
             <p>
                 HTML también admite listas de descripciones. <br>
@@ -2723,7 +2714,7 @@
                 </tbody>
             </table>
 
-            <h2 title="Unordered Lists">Listas desordenadas</h2>
+            <h2 title="Unordered Lists" id="e2">Listas desordenadas</h2>
 
             <p>
                 <b><em>La etiqueta <span class="blue-text">&lt;ul&gt;</span> define una lista desordenada (con viñetas).</em></b> <br><br>
@@ -2776,7 +2767,7 @@
                 </tbody>
             </table>
 
-            <h3 title="Nested Lists">Listas anidadas</h3>
+            <h3 title="Nested Lists" id="e5">Listas anidadas</h3>
 
             <p>
                 Las listas se pueden anidar (lista dentro de lista).
@@ -2816,7 +2807,7 @@
                 Nota: Un elemento de lista (<span class="blue-text">&lt;li&gt;</span>) puede contener una nueva lista y otros elementos HTML como imágenes, enlaces, etc.
             </p>
 
-            <h3 title="Horizontal List with CSS">Lista horizontal con CSS</h3>
+            <h3 title="Horizontal List with CSS" id="e4">Lista horizontal con CSS</h3>
 
             <p>
                 <b><em>Las listas HTML se pueden diseñar de muchas maneras diferentes con CSS.</em></b> <br><br>
@@ -2895,47 +2886,297 @@
                 <li>Utilice la propiedad CSS <span class="red-text">float:left</span> para mostrar la lista horizontalmente</li> 
             </ul>
 
-            <h3 title="Ordered Lists">Listas ordenadas</h3>
+            <h2 title="Ordered Lists" id="e3">Listas ordenadas</h2>
 
+            <p>
+                <b><em>La etiqueta HTML <span class="blue-text">&lt;ol&gt;</span> define una lista ordenada. <br>
+                Una lista ordenada puede ser numérica o alfabética.</em></b>
+            </p>
+            
+            <p>
+                Una lista ordenada comienza con la etiqueta <span class="blue-text">&lt;ol&gt;</span>. Cada elemento de la lista comienza con la etiqueta <span class="blue-text">&lt;li&gt;</span> <br>
+                Los elementos de la lista estarán marcados con números de forma predeterminada.
+            </p>
 
+            <article class="ejemplo">
 
+                Ejemplo:
 
+                <p class="codigo">
+                    &lt;<span class="blue-text">ol</span>&gt;
+                        &lt;<span class="blue-text">li</span>&gt;Coffee&lt;<span class="blue-text">/li</span>&gt;
+                        &lt;<span class="blue-text">li</span>&gt;Tea&lt;<span class="blue-text">/li</span>&gt;
+                        &lt;<span class="blue-text">li</span>&gt;Milk&lt;<span class="blue-text">/li</span>&gt;
+                    &lt;<span class="blue-text">/ol</span>&gt;
+                </p>
+
+            </article>
+
+            <h3>El atributo <b><em>Type</em></b></h3>
+
+            <p>
+                El atributo <span class="red-text">type</span> de la etiqueta <span class="blue-text">&lt;ol&gt;</span> define el tipo de marcador de elemento de la lista:
+            </p>
+
+            <table class="tabletest2black">
+                <tbody>
+                    <tr>
+                        <th>Type</th>
+                        <th>descripcion</th>
+                    </tr>
+                    <tr>
+                        <td>type="1"</td>
+                        <td>Números (predeterminado)</td>
+                    </tr>
+                    <tr>
+                        <td>type="A"</td>
+                        <td>Letras Mayúsculas</td>
+                    </tr>
+                    <tr>
+                        <td>type:"a"</td>
+                        <td>Letras Minúsculas</td>
+                    </tr>
+                    <tr>
+                        <td>type="I"</td>
+                        <td>Números Romanos en Mayúscula</td>
+                    </tr>
+                    <tr>
+                        <td>type="i"</td>
+                        <td>Números Romanos en <br>Minúscula</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 title="Control List Counting">Conteo de lista de control</h3>
+
+            <p>
+                De forma predeterminada, una lista ordenada comenzará a contar desde 1. <br>
+                Si desea comenzar a contar desde un número específico, puede usar el atributo <span class="red-text">start</span>=
+            </p>
+
+            <article class="ejemplo">
+                Ejemplo:
+
+                <div class="divlistasparalelas">
+                    
+                    <ol start="50" class="lista">
+                        <li>Coffee</li>
+                        <li>Tea</li>
+                        <li>Milk</li>
+                    </ol>
+                      
+                    <ol type="I" start="50" class="lista">
+                        <li>Coffee</li>
+                        <li>Tea</li>
+                        <li>Milk</li>
+                    </ol>
+
+                </div>
+
+                <p class="codigo">
+
+                    &lt;<span class="blue-text">ol</span> <span class="red-text">start</span><span class="celeste">="50"</span>&gt;
+                        &lt;<span class="blue-text">li</span>&gt;Coffee&lt;<span class="blue-text">/li</span>&gt;
+                        &lt;<span class="blue-text">li</span>&gt;Tea&lt;<span class="blue-text">/li</span>&gt;
+                        &lt;<span class="blue-text">li</span>&gt;Milk&lt;<span class="blue-text">/li</span>&gt;
+                      &lt;<span class="blue-text">/ol</span>&gt;
+                      
+                      &lt;<span class="blue-text">ol</span> <span class="red-text">type</span><span class="celeste">="I"</span> <span class="red-text">start</span><span class="celeste">="50"</span>&gt;
+                        &lt;<span class="blue-text">li</span>&gt;Coffee&lt;<span class="blue-text">/li</span>&gt;
+                        &lt;<span class="blue-text">li</span>&gt;Tea&lt;<span class="blue-text">/li</span>&gt;
+                        &lt;<span class="blue-text">li</span>&gt;Milk&lt;<span class="blue-text">/li</span>&gt;
+                    &lt;<span class="blue-text">/ol</span>&gt;
+
+                </p>
+
+            </article>
+
+        </div>
+
+        <div class="seccionbloque" id="f1">
+
+            <h2 title="Block and Inline Elements">Bloque HTML y Elementos en línea</h2>
+
+            <p>
+                Cada elemento HTML tiene un valor de visualización predeterminado, según el tipo de elemento que sea. <br>
+                Hay dos valores de visualización: <b><em>bloque y en línea</em></b>.
+            </p>
+
+            <h3 title="Block-level Elements">Elementos a nivel de bloque</h3>
+
+            <p>
+                Un elemento a nivel de bloque siempre comienza en una nueva línea y los navegadores agregan <br>
+                automáticamente algo de espacio (un margen) antes y después del elemento.
+            </p>
+
+            <p class="advertencia">
+                Un elemento a nivel de bloque siempre ocupa todo el ancho disponible <br>
+                (<em>se extiende hacia la izquierda y hacia la derecha tanto como puede</em>).
+            </p>
+
+            <p>
+                Dos elementos de bloque comúnmente utilizados son: <span class="blue-text">&lt;p&gt;</span> y <span class="blue-text">&lt;div&gt;</span>. <br><br>
+                El elemento <span class="blue-text">&lt;p&gt;</span> define un párrafo en un documento HTML. <br>
+                El elemento <span class="blue-text">&lt;div&gt;</span> define una división o una sección en un documento HTML.
+            </p>
+
+            <p style="border-width:1px; border-style:solid; padding:5px; border-color: forestgreen;">
+                El elemento <span class="blue-text">&lt;p&gt;</span> es un elemento a nivel de bloque.
+            </p>
+
+            <div style="border-width:1px; border-style:solid; padding:5px; border-color: green;">
+                El elemento <span class="blue-text">&lt;div&gt;</span> es un elemento a nivel de bloque.
+            </div>
+
+            <p class="advertencia">
+                Los elementos <span class="blue-text">&lt;p&gt;</span> y <span class="blue-text">&lt;div&gt;</span> son elementos de bloque, siempre comenzarán en una nueva línea y ocuparán todo el ancho disponible <br>
+                (se extienden hacia la izquierda y hacia la derecha tanto como sea posible).
+            </p>
+
+            <table class="table3">
+                <caption><b>Estos son los elementos a nivel de bloque en HTML:</b></caption>
+                <tr>
+                    <td>address</td>
+                    <td>article</td>
+                    <td>aside</td>
+                    <td>blockquote</td>
+                    <td>canvas</td>
+                    <td>dd</td>
+                </tr>
+                <tr>
+                    <td>div</td>
+                    <td>dl</td>
+                    <td>dt</td>
+                    <td>fieldset</td>
+                    <td>figcaption</td>
+                    <td>figure</td>
+                </tr>
+                <tr>
+                    <td>footer</td>
+                    <td>form</td>
+                    <td>h1-h6</td>
+                    <td>header</td>
+                    <td>hr</td>
+                    <td>li</td>
+                </tr>
+                <tr>
+                    <td>main</td>
+                    <td>nav</td>
+                    <td>noscript</td>
+                    <td>ol</td>
+                    <td>p</td>
+                    <td>pre</td>
+                </tr>
+                <tr>
+                    <td>section</td>
+                    <td>table</td>
+                    <td>tfoot</td>
+                    <td>ul</td>
+                    <td>video</td>
+                    <td></td>
+                </tr>
+            </table>
+
+            <h3 title="Inline Elements">Elementos en línea</h3>
+
+            <p>
+                Un elemento en línea no comienza en una nueva línea y solo ocupa el ancho necesario. <br><br>
+                Este es <span style="border-width:1px; border-style:solid; padding:5px; border-color: green;">un elemento <span class="blue-text">&lt;span&gt;</span> dentro de</span> un párrafo.
+            </p>
+
+            <table class="table3">
+                <caption><b>Aquí están los elementos en línea en HTML:</b></caption>
+                <tr>
+                    <td>a</td>
+                    <td>abbr</td>
+                    <td>acronym</td>
+                    <td>b</td>
+                    <td>bdo</td>
+                    <td>big</td>
+                </tr>
+                <tr>
+                    <td>br</td>
+                    <td>button</td>
+                    <td>cite</td>
+                    <td>code</td>
+                    <td>dfn</td>
+                    <td>en</td>
+                </tr>
+                <tr>
+                    <td>i</td>
+                    <td>img</td>
+                    <td>input</td>
+                    <td>kbd</td>
+                    <td>label</td>
+                    <td>map</td>
+                </tr>
+                <tr>
+                    <td>object</td>
+                    <td>output</td>
+                    <td>q</td>
+                    <td>samp</td>
+                    <td>script</td>
+                    <td>select</td>
+                </tr>
+                <tr>
+                    <td>small</td>
+                    <td>span</td>
+                    <td>strong</td>
+                    <td>sub</td>
+                    <td>sup</td>
+                    <td>textarea</td>
+                </tr>
+                <tr>
+                    <td>time</td>
+                    <td>tt</td>
+                    <td>var</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+
+            <p class="advertencia">
+                <b><em>Nota:</em></b> Un elemento en línea no puede contener un elemento a nivel de bloque!
+            </p>
+
+            <h3 title="The &lt;div&gt; Element">El elemento &lt;div&gt;</h3>
+
+            <p>
+                El elemento <span class="blue-text">&lt;div&gt;</span> se utiliza a menudo como contenedor para otros elementos HTML. <br>
+                no tiene atributos obligatorios, pero <span class="red-text">style class id</span> son comunes. <br><br>
+                Cuando se usa junto con CSS, el elemento <span class="blue-text">&lt;div&gt;</span> se puede usar para diseñar bloques de contenido:
+            </p>
+
+            <article class="ejemplo">
+                Ejemplo:
+
+                <div style="background-color:black;color:white;padding:20px;">
+                    <h2>London</h2>
+                    <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+                    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+                </div> 
+
+                <p class="codigo">
+
+        &lt;<span class="blue-text">div</span> <span class="red-text">style</span><span class="celeste">="background-color:black;color:white;padding:20px;"</span>&gt;
+            &lt;<span class="blue-text">h2</span>&gt;London&lt;<span class="blue-text">/h2</span>&gt;
+            &lt;<span class="blue-text">p</span>&gt;London is the capital city of England. It is the most populous city
+            in the United Kingdom, with a metropolitan area of over 13 million inhabitants.
+            &lt;<span class="blue-text">/p</span>&gt;
+        &lt;<span class="blue-text">/div</span>&gt;
+
+                </p>
+
+            </article>
+
+            <h3 title="The &lt;span&gt; Element">El elemento &lt;span&gt;</h3>
 
 
 
         </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </div>
-
-    
-
-
-
 
     <script src="script.js"></script>
     

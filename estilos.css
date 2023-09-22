@@ -59,6 +59,7 @@ body {
     color: white;
     font-size: 1.2em;
     text-decoration: none;
+    text-align: initial;
 }
 
 .menu__link:hover {
@@ -133,14 +134,6 @@ body {
 .ulmenu li a:hover {
     background-color: #111111;
 }
-
-
-
-
-
-
-
-
 
 .lista { 
     padding-left: 200px;
@@ -317,7 +310,7 @@ article img {
 .seccionlinks {
     background-image: url("https://img.freepik.com/free-vector/paper-style-wavy-background_23-2149116135.jpg?w=996&t=st=1694027679~exp=1694028279~hmac=150a13c362a18135a236a754f67c0937ebb1fb19a0dac2e822660212a3c1ff5c");
     padding: 1px;
-    border-radius: 5%;
+    border-radius: 1%;
     margin-bottom: 50px;
 }
 
@@ -347,13 +340,21 @@ article img {
     color: white;
     background-image: url("https://img.freepik.com/free-photo/3d-geometric-abstract-background_1048-15986.jpg?w=1060&t=st=1694286828~exp=1694287428~hmac=47fb19b5c66006cb6afe84284a5dc399ea694a1cf54159cd5e8b7a8db6939a2b");
     padding: 1px;
-    border-radius: 5%;
+    border-radius: 2%;
     margin-bottom: 50px;
 }
 
 .seccionlistas {
     color: black;
     background-image: url("imagenes/3d-background-with-white-cubes.jpg");
+    padding: 1px;
+    border-radius: 2%;
+    margin-bottom: 50px;
+}
+
+.seccionbloque {
+    color: black;
+    background-image: url("imagenes/blancoabstracto.jpg");
     padding: 1px;
     border-radius: 5%;
     margin-bottom: 50px;
