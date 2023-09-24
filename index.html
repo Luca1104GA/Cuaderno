@@ -84,6 +84,16 @@
                         </ul>
                     </li>
 
+                    <li class="menu__item container-submenu">
+                        <a href="#" class="menu__link submenu-btn">Bloques <i class="fa-solid fa-down-long"></i></a>
+                        <ul class="submenu">
+                            <li class="menu__item"><a href="#f1" class="menu__link">Inicio</a></li>
+                            <li class="menu__item"><a href="#f2" class="menu__link">Elementos a nivel de bloque</a></li>
+                            <li class="menu__item"><a href="#f3" class="menu__link">Elementos en línea</a></li>
+                            <li class="menu__item"><a href="#f4" class="menu__link">El elemento &lt;div&gt;</a></li>
+                            <li class="menu__item"><a href="#f5" class="menu__link">El elemento &lt;span&gt;</a></li>
+                        </ul>
+                    </li>
 
                 </ul>
             </nav>
@@ -3020,7 +3030,7 @@
                 El elemento <span class="blue-text">&lt;div&gt;</span> define una división o una sección en un documento HTML.
             </p>
 
-            <p style="border-width:1px; border-style:solid; padding:5px; border-color: forestgreen;">
+            <p style="border-width:1px; border-style:solid; padding:5px; border-color: forestgreen;" id="f2">
                 El elemento <span class="blue-text">&lt;p&gt;</span> es un elemento a nivel de bloque.
             </p>
 
@@ -3077,7 +3087,7 @@
                 </tr>
             </table>
 
-            <h3 title="Inline Elements">Elementos en línea</h3>
+            <h3 title="Inline Elements" id="f3">Elementos en línea</h3>
 
             <p>
                 Un elemento en línea no comienza en una nueva línea y solo ocupa el ancho necesario. <br><br>
@@ -3140,7 +3150,7 @@
                 <b><em>Nota:</em></b> Un elemento en línea no puede contener un elemento a nivel de bloque!
             </p>
 
-            <h3 title="The &lt;div&gt; Element">El elemento &lt;div&gt;</h3>
+            <h3 title="The &lt;div&gt; Element" id="f4">El elemento &lt;div&gt;</h3>
 
             <p>
                 El elemento <span class="blue-text">&lt;div&gt;</span> se utiliza a menudo como contenedor para otros elementos HTML. <br>
@@ -3170,9 +3180,230 @@
 
             </article>
 
-            <h3 title="The &lt;span&gt; Element">El elemento &lt;span&gt;</h3>
+            <h3 title="The &lt;span&gt; Element" id="f5">El elemento &lt;span&gt;</h3>
+
+            <p>
+                El elemento <span class="blue-text">&lt;span&gt;</span> es un contenedor en línea que se utiliza para marcar una parte de un texto <br>
+                o una parte de un documento. No tiene atributos obligatorios pero al igual que con el <span class="blue-text">&lt;div&gt;</span> <span class="red-text"><q>style class id</q></span> son comunes. <br><br>
+                Cuando se usa junto con CSS, el elemento <span class="blue-text">&lt;span&gt;</span> se puede usar para diseñar partes del texto:
+            </p>
+
+            <article class="ejemplo">
+                Ejemplo:
+
+                <p>
+                    Mi madre tiene ojos <span style="color:blue;font-weight:bold;">azules</span> y mi padre los tiene <span style="color:darkolivegreen;font-weight:bold;">Verdes</span>.
+                </p>
+
+                <p class="codigo">
+
+        &lt;<span class="blue-text">p</span>&gt;
+            Mi madre tiene ojos &lt;<span class="blue-text">span</span> <span class="red-text">style</span><span class="celeste">="color: blue;font-weight:bold;"</span>azules&lt;/<span class="blue-text">span</span>&gt;
+            y mi padre los tiene &lt;<span class="blue-text">span</span> <span class="red-text">style</span><span class="celeste">="color: green;font-weight:bold;"</span>verdes&lt;/<span class="blue-text">span</span>&gt;
+        &lt;/<span class="blue-text">p</span>&gt;
+
+            </article>
+
+            <p>
+                En resumen: <br><br>
+                Un elemento a nivel de bloque siempre comienza en una nueva línea y ocupa todo el ancho disponible <br>
+                Un elemento en línea no comienza en una nueva línea y solo ocupa el ancho necesario!
+            </p>
+
+        </div>
+
+        <div class="seccionclass" id="g1">
+
+            <h2 title="HTML class Attribute">El atributo &lt;class&gt;</h2>
+            
+            <p>
+                El atributo HTML <span class="red-text">class</span> se utiliza para especificar una clase para un elemento. <br>
+                Varios elementos pueden compartir la misma clase.
+            </p>
+
+            <h3 title="Using The class Attribute">Usando el atributo <span class="red-text">&lt;class&gt;</span></h3>
+
+            <p>
+                El atributo <span class="red-text">&lt;class&gt;</span> se utiliza a menudo para señalar el nombre de una clase en una hoja de estilo. <br>
+                Tambien puede ser utilizado por javaScript para acceder a manipular elementos con el nombre de clase específico. <br><br>
+                En el siguiente ejemplo tenemos tres elementos <span class="blue-text">&lt;div&gt;</span> con un atributo <span class="red-text">&lt;class&gt;</span> con el valor de "city". <br>
+                Los tres <span class="blue-text">&lt;div&gt;</span> tendrán el mismo estilo acorde a la definicion del estilo <span class="verde">.city</span>.
+            </p>
+
+            <article class="ejemplo">
+
+                Ejemplo:
+
+                <div class="city">
+                    <h2>London</h2>
+                    <p>London is the capital of England.</p>
+                </div> 
+                    
+                <div class="city">
+                    <h2>Paris</h2>
+                    <p>Paris is the capital of France.</p>
+                </div>
+                    
+                <div class="city">
+                    <h2>Tokyo</h2>
+                    <p>Tokyo is the capital of Japan.</p>
+                </div>
+
+                <p class="codigo">
+
+                    &lt;<span class="blue-text">!DOCTYPE</span> <span class="red-text">html</span>&gt;
+                    &lt;<span class="blue-text">html</span>&gt;
+                    &lt;<span class="blue-text">head</span>&gt;
+                    &lt;<span class="blue-text">style</span>&gt;
+                    <span class="blue-text">.city</span> {
+                        <span class="red-text">background-color</span><span class="celeste">: tomato;</span>
+                        <span class="red-text">color</span><span class="celeste">: white;</span>
+                        <span class="red-text">border</span><span class="celeste">: 2px solid black;</span>
+                        <span class="red-text">margin</span><span class="celeste">: 20px;</span>
+                        <span class="red-text">padding</span><span class="celeste">: 20px;</span>
+                    }
+                    &lt;/<span class="blue-text">style</span>&gt;
+                    &lt;/<span class="blue-text">head</span>&gt;
+                    &lt;<span class="blue-text">body</span>&gt;
+
+                    &lt;<span class="blue-text">div</span><span class="red-text"> class</span><span class="celeste">="city"</span>&gt;
+                        &lt;<span class="blue-text">h2</span>&gt;London&lt;/<span class="blue-text">h2</span>&gt;
+                        &lt;<span class="blue-text">p</span>&gt;London is the capital of England.&lt;/<span class="blue-text">p</span>&gt;
+                    &lt;/<span class="blue-text">div</span>&gt;
+
+                    &lt;<span class="blue-text">div</span><span class="red-text"> class</span><span class="celeste">="city"</span>&gt;
+                        &lt;<span class="blue-text">h2</span>&gt;Paris&lt;/<span class="blue-text">h2</span>&gt;
+                        &lt;<span class="blue-text">p</span>&gt;Paris is the capital of France.&lt;/<span class="blue-text">p</span>&gt;
+                    &lt;/<span class="blue-text">div</span>&gt;
+
+                    &lt;<span class="blue-text">div</span><span class="red-text"> class</span><span class="celeste">="city"</span>&gt;
+                        &lt;<span class="blue-text">h2</span>&gt;Tokyo&lt;/<span class="blue-text">h2</span>&gt;
+                        &lt;<span class="blue-text">p</span>&gt;Tokyo is the capital of Japan.&lt;/<span class="blue-text">p</span>&gt;
+                    &lt;/<span class="blue-text">div</span>&gt;
+
+                    &lt;/<span class="blue-text">body</span>&gt;
+                    &lt;/<span class="blue-text">html</span>&gt;
+
+                </p>
 
 
+            </article>
+
+            <p>
+                En el siguiente ejemplo tenemos dos elementos <span class="blue-text">&lt;span&gt;</span> con un atributo <span class="red-text">class</span> con el valor de "note". <br>
+                Ambos elementos <span class="blue-text">&lt;span&gt;</span> tendrán el mismo estilo según la definición del estilo de <span class="red-text">.note</span>
+            </p>
+
+            <article class="ejemplo">
+
+                Ejemplo: <br>
+                
+                <h2>My <span class="note">Important</span> Heading</h2>
+                <p>This is some <span class="note">important</span> text.</p>
+
+                <p class="codigo">
+
+                    &lt;<span class="blue-text">!DOCTYPE</span> <span class="red-text">html</span>&gt;
+                    &lt;<span class="blue-text">html</span>&gt;
+                    &lt;<span class="blue-text">head</span>&gt;
+                    &lt;<span class="blue-text">style</span>&gt;
+                    <span class="blue-text">.note</span> {
+                        <span class="red-text">font-size</span><span class="celeste">: 120%;</span>
+                        <span class="red-text">color</span><span class="celeste">: Yellow;</span>
+                    }
+                    &lt;/<span class="blue-text">style</span>&gt;
+                    &lt;/<span class="blue-text">head</span>&gt;
+                    &lt;<span class="blue-text">body</span>&gt;
+
+                    &lt;<span class="blue-text">h1</span>&gt;My &lt;<span class="blue-text">span</span> <span class="red-text">class</span><span class="celeste">="note"</span>&gt;Important&lt;/<span class="blue-text">span</span>&gt; Heading.&lt;/<span class="blue-text">h1</span>&gt;
+                        
+                    &lt;<span class="blue-text">p</span>&gt;
+                    This is some &lt;<span class="blue-text">span</span> <span class="red-text">class</span><span class="celeste">="note"</span>&gt;Important&lt;/<span class="blue-text">span</span>&gt; text.&lt;/<span class="blue-text">h1</span>
+                    &lt;/<span class="blue-text">p</span>&gt;
+
+                    &lt;/<span class="blue-text">body</span>&gt;
+                    &lt;/<span class="blue-text">html</span>&gt;
+
+                </p>
+
+            </article>
+
+            <p class="advertencia">
+                <b><em>Consejo:</em></b> El atributo <span class="red-text">class</span> se puede utilizar en <b>cualquier</b> elemento HTML. <br>
+                <b><em>Nota:</em></b> El nombre de la clase dintingue entre mayúsculas y minúsculas!
+            </p>
+
+            <h3 title="The Syntax For Class">La sintaxis de la clase</h3>
+
+            <p>
+                Para crear una clase escriba un carácter de punto (.), seguido del nombre de una clase . <br>
+                Luego defina las propiedades CSS entre llaves {} :><
+            </p>
+
+            <h3 title="Multiple Classes">Múltiples clases</h3>
+
+            <p>
+                <b><em>Los elementos HTML pueden pertenecer a más de una clase.</em></b> <br><br>
+                Para definir varias clases, separe los nombres de las clases con un espacio, por ejemplo, &lt;<span class="blue-text">div</span> <span class="red-text">class</span><span class="verde">="city main"</span>&gt;. <br>
+                El estilo del elemento se diseñará de acuerdo con todas las clases especificadas.
+            </p>
+
+            <article class="ejemplo">
+
+                <h2>Multiple Classes</h2>
+                <p>
+                    Aca los tres elementos h2 pertenecen a la clase "city". Ademas London que tambien pertenece a la clase principal <br>
+                    pero lo podemos ver alineado a la izquierda
+                </p>
+
+                <h2 class="city main">London</h2>
+                <h2 class="city">Paris</h2>
+                <h2 class="city">Tokyo</h2>
+
+                <p class="codigo">
+
+                    &lt;<span class="blue-text">h2</span> <span class="red-text">class</span><span class="celeste">="city main"</span>&gt;London&lt;/<span class="blue-text">h2</span>&gt;
+                    &lt;<span class="blue-text">h2</span> <span class="red-text">class</span><span class="celeste">="city"</span>&gt;Paris&lt;/<span class="blue-text">h2</span>&gt;
+                    &lt;<span class="blue-text">h2</span> <span class="red-text">class</span><span class="celeste">="city"</span>&gt;Tokyo&lt;/<span class="blue-text">h2</span>&gt;
+
+                </p>
+
+            </article>
+
+            <h3 title="Different Elements Can Share Same Class">Diferentes elementos pueden compartir la misma clase</h3>
+
+            <p>
+                <b><em>Diferentes elementos HTML pueden apuntar al mismo nombre de clase.</em></b> <br><br>
+                En el siguiente ejemplo ambos <span class="blue-text">&lt;h2&gt;</span> y <span class="blue-text">&lt;p&gt;</span> <br>
+                apuntan a la clase "city" y obtendran el mismo estilo:
+            </p>
+
+            <article class="ejemplo">
+
+                <h2>Different Elements Can Share Same Class</h2>
+
+                <p>
+                    Incluso si los dos elementos no tienen el mismo nombre de <span title="tag">etiqueta</span>, <br>
+                    ambos pueden apuntar a la misma clase y obtener el mismo estilo CSS.:
+                </p>
+
+                <h2 class="city">Paris</h2>
+                <p class="city">Paris is the capital of France.</p>
+
+                <p class="codigo">
+                    &lt;<span class="blue-text">h2</span> <span class="red-text">class</span><span class="celeste">="city"</span>&gt;Paris&lt;/<span class="blue-text">h2</span>&gt;
+
+                    &lt;<span class="blue-text">p</span> <span class="red-text">class</span><span class="celeste">="city"</span>&gt;Paris is the capital of France&lt;/<span class="blue-text">p</span>&gt;
+                </p>
+
+            </article>
+
+            <h3 title="Use of The class Attribute in JavaScript">Uso del atributo class en javaScript</h3>
+
+            <p>
+                <b><em>JavaScript también puede utilizar el nombre de la clase para realizar determinadas tareas para elementos específicos</em></b>. <br><br>
+                javaScript puede acceder a elementos con un nombre de clase especifico con el metodo <span class="red-text">getElementByClassName()</span>.
+            </p>
 
         </div>
 

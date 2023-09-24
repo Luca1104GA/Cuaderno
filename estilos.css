@@ -269,6 +269,27 @@ article img {
     color: aquamarine;
 }
 
+.verde {
+    color: green;
+}
+
+.city {
+    background-color: tomato;
+    color: white;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+}
+
+.main {
+    text-align: left;
+}
+
+.note {
+    font-size: 120%;
+    color: yellow
+}
+
 .Tipos {
     color: rgb(26, 25, 24);
 }
@@ -355,6 +376,14 @@ article img {
 .seccionbloque {
     color: black;
     background-image: url("imagenes/blancoabstracto.jpg");
+    padding: 1px;
+    border-radius: 5%;
+    margin-bottom: 50px;
+}
+
+.seccionclass {
+    color: black;
+    background-image: url("imagenes/white-cubes-3d-background.jpg");
     padding: 1px;
     border-radius: 5%;
     margin-bottom: 50px;
