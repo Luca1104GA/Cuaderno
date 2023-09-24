@@ -66,6 +66,17 @@ botonTop.addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
-function myFunction() {
+function myFunction2() {
     alert("Redireccionando a Wikipedia!");
+}
+
+function myFunction() {
+    var x = document.getElementsByClassName("city2");
+    for (var i = 0; i < x.length; i++) {
+        if (x[i].style.display === "none" || x[i].style.display === "") {
+            x[i].style.display = "block"; // Mostrar el elemento
+        } else {
+            x[i].style.display = "none"; // Ocultar el elemento
+        }
+    }
 }

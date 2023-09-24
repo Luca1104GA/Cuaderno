@@ -659,7 +659,7 @@
                         <img src="https://www.w3schools.com/html/workplace.jpg" alt="Workplace" usemap="#workmap2" width="400" height="379">
 
                         <map name="workmap2">
-                            <area shape="circle" coords="337,300,44" href="https://es.wikipedia.org/wiki/Taza" onclick="myFunction()" target="_blank">
+                            <area shape="circle" coords="337,300,44" href="https://es.wikipedia.org/wiki/Taza" onclick="myFunction2()" target="_blank">
                         </map>
 
                         <br>
@@ -3337,7 +3337,7 @@
 
             <p>
                 Para crear una clase escriba un carácter de punto (.), seguido del nombre de una clase . <br>
-                Luego defina las propiedades CSS entre llaves {} :><
+                Luego defina las propiedades CSS entre llaves {} 
             </p>
 
             <h3 title="Multiple Classes">Múltiples clases</h3>
@@ -3380,7 +3380,7 @@
 
             <article class="ejemplo">
 
-                <h2>Different Elements Can Share Same Class</h2>
+                <h2>Diferentes elementos pueden compartir la misma clase</h2>
 
                 <p>
                     Incluso si los dos elementos no tienen el mismo nombre de <span title="tag">etiqueta</span>, <br>
@@ -3405,7 +3405,70 @@
                 javaScript puede acceder a elementos con un nombre de clase especifico con el metodo <span class="red-text">getElementByClassName()</span>.
             </p>
 
+            <article class="ejemplo">
+
+                Ejemplo: <br><br>
+                Haga clic en el botón para ocultar todos los elementos con el nombre de clase "city":
+
+                <div id="botonContenedor">
+                    <button id="hide" onclick="myFunction()">Hide elements</button>
+                </div>
+
+                <h2 class="city city2">London</h2>
+                <p>London is the capital of England.</p>
+
+                <h2 class="city city2">Paris</h2>
+                <p>Paris is the capital of France.</p>
+
+                <h2 class="city city2">Tokyo</h2>
+                <p>Tokyo is the capital of Japan.</p>
+
+                <p class="codigo">
+
+                    &lt;<span class="blue-text">script</span>&gt;
+                        <span class="blue-text">function</span> <span class="verde">myFunction()</span> {
+                          <span class="blue-text">var</span> x <span class="red-text">=</span> document.<span class="verde">getElementsByClassName</span>(<span class="verde">"city"</span>);
+                          <span class="red-text">for</span> (<span class="blue-text">var</span> i <span class="red-text">=</span> <span class="celeste">0</span>; i <span class="red-text">&lt;</span> x.<span class="blue-text">length</span>; i<span class="red-text">++</span>) {
+                            x[i].style.display <span class="red-text">=</span> <span class="celeste">"none"</span>;
+                          }
+                        }
+                    &lt;/<span class="blue-text">script</span>&gt;
+
+                </p>
+
+            </article>
+
+            <h3 title="Chapter Summary">Resumen del capítulo</h3>
+
+            <ul class="lista">
+                <li>El atributo HTML <span class="red-text">class</span> especifica uno o más nombres de clase para un elemento.</li>
+                <li>CSS y JavaScript utilizan clases para seleccionar y acceder a elementos específicos.</li>
+                <li>El atributo <span class="red-text">class</span> se puede utilizar en cualquier elemento HTML.</li>
+                <li>El nombre de la clase distingue entre mayúsculas y minúsculas.</li>
+                <li>Diferentes elementos HTML puden apuntar al mismo nombre de clase</li>
+                <li>JavaScript puede acceder alementos con un nombre de clase específico con el método <span class="red-text">getElementByClassName</span></li>
+            </ul>
+
+
+
+
+
+
+
         </div>
+
+        <div class="seccionids" id="h1"> 
+
+            <h2 title="id Attribute">El atributo id</h2>
+
+            <p>
+                <b><em>El atributo <span class="red-text">id</span> se utiliza para especificar una identificación única para un elemento HTML.</em></b> <br>
+                <del>No puedes</del> <strong>no debes</strong> tener más de un elemento con el mismo id en un documento HTML.
+            </p>
+
+
+        </div>
+
 
     </div>
 

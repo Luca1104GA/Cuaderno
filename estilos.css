@@ -389,6 +389,14 @@ article img {
     margin-bottom: 50px;
 }
 
+.seccionids {
+    color: black;
+    background-image: url("imagenes/white-cubes-3d-background.jpg");
+    padding: 1px;
+    border-radius: 5%;
+    margin-bottom: 50px;
+}
+
 #botonIrAbajo {
     min-width: 130px;
     height: 40px;
@@ -475,6 +483,20 @@ article img {
 
 #botonContenedor {
     text-align: center;
+}
+
+#hide {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: tomato;
+    color: white;
+    border-style: groove;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#hide:hover {
+    background-color: rgb(190, 61, 39);
 }
 
 #botonTop {
