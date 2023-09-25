@@ -178,6 +178,13 @@ caption {
     background-color: transparent;
 }
 
+#myHeader {
+    background-color: lightblue;
+    color: black;
+    padding: 40px;
+    text-align: center;
+} 
+
 #imgaside {
     display: flex;
     justify-content: center;

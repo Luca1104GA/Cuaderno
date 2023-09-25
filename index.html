@@ -3466,6 +3466,100 @@
                 <del>No puedes</del> <strong>no debes</strong> tener más de un elemento con el mismo id en un documento HTML.
             </p>
 
+            <h3 title="Using the id Attribute">Usando el atributo id</h3>
+
+            <p>
+                El atributo <span class="red-text">id</span> especifica una identificación única para un elemento HTML. <br>
+                El valor del atributo <span class="red-text">id</span> debe ser único deontro del documento HTML. <br><br>
+                El atributo <span class="red-text">id</span> se utiliza para señalar una declaración de estilo específica en una hoja de estilo. <br>
+                javaScript también lo utiliza para acceder y manipular el elemento con la identificación especifica. <br><br>
+                La sintaxis de <span class="red-text">id</span> es: Un carácter (#), seguido de un nombre de id. <br>
+                Luego defina las propiedades CSS entre llaves {}. <br><br>
+                El el siguiente ejemplo tenemos un <span class="blue-text">&lt;h1&gt;</span> que apunta al nombre de identificación "myHeader". <br>
+                Este <span class="blue-text">&lt;h1&gt;</span> tendrá estilo de acuerdo con la definición <span class="red-text">#myHeader</span>.
+            </p>
+
+            <article class="ejemplo">
+
+                Ejemplo:
+
+                <h1 id="myHeader">My Header</h1>
+
+                <P class="codigo">
+
+                    &lt;<span class="blue-text">!DOCTYPE</span> <span class="red-text">html</span>&gt;
+                    &lt;<span class="blue-text">html</span>&gt;
+                    &lt;<span class="blue-text">head</span>&gt;
+                    &lt;<span class="blue-text">style</span>&gt;
+                    <span class="verde">#myHeader</span> {
+                        <span class="red-text">background-color</span><span class="celeste">: lightblue;</span>
+                        <span class="red-text">color</span><span class="celeste">: black;</span>
+                        <span class="red-text">padding</span><span class="celeste">: 40px;</span>
+                        <span class="red-text">text-align</span><span class="celeste">: center;</span>
+
+                    &lt;/<span class="blue-text">style</span>&gt;
+                    &lt;/<span class="blue-text">head</span>&gt;
+                    &lt;<span class="blue-text">body</span>&gt;
+
+                    &lt;<span class="blue-text">h1</span> <span class="red-text">id</span><span class="celeste">="myHeader"</span>&gt;My Header&lt;/<span class="blue-text">h1</span>&gt;
+
+                    &lt;/<span class="blue-text">body</span>&gt;
+                    &lt;/<span class="blue-text">html</span>&gt;
+
+                </P>
+
+            </article>
+
+            <p class="advertencia">
+                <b><em>Nota:</em></b> El nombre de identificación distingue entre mayúsculas y minúsculas! <br>
+                <b><em>Nota:</em></b> El nombre de identificación debe contener al menos un carácter, no puede comenzar <br>
+                con un número y no debe contener espacios en blanco (espacios, tabulaciones, etc.).
+            </p>
+
+            <h3 title="Difference Between Class and ID" style="color: rgb(10, 143, 143);">Diferencia entre class e id</h3>
+
+            <p>
+                Un nombre de clase puede ser usado por múltiples elementos HTML, mientras que un nombre de id <br>
+                solo puede ser usado por un elemento HTML dentro de la página.
+            </p>
+
+            <h3 title="Bookmarks with ID and Links">Marcadores con ID y enlaces</h3>
+
+            <p>
+                Los marcadores se utilizan para permitir a los lectores saltar a partes específicas de una página. <br>
+                Los marcadores pueden resultar útiles si su páginaes muy larga. <br>
+                Para utilizar un marcador, primero debe crearlo y luego agregarle un enlace. <br>
+                Luego cuando se hace click en el enlace la página se desplazará hasta la ubicación con el marcador. 
+            </p>
+
+            <article class="ejemplo">
+
+                Ejemplo: <br><br>
+                <strong>Primero crea un marcador con el atributo <span class="red-text">id</span>:</strong>
+
+                <p class="codigo">
+                    &lt;<span class="blue-text">h2</span> <span class="red-text">id</span><span class="celeste">="C4"</span>&gt;Chapter 4&lt;/<span class="blue-text">h2</span>&gt;
+                </p>
+
+                <strong>Luego agregue un enlace al marcador ("saltar al Capítulo 4") desde la misma página:</strong>
+
+                <p class="codigo">
+                    &lt;<span class="blue-text">a</span> <span class="red-text">href</span><span class="celeste">="#C4"</span>&gt;jump to Chapter 4&lt;/<span class="blue-text">a</span>&gt;
+                </p>
+
+                <strong>O agregue un enlace al marcador ("Saltar al Capítulo 4") desde otra página:</strong>
+
+                <p class="codigo">
+                    &lt;<span class="blue-text">a</span> <span class="red-text">href</span><span class="celeste">="html_demo.html#C4"</span>&gt;Jump to Chapter 4&lt;/<span class="blue-text">a</span>&gt;
+                </p>
+
+            </article>
+
+            <h3 title="Using The id Attribute in JavaScript">Usando el atributo id en javaScript</h3>
+
+
+
+
 
         </div>
 
