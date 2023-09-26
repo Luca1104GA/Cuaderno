@@ -95,6 +95,17 @@
                         </ul>
                     </li>
 
+                    <li class="menu__item container-submenu">
+                        <a href="#" class="menu__link submenu-btn">Class ID <i class="fa-solid fa-down-long"></i></a>
+                        <ul class="submenu">
+                            <li class="menu__item"><a href="#g1" class="menu__link">Class</a></li>
+                            <li class="menu__item"><a href="#g2" class="menu__link">Múltiples clases</a></li>
+                            <li class="menu__item"><a href="#g3" class="menu__link">Class en javaScript</a></li>
+                            <li class="menu__item"><a href="#g4" class="menu__link">ID</a></li>
+                            <li class="menu__item"><a href="#g5" class="menu__link">ID en javaScript</a></li>
+                        </ul>
+                    </li>
+
                 </ul>
             </nav>
 
@@ -416,7 +427,7 @@
                 <li>a:active:  Estilo que se aplica cuando un enlace está siendo activamente presionado (haciendo clic) por el usuario. Puede ser útil para mostrar el momento en que se hace clic.</li>
             </ul>
             
-            <div id="botonContenedor">
+            <div class="botonContenedor">
                 <button id="botonTop">Ir al inicio</button>
             </div>
     
@@ -3340,7 +3351,7 @@
                 Luego defina las propiedades CSS entre llaves {} 
             </p>
 
-            <h3 title="Multiple Classes">Múltiples clases</h3>
+            <h3 title="Multiple Classes" id="g2">Múltiples clases</h3>
 
             <p>
                 <b><em>Los elementos HTML pueden pertenecer a más de una clase.</em></b> <br><br>
@@ -3398,7 +3409,7 @@
 
             </article>
 
-            <h3 title="Use of The class Attribute in JavaScript">Uso del atributo class en javaScript</h3>
+            <h3 title="Use of The class Attribute in JavaScript" id="g3">Uso del atributo class en javaScript</h3>
 
             <p>
                 <b><em>JavaScript también puede utilizar el nombre de la clase para realizar determinadas tareas para elementos específicos</em></b>. <br><br>
@@ -3410,7 +3421,7 @@
                 Ejemplo: <br><br>
                 Haga clic en el botón para ocultar todos los elementos con el nombre de clase "city":
 
-                <div id="botonContenedor">
+                <div class="botonContenedor">
                     <button id="hide" onclick="myFunction()">Hide elements</button>
                 </div>
 
@@ -3457,7 +3468,7 @@
 
         </div>
 
-        <div class="seccionids" id="h1"> 
+        <div class="seccionids" id="g4"> 
 
             <h2 title="id Attribute">El atributo id</h2>
 
@@ -3555,14 +3566,177 @@
 
             </article>
 
-            <h3 title="Using The id Attribute in JavaScript">Usando el atributo id en javaScript</h3>
+            <h3 title="Using The id Attribute in JavaScript" id="g5">Usando el atributo id en javaScript</h3>
 
+            <p>
+                El atributo <span class="red-text">id</span> puede ser usado también en javaScript para realizar algunas tareas para ese elemento en específico. <br>
+                javaScript púede acceder a un elemento con una <span class="red-text">id</span> en específico con el metodo <span class="red-text">getElementById()</span>.
+            </p>
 
+            <article class="ejemplo">
 
+                Ejemplo: <br><br>
+                <strong>Use el atributo <span class="red-text">id</span> para manipular texto con javaScript:</strong>
 
+                <h1 style="text-align: center;" id="myHeader2">Hello World!</h1>
+                <div class="botonContenedor">
+                    <button class="css-button-retro--red" onclick="displayResult()">Cambiar texto</button>
+                </div>
+
+                <p class="codigo">
+                    &lt;<span class="blue-text">script</span>&gt;
+                        <span class="blue-text">function</span> <span class="celeste">displayResult()</span> {
+                          document.<span class="verde">getElementById</span>(<span class="verdeclaro">"myHeader"</span> ).innerHTML <span class="red-text">=</span> <span class="verdeclaro">"Have a nice day!"</span>;
+                        }
+                    &lt;/<span class="blue-text">script</span>&gt;
+                </p>
+
+            </article>
 
         </div>
 
+        <div class="seccioniframes" id="h1">
+
+            <h2 title="marco en línea">Iframes</h2>
+
+            <p>
+                El término "iframe" se traduce al español como "marco en línea" o "marco flotante". <br>
+                Un iframe es un elemento HTML que permite incrustar otro documento HTML dentro de una página web. <br>
+                Se utiliza para mostrar contenido de otras fuentes, como sitios web externos, documentos o elementos multimedia, <br>
+                en una ventana o marco dentro de una página web. <br><br>
+
+                La idea es que el contenido del iframe se muestre dentro de un espacio delimitado en la página principal.
+            </p>
+
+            <h3 title="Iframe Syntax">Sintaxis de marco en línea</h3>
+
+            <p>
+                La etiqueta <span class="blue-text">&lt;iframe&gt;</span> especifica un marco en línea. <br>
+                Un marco en línea se utiliza para incrustar otro documento dentro del documento actual. 
+            </p>
+
+            <article class="ejemplo">
+
+                <strong>Sintaxis</strong>
+
+                <p class="codigo">
+
+                    &lt;<span class="blue-text">iframe</span> <span class="red-text">src</span><span class="celeste">="url"</span> <span class="red-text">title</span><span class="celeste">="descripcion"</span>&gt;&lt;/<span class="blue-text">iframe</span>&gt;
+ 
+                </p>
+
+                <p class="advertencia">
+                    <b><em>Consejo:</em></b> Es una buena práctica incluir siempre un atributo <span class="red-text">title</span> para el archivo <span class="blue-text">&lt;iframe&gt;</span>. <br>
+                    Los lectores de pantalla lo utlizan para leer cuál es el contenido del iframe.
+                </p>
+
+            </article>
+
+            <h3 title="Iframe - Set Height and Width">Iframe - Establecer ancho y altura</h3>
+
+            <p>
+                Utilice los atributos <span class="red-text">height width</span> para especificar el tamaño del iframe. <br>
+                La altura y el ancho se especifican en píxeles de forma predeterminada.
+            </p>
+
+            <article class="ejemplo">
+
+                Ejemplo:
+
+                <p class="codigo">
+    &lt;<span class="blue-text">iframe</span> <span class="red-text">src</span><span class="celeste">="demo_iframe.htm"</span> <span class="red-text">height</span><span class="celeste">="200"</span> <span class="red-text">width</span><span class="celeste">="300"</span> <span class="red-text">title</span><span class="celeste">="iframe Example"</span>&gt;&lt;/<span class="blue-text">iframe</span>&gt;
+                </p>
+
+                <div class="botonContenedor">
+                    <iframe src="demo_iframe.htm" style="height:200px;width:300px" title="Iframe Example"></iframe>
+                </div>
+
+                <p>
+                    <strong>O puedes agregar el atributo <span class="red-text">style</span> y usar propiedades CSS <span class="celeste">height width</span></strong>
+                </p>
+
+                <p class="codigo">
+ &lt;<span class="blue-text">iframe</span> <span class="red-text">src</span><span class="celeste">="demo_iframe.htm"</span><span class="red-text">style</span><span class="celeste">="height:200px;width:300px;"</span> <span class="red-text">title</span><span class="celeste">="iframe Example"</span>&gt;&lt;/<span class="blue-text">iframe</span>&gt;
+                </p>
+
+                <h3 title="Remove the Border">Eliminar el borde del iframe</h3>
+                
+                <p>
+                    <strong><em>De forma predeterminada, un iframe tiene un borde alrededor.</em> <br>
+                        Para eliminar el borde, agregue el atributo <span class="red-text">style</span> y use la proiedad CSS <span class="red-text">border</span>:</strong>
+                </p>
+    
+                <p class="codigo">
+        &lt;<span class="blue-text">iframe</span> <span class="red-text">src</span><span class="celeste">="demo_iframe.htm"</span><span class="red-text">style</span><span class="celeste">="border:none;"</span> <span class="red-text">title</span><span class="celeste">="iframe Example"</span>&gt;&lt;/<span class="blue-text">iframe</span>&gt;
+                </p>
+    
+                <div class="botonContenedor">
+                    <iframe src="demo_iframe.htm" style="border:none; height:200px;width:300px;" title="Iframe Example"></iframe>
+                </div>
+    
+                <p>
+                    <strong>Con CSS, también puedes cambiar el tamaño, estilo y color del borde del iframe:</strong> 
+                </p>
+    
+                <p class="codigo">
+    &lt;<span class="blue-text">iframe</span> <span class="red-text">src</span><span class="celeste">="demo_iframe.htm"</span><span class="red-text">style</span><span class="celeste">="border:2px solid red;"</span> <span class="red-text">title</span><span class="celeste">="iframe Example"</span>&gt;&lt;/<span class="blue-text">iframe</span>&gt;
+                </p>
+    
+                <div class="botonContenedor">
+                    <iframe src="demo_iframe.htm" style="border:2px solid red; height:200px;width:300px;" title="Iframe Example"></iframe>
+                </div>
+
+            </article>
+
+            <h3 title="Iframe - Target for a Link">Destino de un enlace iframe</h3>
+
+            <p>
+                Se puede utilizar un iframe como marco de destino para un enlace. <br>
+                El atributo del enlace <span class="red-text">target</span> debe hacer referencia al atributo <span class="red-text">name</span> del iframe:
+            </p>
+
+            <article class="ejemplo">
+                Ejemplo:
+
+                <p>
+                    <a href="https://www.youtube.com/embed/c0ra77RmKKo?si=YR002qB8kyRf_6DV&autoplay=1"  target="iframe_a" style="color: yellow;"><q><strong>El Rey a Hablado</strong></q></a>
+                </p>
+
+                <div class="botonContenedor">
+                    <iframe src="demo_iframe.htm" name="iframe_a" width="560" height="315" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                
+
+                <p class="codigo">
+            &lt;<span class="blue-text">iframe</span> <span class="red-text">src</span><span class="celeste">="demo_inframe.htm"</span> <span class="red-text">name</span><span class="celeste">="iframe_a"</span> <span class="red-text">title</span><span class="celeste">="Iframe Example</span>&gt;&lt;/<span class="blue-text">iframe</span>&gt;
+            &lt;<span class="blue-text">p</span>&gt;
+              &lt;<span class="blue-text">a</span> <span class="red-text">href</span><span class="celeste">="https://www.youtube.com"</span> <span class="red-text">target</span><span class="celeste">="iframe_a"</span>&gt;El Rey a Hablado&lt;/<span class="blue-text">a</span>&gt;
+            &lt;/<span class="blue-text">p</span>&gt;
+                </p>
+
+            </article>
+
+            <h3 title="Chapter Summary">Resumen del capítulo</h3>
+
+            <ul class="lista">
+                <li>La etiqueta HTML <span class="blue-text">&lt;iframe&gt;</span> especifica un marco en línea.</li>
+                <li>El atributo <span class="red-text">src</span> define la URL de la página a incrustar.</li> 
+                <li>Incluya siempre un atributo <span class="red-text">title</span> (para lectores de pantalla)</li>
+                <li>Los atributos <span class="red-text">height</span> y <span class="red-text">width</span> especifica el tamaño del iframe.</li>
+                <li>Utilice <span class="red-text">border:none;</span> para eliminar el borde alrededor del iframe.</li> 
+            </ul>
+
+        </div>
+
+        <div class="seccionjavaScript" id="j1">
+
+            <h2>javaScript</h2>
+
+            <p>
+                <em><b>JavaScript hace que las páginas HTML sean más dinámicas e interactivas.</b></em>
+            </p>
+
+        </div>
 
     </div>
 

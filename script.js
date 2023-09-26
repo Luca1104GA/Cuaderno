@@ -80,3 +80,14 @@ function myFunction() {
         }
     }
 }
+
+function displayResult() {
+    var headerElement = document.getElementById("myHeader2");
+  
+    if (headerElement.innerHTML === "Hello World!") {
+      headerElement.innerHTML = "Have a nice day!";
+    } else {
+      headerElement.innerHTML = "Hello World!";
+    }
+}
+  

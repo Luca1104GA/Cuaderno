@@ -280,6 +280,10 @@ article img {
     color: green;
 }
 
+.verdeclaro {
+    color: lightgreen;
+}
+
 .city {
     background-color: tomato;
     color: white;
@@ -404,10 +408,57 @@ article img {
     margin-bottom: 50px;
 }
 
-#botonIrAbajo {
+.seccioniframes {
+    color: white;
+    background-image: url("imagenes/modern-background-with-lines.jpg");
+    padding: 1px;
+    border-radius: 5%;
+    margin-bottom: 50px;
+}
+
+.seccionjavaScript {
+    color: black;
+    background-image: url("imagenes/gray-abstract-wireframe-technology-background.jpg");
+    padding: 1px;
+    border-radius: 5%;
+    margin-bottom: 50px;
+}
+
+.css-button-retro--red {
     min-width: 130px;
     height: 40px;
     color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border: 1px solid #000;
+    color: #000;
+    background: transparent;
+    z-index: 0;
+}
+.css-button-retro--red:hover:after {
+    top: 0;
+    left: 0;
+}
+.css-button-retro--red:after {
+    content: "";
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 5px;
+    left: 5px;
+    transition: 0.2s;
+    background-color: #ef233c;
+}
+
+#botonIrAbajo {
+    min-width: 130px;
+    height: 40px;
     padding: 5px 10px;
     font-weight: bold;
     cursor: pointer;
@@ -449,7 +500,6 @@ article img {
 #botonVolverArriba {
     min-width: 130px;
     height: 40px;
-    color: #fff;
     padding: 5px 10px;
     font-weight: bold;
     cursor: pointer;
@@ -488,7 +538,7 @@ article img {
     background: #212529;
 }
 
-#botonContenedor {
+.botonContenedor {
     text-align: center;
 }
 
