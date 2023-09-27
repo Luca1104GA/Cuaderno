@@ -66,6 +66,31 @@ botonTop.addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
+function light(sw) {
+    var pic;
+    if (sw == 0) {
+      pic = "imagenes/pic_bulboff.gif"
+    } else {
+      pic = "imagenes/pic_bulbon.gif"
+    }
+    document.getElementById('myImage').src = pic;
+}
+
+
+
+
+
+
+function myFunction4() {
+    document.getElementById("demo4").style.fontSize = "25px"; 
+    document.getElementById("demo4").style.color = "red";
+    document.getElementById("demo4").style.backgroundColor = "yellow";        
+}
+
+function myFunction3() { 
+    document.getElementById("demo").innerHTML = "<strong>¡Hola javaScript!</strong>";
+}
+
 function myFunction2() {
     alert("Redireccionando a Wikipedia!");
 }
@@ -91,3 +116,19 @@ function displayResult() {
     }
 }
   
+
+const botonesChatGpt = document.getElementsByClassName("botonChatGpt");
+const contenidosChatGpt = document.getElementsByClassName("contenidoChatGpt");
+
+for (let i = 0; i < botonesChatGpt.length; i++) {
+    botonesChatGpt[i].addEventListener("click", function() {
+        const contenido = contenidosChatGpt[i];
+        if (contenido.style.display === "none" || contenido.style.display === "") {
+            contenido.style.display = "block";
+        } else {
+            contenido.style.display = "none";
+        }
+    });
+}
+
+
