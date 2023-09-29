@@ -3746,9 +3746,9 @@
             <div class="contenidoChatGpt">
                 <p style="background-color: #19C37D;">
                     La etiqueta HTML <span class="blue-text">&lt;script&gt;</span> se utiliza para incorporar código de secuencias de comandos. <br>
-                    (generalmente <strong>javaScript</strong>) en una página web. Esta secuencia de comandos, conocuda como <br>
+                    (generalmente <strong>javaScript</strong>) en una página web. Esta secuencia de comandos, conocida como <br>
                     "cliente", se ejecuta en el navegador web del usuario, permitiendo la interacción dinámica y <br>
-                    el procesamiento de datos en la página. A través del elementos <span class="blue-text">&lt;script&gt;</span>, los desarroladores <br>
+                    el procesamiento de datos en la página. A través del elemento <span class="blue-text">&lt;script&gt;</span>, los desarroladores <br>
                     web pueden agregar funcionalidades personalizadas y mejoras a sus sitios web. lo que les <br>
                     permite crear experiencias más interacivas y dinámicas para los visitantes. 
                 </p>
@@ -3785,7 +3785,7 @@
                 </div>
 
                 <p class="codigo">   
-                    document.<span class="verde">getElementById</span>(<span class="verdeclaro">"demo"</span>).innerHTML = <span class="verdeclaro">"Hello javaScript!"</span>;
+                    document.<span class="verde">getElementById</span>(<span class="verdeclaro">"demo"</span>).innerHTML = <span class="verdeclaro">"¡Hola javaScript!"</span>;
                 </p>
 
                 <h3 class="advertencia">
@@ -3827,6 +3827,237 @@
                 <p class="codigo">
                     document.<span class="verde">getElementById</span>(<span class="verdeclaro">"image"</span>)<span class="red-text">.src =</span> <span class="verdeclaro">"picture.gif"</span>;
                 </p>    
+
+                <h3 class="advertencia" title="The &lt;noscript&gt; Tag">La etiqueta &lt;noscript&gt;</h3>
+
+                <p>
+                    <strong>Esta etiqueta define un contenido alternativo que se mostrará a los usuarios que tienen scripts desahabilitados <br>
+                        en su navegador o tienen un navegador que no admite scripts.</strong>
+                </p>
+
+                <p class="codigo">
+                    &lt;<span class="blue-text">script</span>&gt;
+                    document.<span class="verde">getElementById</span><span class="verdeclaro">("demo")</span>.innerHTML <span class="red-text">=</span> <span class="verdeclaro">"¡Hola javaScript!"</span>;
+                    &lt;/<span class="blue-text">script</span>&gt;
+                    &lt;<span class="blue-text">noscript</span>&gt;<!--Un navegador sin soporta para javaScript mostrara el texto escrito dentro del elemento <noscript>  -->Perdon, tu navegador no soporta javaScript!&lt;/<span class="blue-text">noscript</span>&gt;
+    <span class="gristrasparente">&lt;!--Un navegador sin soporta javaScript mostrara el texto escrito dentro de &lt;noscript&gt; &ndash;&ndash;&gt;</span>
+                    </p>    
+                
+            </article>
+
+
+        </div>
+
+        <div class="seccionrutas" id="k1">
+
+            <h2 title="File Paths">Rutas de archivos</h2>
+
+            <p>
+                Una ruta de archivo describe la ubicación de un archivo en la estructura de carpetas de un sitio web.
+            </p>
+
+            <article class="ejemplo">
+
+                <table class="table10">
+                    <caption><strong>Ejemplos de ruta de archivo</strong></caption>
+                    <tr>
+                        <th>Ruta</th>
+                        <th>Descripción</th>
+                    </tr>
+                    <tr>
+                        <td>&lt;img src="picture.jpg"&gt;</td>
+                        <td>El archivo "picture.jpg" se encuentra en la misma carpeta que la página actual.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;img src="images/picture.jpg&gt;</td>
+                        <td>El archivo "picture.jpg" se encuentra en la carpeta de imágenes de la carpeta actual.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;img src="/images/picture.jpg&gt;</td>
+                        <td>El archivo "picture.jpg" se encuentra en la carpeta de imagenes en la raiz de la web actual.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;img src="../picture.jpg"&gt;</td>
+                        <td>El archivo "picture.jpg" esta ubicado en la carpeta superior de la carpeta actual</td>
+                    </tr>
+                </table>
+
+            </article>
+            
+            <p>
+                <strong>Las rutas de archivos se utilizan al vincular archivos externos tales como</strong> :
+            </p>
+
+            <ul class="lista">
+                <li class="litable">Páginas web</li>
+                <li class="litable">Imágenes</li>
+                <li class="litable">Hojas de estilo</li>
+                <li class="litable">javaScripts</li>
+            </ul>
+            
+            <h3 title="Absolute File Paths">Rutas absolutas</h3>
+
+            <p>
+                Una ruta de archivo absoluta es la URL completa de un archivo.
+            </p>
+            
+            <article class="ejemplo">
+                Ejemplo:
+
+                <div class="botonContenedor">
+                    <img src="https://www.w3schools.com/images/picture.jpg" alt="Montaña">
+                </div>
+
+                <p class="codigo">
+                    &lt;<span class="blue-text">img</span> <span class="red-text">src</span><span class="celeste">="https://www.w3schools.com/images/picture.jpg"</span> <span class="red-text">alt</span><span class="celeste">="Montaña"</span>&gt;
+                </p>
+
+            </article>
+
+            <h3 title="Relative File Paths">Rutas relativas</h3>
+
+            <p>
+                Una ruta de archivo relativa apunta a un archivo relativo a la página actual. <br><br>
+            </p>
+
+            <article class="ejemplo">
+                Ejemplo:
+
+                <p>
+                    <strong>En el siguiente ejemplo, la ruta del archivo apunta a un archivo en la carpeta de imágenes ubicada <br>
+                    en la raiz de la web actual:</strong>
+                </p>
+
+                <div class="botonContenedor">
+                    <img src="imagenes/picture.jpg" alt="Montaña">
+                </div>
+
+                <p class="codigo">
+                    &lt;<span class="blue-text">img</span> <span class="red-text">src</span><span class="celeste">="/images/picture.jpg"</span> <span class="red-text">alt</span><span class="celeste">="Montaña"</span>&gt;
+                </p>
+
+                <p>
+                    <strong>En el siguiente ejemplo, la ruta del archivo apunta a un archivo en la carpeta de imágenes ubicada <br>
+                    en la carpeta actual:</strong>
+                </p>
+
+                <p class="codigo">
+                    &lt;<span class="blue-text">img</span> <span class="red-text">src</span><span class="celeste">="images/picture.jpg"</span> <span class="red-text">alt</span><span class="celeste">="Montaña"</span>&gt;
+                </p>
+
+                <p>
+                    <strong>En el siguiente ejemplo, la ruta del archivo apunta a un archivo en la carpera de imágenes ubicada <br>
+                    en la carpeta un nivel superior de la carpeta actual:</strong>
+                </p>
+
+                <p class="codigo">
+                    &lt;<span class="blue-text">img</span> <span class="red-text">src</span><span class="celeste">="../images/picture.jpg"</span> <span class="red-text">alt</span><span class="celeste">="Montaña"</span>&gt;
+                </p>
+
+            </article>
+
+            <h3 title="Best Practice">Mejores prácticas</h3>
+
+            <p>
+                Es una buena práctica utilizar rutas de archivo relativas (si es posible). <br>
+                Al utilizar rutas de archivos relativas, sus páginas web no estarán vinculadas a su URL base actual. <br>
+                Todos los enlaces funcionarán en su propia computadora (localhost), así como en su dominio público actual y <br>
+                sus dominios públicos futuros.
+            </p>
+
+        </div>
+
+        <div class="seccionhead" id="m1">
+
+            <h2 title="The Head Element">El elemento "Head"</h2>
+
+            <p>
+                El elemento HTML <span class="blue-text">&lt;head&gt;</span> es un contenedor para los siguientes elementos : <span class=" blue-text">&lt;title&gt;</span>, <span class="blue-text">&lt;style&gt;</span> <br>
+                <span class="blue-text">&lt;meta&gt;</span>, <span class="blue-text">&lt;link&gt;</span>, <span class="blue-text">&lt;script&gt;</span> y <span class="blue-text">&lt;base&gt;</span>.
+            </p>
+
+            <h3>&lt;head&gt;</h3>
+
+            <p>
+                Este elemento es un contenedor de metadatos (datos sobre datos) y se coloca entre <br>
+                la etiqueta <span class="blue-text">&lt;html&gt;</span> y la etiqueta <span class="blue-text">&lt;body&gt;</span> <br> <br>
+                Los metadatos HTML son datos sobre el documento HTML. Los metadatos no se muestran. <br>
+                Los metadatos suelen definir el titulo del documento, el set de caracteres, los estilos, <br>
+                los scripts y otra metainformación.
+            </p>
+
+            <h3>&lt;title&gt;</h3>
+
+            <p>
+                El elemento <span class="blue-text">&lt;title&gt;</span> define el título del documento. El título  debe ser solo texto <br>
+                y se muestra en la barra del navegador o en la pestaña de la página. <br><br>
+                <em>El <span class="blue-text">&lt;title&gt;</span> es obligatorio en docuemntos HTML!</em> <br><br>
+                El contenido del título de una página es muy importante para la optimización de motores de búsqueda (SEO*)<br>
+                Los algoritmos de los motores de búsqueda utilizan el título de la página para decidir el orden <br>
+                al enumerar las páginas en los resultados de búsqueda. 
+            </p>
+
+            <button class="botonChatGpt css-button-shadow-border-sliding--green" style="color: black;">Chat Gpt <br> *SEO</button>
+            <div class="contenidoChatGpt">
+                <p style="background-color: #19C37D; color: black;">
+                    "(SEO)" se refiere a "Search Engine Optimization" o "Optimización para Motores de Búsqueda" en español. <br>
+                    El SEO es una estrategia y conjunto de técnicas utilizadas para mejorar la visibilidad de un sitio web <br>
+                    en los resultados de los motores de búsqueda como Google, Bing y otros. El objetivo del SEO es hacer <br>
+                    que un sitio web aparezca en los primeros resultados de búsqueda cuando los usuarios buscan palabras clave relacionadas con su contenido. 
+                </p>
+            </div>
+
+            <p>
+                El elemento <span class="blue-text">&lt;title&gt;</span>
+            </p>
+
+            <ul class="lista">
+                <li>define un título en la barra de herramientas del navegados</li>
+                <li>proporcina un título para la página cuando se agrega a favoritos</li>
+                <li>muestra un título  para la página en los resultados del motor de búsqueda</li>
+            </ul>
+
+            <p>
+                <em>Por lo tanto, intenta que el título sea lo más preciso y significativo posible!</em>
+            </p>
+
+            <article class="ejemplo">
+
+                <b><em>Ejemplo</em></b>
+
+                <p class="codigo">
+                    &lt;<span class="blue-text">!DOCTYPE</span> <span class="red-text">html</span>&gt;
+                    &lt;<span class="blue-text">html</span>&gt;
+                    &lt;<span class="blue-text">head</span>&gt;
+                       &lt;<span class="blue-text">title</span>&gt;Un title de página significativo&lt;/<span class="blue-text">title</span>&gt;
+                    &lt;/<span class="blue-text">head</span>&gt;   
+                    &lt;<span class="blue-text">body</span>&gt;
+
+                    El contenido del documento......
+
+                    &lt;/(<span class="blue-text">body</span>&gt;
+                    &lt;/<span class="blue-text">html</span>&gt;
+                </p>
+
+            </article>
+
+            <h3>&lt;style&gt;</h3>
+
+            <p>
+                El elemento <span class="blue-text">&lt;style&gt;</span> se utiliza para definir información de estilo para una sola página HTML:
+            </p>
+
+            <article class="ejemplo">
+
+                <b><em>ejemplo</em></b>
+
+                <p class="codigo">
+                    &lt;<span class="blue-text">style</span>&gt;
+                       <span class="blue-text">body</span> {<span class="red-text">background-color</span><span class="celeste">: powderblue;</span>}
+                       <span class="blue-text">h1</span> {<span class="red-text">color</span><span class="celeste">: red;</span>}
+                       <span class="blue-text">p</span> {<span class="red-text">color</span><span class="celeste">: blue;</span> }
+                    &lt;/<span class="blue-text">style</span>&gt;
+                </p>
 
             </article>
 

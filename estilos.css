@@ -287,6 +287,10 @@ article img {
     color: lightgreen;
 }
 
+.gristrasparente {
+    color: #646464;
+}
+
 .city {
     background-color: tomato;
     color: white;
@@ -363,8 +367,8 @@ article img {
 }
 
 .seccioncosas {
-    color: white;
-    background-image: url("https://img.freepik.com/free-vector/gradient-black-background-with-wavy-lines_23-2149145960.jpg?w=996&t=st=1694030349~exp=1694030949~hmac=14d52797f557b573569cd7a8cbd6f30abfbfc1073f788583e25c5562069373bc");
+    color: black;
+    background-image: url("imagenes/3d-background-with-white-cubes.jpg");
     padding: 1px;
     border-radius: 5%;
     background-size: cover;
@@ -374,6 +378,7 @@ article img {
 .secciontablas {
     color: white;
     background-image: url("https://img.freepik.com/free-photo/3d-geometric-abstract-background_1048-15986.jpg?w=1060&t=st=1694286828~exp=1694287428~hmac=47fb19b5c66006cb6afe84284a5dc399ea694a1cf54159cd5e8b7a8db6939a2b");
+    background-size: contain;
     padding: 1px;
     border-radius: 2%;
     margin-bottom: 50px;
@@ -382,6 +387,7 @@ article img {
 .seccionlistas {
     color: black;
     background-image: url("imagenes/3d-background-with-white-cubes.jpg");
+    background-size: contain;
     padding: 1px;
     border-radius: 2%;
     margin-bottom: 50px;
@@ -390,6 +396,7 @@ article img {
 .seccionbloque {
     color: black;
     background-image: url("imagenes/blancoabstracto.jpg");
+    background-size: contain;
     padding: 1px;
     border-radius: 5%;
     margin-bottom: 50px;
@@ -398,6 +405,7 @@ article img {
 .seccionclass {
     color: black;
     background-image: url("imagenes/white-cubes-3d-background.jpg");
+    background-size: contain;
     padding: 1px;
     border-radius: 5%;
     margin-bottom: 50px;
@@ -406,6 +414,7 @@ article img {
 .seccionids {
     color: black;
     background-image: url("imagenes/white-cubes-3d-background.jpg");
+    background-size: contain;
     padding: 1px;
     border-radius: 5%;
     margin-bottom: 50px;
@@ -414,6 +423,7 @@ article img {
 .seccioniframes {
     color: white;
     background-image: url("imagenes/modern-background-with-lines.jpg");
+    background-size: contain;
     padding: 1px;
     border-radius: 5%;
     margin-bottom: 50px;
@@ -422,6 +432,25 @@ article img {
 .seccionjavaScript {
     color: black;
     background-image: url("imagenes/gray-abstract-wireframe-technology-background.jpg");
+    background-size: contain;
+    padding: 1px;
+    border-radius: 5%;
+    margin-bottom: 50px;
+}
+
+.seccionrutas {
+    color: white;
+    background-image: url("imagenes/3d-connections-polygonal-background-with-connecting-lines-dots.jpg");
+    background-size: contain;
+    padding: 1px;
+    border-radius: 5%;
+    margin-bottom: 50px;
+}
+
+.seccionhead {
+    color: white;
+    background-image: url("imagenes/fondoazul.jpg");
+    background-size: cover;
     padding: 1px;
     border-radius: 5%;
     margin-bottom: 50px;
