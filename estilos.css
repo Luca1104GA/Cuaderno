@@ -254,6 +254,33 @@ article img {
     margin: 15px;
 }
 
+.ejemplo > p:not(.codigo) {
+    font-weight: bold; /* Hace que el texto sea más grueso */
+    color: #333;
+}
+
+
+.iframeindividual {
+    /* Estilo normal de la imagen */
+    float: left;
+    border: 2px solid transparent; /* Borde transparente */
+    transition: border 0.3s, cursor 0.3s; /* Transición suave para el borde y el cursor */
+  }
+  
+  .iframeindividual:hover {
+    /* Estilo cuando el mouse está sobre la imagen */
+    border: 25px solid #000; /* Borde sólido negro */
+    cursor: pointer; /* Cambio de cursor a un puntero */
+  }
+  
+  .flexContainerimg {
+    display: flex; /* Usar flexbox para el contenedor */
+    justify-content: center; /* Centrar horizontalmente las imágenes */
+    align-items: center; /* Centrar verticalmente las imágenes */
+    height: 75vh; /* Ajustar la altura del contenedor */
+  }
+
+  
 .columna {
     width: 30%;
     margin: 20px 0px;
