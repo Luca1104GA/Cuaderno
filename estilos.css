@@ -139,8 +139,19 @@ body {
     padding-left: 200px;
 }
 
+
 .lista li {
     margin: 5px 0;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.lista2 { 
+    padding-left: 50px;
+}
+
+.lista2 li {
+    margin: 10px 0;
     padding-left: 10px;
     text-align: left;
 }
@@ -162,6 +173,13 @@ caption {
 .contenidoChatGpt {
     display: none;
 }
+
+.contenidoChatGpt p {
+    background-color: #19C37D;
+    color: black;
+}
+
+
 
 /* tr:nth-child(even) {
     background-color: #dddddd;
@@ -188,13 +206,13 @@ caption {
     text-align: center;
 } 
 
-#imgaside {
+.imgaside {
     display: flex;
     justify-content: center;
     background-color: transparent;
 }
 
-#imgaside2 {
+.imgaside2 {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -261,24 +279,22 @@ article img {
 
 
 .iframeindividual {
-    /* Estilo normal de la imagen */
     float: left;
-    border: 2px solid transparent; /* Borde transparente */
-    transition: border 0.3s, cursor 0.3s; /* Transición suave para el borde y el cursor */
-  }
+    border: 2px solid transparent;
+    transition: border 0.3s, cursor 0.3s; 
+}
+
+.iframeindividual:hover {
+    border: 25px solid #000;
+    cursor: pointer;
+}
   
-  .iframeindividual:hover {
-    /* Estilo cuando el mouse está sobre la imagen */
-    border: 25px solid #000; /* Borde sólido negro */
-    cursor: pointer; /* Cambio de cursor a un puntero */
-  }
-  
-  .flexContainerimg {
-    display: flex; /* Usar flexbox para el contenedor */
-    justify-content: center; /* Centrar horizontalmente las imágenes */
-    align-items: center; /* Centrar verticalmente las imágenes */
-    height: 75vh; /* Ajustar la altura del contenedor */
-  }
+.flexContainerimg {
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    height: 75vh; 
+}
 
   
 .columna {
@@ -475,9 +491,9 @@ article img {
 }
 
 .seccionhead {
-    color: white;
-    background-image: url("imagenes/fondoazul.jpg");
-    background-size: cover;
+    color: black;
+    background-image: url("imagenes/white-cubes-3d-background.jpg");
+    background-size: contain;
     padding: 1px;
     border-radius: 5%;
     margin-bottom: 50px;
@@ -518,7 +534,7 @@ article img {
 .css-button-shadow-border-sliding--green {
     min-width: 130px;
     height: 40px;
-    color: #fff;
+    color: #444;
     padding: 5px 10px;
     font-weight: bold;
     cursor: pointer;
@@ -997,3 +1013,19 @@ article img {
     background-color: #D6EEEE;
     color: black;
 }
+
+/*wtf esto es cualquiera*/
+/* .list-container {
+    display: flex;
+    align-items: center;
+}
+
+.list-container img {
+    margin-left: 50px; 
+    margin-right: 0px;
+}
+
+.list-container li {
+    margin-right: 5px;
+    margin-left: 5px;
+} */
