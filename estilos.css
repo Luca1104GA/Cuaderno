@@ -157,7 +157,7 @@ body {
 }
 
 #liboton {
-    background-image: url("https://img.freepik.com/free-vector/bokeh-background_23-2148486863.jpg?w=996&t=st=1694027736~exp=1694028336~hmac=7118739d3b67a8d121dfce2004ea2271123147427efa1baee8d5ead57fa205ac");
+    background-image: url("imagenes/white-cubes-3d-background.jpg");
 }
 
 table {
@@ -190,7 +190,7 @@ caption {
     border: 1px solid black;
     width: 960px;
     margin: 15px auto;
-    background-image: url("https://img.freepik.com/free-vector/gradient-black-background-with-wavy-lines_23-2149151737.jpg?w=900&t=st=1694286920~exp=1694287520~hmac=18cfff1903afa375c0b99c3f4f05fe6641206d9347cd557785ec8a689d6d19b5");
+    background-image: url("imagenes/3d-connections-polygonal-background-with-connecting-lines-dots.jpg");
 }
 
 .flexContainer {
@@ -396,7 +396,7 @@ article img {
     margin-bottom: 50px;
 }
 
-.seccionimagenes {
+.Estilo_negro1 {
     color: white;
     background-image: url("https://img.freepik.com/free-vector/abstract-blue-light-pipe-speed-zoom-black-background-technology_1142-9980.jpg?w=996&t=st=1694028840~exp=1694029440~hmac=b4a260cbbfbc0d02266fc6e9583ff493cdcfcf1062b54816853020734ca1e9d0");
     padding: 1px;
@@ -405,11 +405,11 @@ article img {
     margin-bottom: 50px;
 }
 
-.seccionimagenes p.Advertencia {
+.Estilo_negro1 p.Advertencia {
     color: black;
 }
 
-.seccioncosas {
+.Estilo_blanco1 {
     color: black;
     background-image: url("imagenes/3d-background-with-white-cubes.jpg");
     padding: 1px;
@@ -418,7 +418,7 @@ article img {
     margin-bottom: 50px;
 }
 
-.secciontablas {
+.Estilo_negro2 {
     color: white;
     background-image: url("https://img.freepik.com/free-photo/3d-geometric-abstract-background_1048-15986.jpg?w=1060&t=st=1694286828~exp=1694287428~hmac=47fb19b5c66006cb6afe84284a5dc399ea694a1cf54159cd5e8b7a8db6939a2b");
     background-size: contain;
@@ -427,25 +427,7 @@ article img {
     margin-bottom: 50px;
 }
 
-.seccionlistas {
-    color: black;
-    background-image: url("imagenes/3d-background-with-white-cubes.jpg");
-    background-size: contain;
-    padding: 1px;
-    border-radius: 2%;
-    margin-bottom: 50px;
-}
-
-.seccionbloque {
-    color: black;
-    background-image: url("imagenes/blancoabstracto.jpg");
-    background-size: contain;
-    padding: 1px;
-    border-radius: 5%;
-    margin-bottom: 50px;
-}
-
-.seccionclass {
+.Estilo_blanco2 {
     color: black;
     background-image: url("imagenes/white-cubes-3d-background.jpg");
     background-size: contain;
@@ -454,25 +436,7 @@ article img {
     margin-bottom: 50px;
 }
 
-.seccionids {
-    color: black;
-    background-image: url("imagenes/white-cubes-3d-background.jpg");
-    background-size: contain;
-    padding: 1px;
-    border-radius: 5%;
-    margin-bottom: 50px;
-}
-
-.seccioniframes {
-    color: white;
-    background-image: url("imagenes/modern-background-with-lines.jpg");
-    background-size: contain;
-    padding: 1px;
-    border-radius: 5%;
-    margin-bottom: 50px;
-}
-
-.seccionjavaScript {
+.Estilo_blanco3 {
     color: black;
     background-image: url("imagenes/gray-abstract-wireframe-technology-background.jpg");
     background-size: contain;
@@ -481,7 +445,7 @@ article img {
     margin-bottom: 50px;
 }
 
-.seccionrutas {
+.Estilo_negro3 {
     color: white;
     background-image: url("imagenes/3d-connections-polygonal-background-with-connecting-lines-dots.jpg");
     background-size: contain;
@@ -490,7 +454,7 @@ article img {
     margin-bottom: 50px;
 }
 
-.seccionhead {
+.Estilo_blanco4 {
     color: black;
     background-image: url("imagenes/white-cubes-3d-background.jpg");
     background-size: contain;
