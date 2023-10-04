@@ -1,5 +1,5 @@
 body {
-    background-image:  url("imagenes/3d-connections-polygonal-background-with-connecting-lines-dots.jpg");
+    background-image:  url("https://img.freepik.com/free-vector/software-engineering-background_1284-3394.jpg?w=740&t=st=1694025228~exp=1694025828~hmac=029a794e845fe7805a10d787c0ce68748ea0c90a7d0376f9191003a8f3fc8408");
     text-align: center;
     margin: 0;
     padding: 0;
@@ -10,6 +10,16 @@ body {
 }
 
 /* aprendo hacer commits */
+
+.container {
+    max-width: 1200px;
+    border: 1px solid black;
+    width: 960px;
+    margin: 15px auto;
+    background-image: url("https://img.freepik.com/free-vector/gradient-black-background-with-wavy-lines_23-2149151737.jpg?w=900&t=st=1694286920~exp=1694287520~hmac=18cfff1903afa375c0b99c3f4f05fe6641206d9347cd557785ec8a689d6d19b5");
+}
+
+
 
 #primerimagen {
     background-image: url("https://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-72043.jpg?w=1060&t=st=1694028439~exp=1694029039~hmac=678dad221434153a728a56f18ff4aff220d4f0d3bc593d739222cedb79b8996f");
