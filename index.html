@@ -3022,7 +3022,7 @@
 
             </article>
 
-        </div>     <!-- Este cierre de div me despliega el block and line de abajo y el de abajo no tiene despliegue -->
+        </div>     <!-- Este cierre de div me despliega el block and line de abajo y el de abajo no tiene despliegue. Solucionado seguro eran el exceso de extenciones inutiles que tenia -->
 
         <!-- Block and Inline -->
         <div class="Estilo_blanco3" id="f1">
@@ -4014,7 +4014,7 @@
                 al enumerar las páginas en los resultados de búsqueda. 
             </p>
 
-            <button class="botonChatGpt css-button-shadow-border-sliding--green">Chat Gpt <br> *SEO</button>
+            <button class="botonChatGpt css-button-shadow-border-sliding--green">Chat Gpt</button>
             <div class="contenidoChatGpt">
                 <p>
                     "(SEO)" se refiere a "Search Engine Optimization" o "Optimización para Motores de Búsqueda" en español. <br>
@@ -4205,7 +4205,7 @@
                 El elemento <span class="blue-text">&lt;script&gt;</span> se utiliza para para definir javaScript al lado del cliente. 
             </p>
 
-            <button class="botonChatGpt css-button-shadow-border-sliding--green">Chat GPT <br> script</button>
+            <button class="botonChatGpt css-button-shadow-border-sliding--green">Chat GPT</button>
             <div class="contenidoChatGpt">
                 <p>
                     La etiqueta HTML <span class="blue-text">&lt;script&gt;</span> se utiliza para incorporar código de secuencias de comandos. <br>
@@ -4229,7 +4229,7 @@
                 Solo puede haber un elemento <span class="blue-text">&lt;base&gt;</span> en un documento!
             </p>
 
-            <button class="botonChatGpt css-button-shadow-border-sliding--green">Chat GPT <br> base</button>
+            <button class="botonChatGpt css-button-shadow-border-sliding--green">Chat GPT</button>
             <div class="contenidoChatGpt">
                 <p>
                     El elemento <span class="blue-text">&lt;base&gt;</span> es una etiqueta HTML utilizada para especificar la URL y/o el <br>
@@ -4626,14 +4626,14 @@
 
             </article>
 
-            <h3>Diseños web responsivos - Frameworks</h3>
+            <h3>Diseños web responsivos - Frameworks</h3> <!-- No logre hacer estos ejemplos responsivos -->
 
             <p>
                 Tolos los frameworks populares ofrecen diseños responsivos. <br>
                 Ellos son gratis y facil de usar!
             </p>
 
-            <h4>W3.CSS</h4>
+            <h4>W3.CSS</h4> <!-- No es un iframe y lo consegui medio parcial al responsive -->
 
             <p>
                 W3.CSS es un framework moderno con soporte de diseño para escritorio, tablet y celulares de forma predeterminada. <br>
@@ -4669,10 +4669,395 @@
                     </div>
                 </div>
                 
+                <p class="codigo">
+                    <code>&lt;<span class="blue-text">link</span> <span class="red-text">rel</span><span class="celeste">="stylesheet"</span> <span class="red-text">href</span><span class="celeste">="https://www.w3schools.com/w3css/4/w3.css"</span>&gt;</code>
+                </p>
+
             </article>
+
+            <h4>Bootstrap</h4> <!-- Este si es un iframe y es 0 responsivo -->
+
+            <p>
+                Otro framework popular es Bootstrap
+            </p>
+
+            <article class="ejemplo">
+
+                <div class="iframe-container">
+                    <iframe src="Bootstrapdemo.html" frameborder="0"></iframe>
+                </div>
+
+                <p class="codigolargo">
+                    <code>&lt;<span class="blue-text">link</span> <span class="red-text">href</span><span class="celeste">= "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"</span> <span class="red-text">rel</span><span class="celeste">="stylesheet"</span>&gt;</code>
+                    <code>&lt;<span class="blue-text">script</span> <span class="red-text">src</span><span class="celeste">="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"</span>&gt;&lt;/<span class="blue-text">script</span>&gt;</code>
+                </p>
+            </article>
+        
+        </div>
+
+        <!-- Computercode -->
+        <div class="Estilo_negro2" id="o1">
+
+            <h2 title="Computer Code Elements">Elementos del código de programación</h2>
+
+                <p>
+                    <em>HTML</em> contiene varios elementos para definir la entrada del susuario y el código de programación.
+                </p>
+
+                <h3 title="For Keyboard Input">&lt;kbd&gt; para entrada de teclado</h3>
+
+                <p>
+                    El elemento <em>HTML</em> <span class="blue-text">&lt;kbd&gt;</span> se utiliza para mostrar la entrada del teclado. El contenido interior <br>
+                    se muestra en la fuente monoespaciada predeterminada del navegador.
+                </p>
+
+                <article class="ejemplo">
+                    Ejemplo
+                    <p>
+                        Defina algo de texto como entrada de teclado en un documento:
+                    </p>
+
+                    <p class="codigo">
+                        <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="blue-text">p</span>&gt; Guarde el documento presionando <span class="blue-text">&lt;kbd&gt;</span>Ctrl + S<span class="blue-text">&lt;kbd&gt;</span> &lt;<span class="blue-text">/p</span>&gt;</code>
+                    </p>
+
+                    <p>
+                        Resultado:
+                    </p>
+
+                    <p style="background-color: white;">
+                        Guarde el documento presionando <kbd>Ctrl + S</kbd>
+                    </p>
+
+                </article>
+
+                <h3>&lt;samp&gt; Para el Output</h3>
+
+                <p>
+                    El elemento <em>HTML</em> <span class="blue-text">&lt;samp&gt;</span> se utiliza para mostrar un ejemplo Output de un codigo de programación. <br>
+                    El contenido interior se muestra en la fuente monoespaciada predeterminada del navegador.
+                </p>
+
+                <button class="botonChatGpt css-button-shadow-border-sliding--green">Chat GPT</button>
+                <div class="contenidoChatGpt">
+                    <p>
+                        "La etiqueta HTML &lt;samp&gt; se utiliza para mostrar ejemplos de salida de programas o <br>
+                        fragmentos de código en una página web. Proporciona una forma de destacar y formatear <br>
+                        este texto de salida, lo que lo hace más fácil de identificar en el contexto de la página."
+                    </p>
+                </div>
+
+                <article class="ejemplo">
+                    Ejemplo
+
+                    <p>
+                        Define algo de texto como una muestra Output de un codigo de programación.
+                    </p>
+
+                    <p class="codigo">
+                        <code>&lt;<span class="blue-text">p</span>&gt;Mensaje desde mi computadora:&lt;/<span class="blue-text">p</span>&gt;</code>
+                        <code>&lt;<span class="blue-text">p</span>&gt;&lt;<span class="blue-text">samp</span>&gt;File not found.&lt;<span class="blue-text">br</span>&gt;Press F1 to continue&lt;/<span class="blue-text">samp</span>&gt;&lt;/<span class="blue-text">p</span>&gt;</code>
+                    </p>
+
+                    <p>
+                        Resultado:
+                    </p>
+
+                    <div style="background-color: white;">
+                        <p>Mensaje desde mi computadora:</p>
+                        <p><samp>File not found.<br>Press F1 to continue</samp></p>
+                    </div>
+
+                </article>
+
+                <h3>&lt;code&gt; Para codigos de programación</h3>
+
+                <p>
+                    El elemento <em>HTML</em> <span class="blue-text">&lt;code&gt;</span> se utiliza para definir una parte de un codigo de programación. <br>
+                    El contenido interior se muestra en la fuente monoespaciada predeterminada del navegador.
+                </p>
+
+                <button class="botonChatGpt css-button-shadow-border-sliding--green">Chat GPT</button>
+                <div class="contenidoChatGpt">
+                    <p>
+                        "La etiqueta HTML <span class="blue-text">&lt;code&gt;</span> se utiliza para resaltar y formatear fragmentos de código en una página web.<br>
+                        Al utilizar esta etiqueta, el texto contenido dentro de <span class="blue-text">&lt;code&gt;</span> se muestra en una fuente de ancho fijo,<br>
+                        como una fuente de máquina de escribir, y suele estar rodeado por un borde o fondo distintivo para diferenciarlo del texto normal.<br>
+                        Esto es especialmente útil cuando deseas mostrar ejemplos de código fuente, comandos de programación<br>
+                        o cualquier otro contenido relacionado con la codificación en tu página web.<br>
+                        La etiqueta <span class="blue-text">&lt;code&gt;</span> ayuda a mantener la estructura y la legibilidad del código dentro del contexto de tu página."
+                    </p>
+                </div>
+
+                <article class="ejemplo">
+                    
+                    Ejemplo: <br><br>
+
+                    <p>
+                        Define algo de codigo de programación como texto en un documento: 
+                    </p>
+
+                    <p class="codigo">
+                        <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="blue-text">code</span>&gt;
+                          x = 5;
+                          y = 6;
+                          z = x + y;
+                        &lt;/<span class="blue-text">code</span></code>
+                    </p>
+
+                    <p>
+                        Resultado:
+                    </p>
+
+                    <div style="background-color: white; text-align: center;">
+                        <code>
+                            x = 5;
+                            y = 6;
+                            z = x + y;
+                        </code>
+                    </div>
+
+                    <p>
+                        Note como el elemento <span class="blue-text">&lt;code&gt;</span> no preserva espacios en blanco extra y saltos de linea.<br>
+                        Para arreglar esto, puedes poner el <span class="blue-text">&lt;code&gt;</span> adentro de un elemento <span class="blue-text">&lt;pre&gt;</span>
+                    </p>
+
+                    <p class="codigo">
+                        <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="blue-text">pre</span>&gt;</code>
+                        <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="blue-text">code</span>&gt;
+                          x = 5;
+                          y = 6;
+                          z = x + y;
+                        &lt;/<span class="blue-text">code</span></code>
+                        <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span class="blue-text">pre</span>&gt;</code>
+                    </p>
+
+                    <p>
+                        Resultado:
+                    </p>
+
+                    <!-- Esto es lo que usan en la pagina , hacen trampa !!!!! -->
+                    <div class="w3-white w3-padding notranslate" style="text-align: center;">
+                        <code style="font-family: monospace !important;font-size:13px;color:black;background-color:#fff;padding:0;">
+                        x = 5;<br>
+                        y = 6;<br>
+                        z = x + y;
+                        </code>
+                    </div>
+
+                    <!-- <div style="background-color: white;">
+                        <pre style="padding: 0px;">
+                            <code>
+                                x = 5;
+                                y = 6;
+                                z = x + y;
+                            </code>
+                        </pre>
+                    </div> -->
+                    
+                    <div class="botonContenedor" style="margin-top: 15px;">
+                        <button class="botonChatGpt css-button-shadow-border-sliding--green">Chat GPT</button>
+                        <div class="contenidoChatGpt">
+                            <p>
+                                "La etiqueta <span class="blue-text">&lt;pre&gt;</span> en HTML se utiliza para definir texto preformateado,<br>
+                                Lo que significa que el texto dentro de esta etiqueta se muestra tal como está escrita en el código fuente, <br>
+                                incluyendo espacion en blanco y saltos de linea. Esta etiqueta es útil cuando deseas mostrar código fuete, <br>
+                                bloques de texto con un formato específico, o cualquier contenido donde la disposición exacta de los caracteres es importante. "
+                            </p>
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <h3>&lt;var&gt; Para variables</h3>
+
+                <p>
+                    El elemento <em>HTML</em> <span class="blue-text">&lt;var&gt;</span> se utiliza para definir una variable en programación o en una Expresión matemática. <br>
+                    <em>Su contenido normalmente se muestra en cursiva.</em>
+                </p>
+
+                <article class="ejemplo">
+                    Ejemplo
+
+                    <p>
+                        Defina algo de texto como variables en un documento:
+                    </p>
+
+                    <p class="codigolargo">
+                        &lt;<span class="blue-text">p</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;El area de un triangulo es : 1/2 x &lt;<span class="blue-text">var</span>&gt;b&lt;<span class="blue-text">/var</span> x &lt;<span class="blue-text">var</span>&gt;h&lt;<span class="blue-text">/var</span>, donde &lt;<span class="blue-text">var</span>&gt;b&lt;<span class="blue-text">/var</span>&gt; es la base,<br>
+                        &nbsp;&nbsp;&nbsp;y &lt;<span class="blue-text">var</span>&gt;h&lt;<span class="blue-text">/var</span>&gt; es la altura vertical.<br>
+                        &lt;<span class="blue-text">/p</span>&gt;
+                    </p>
+
+                    <p>
+                        Resultado:
+                    </p>
+
+                    <div class="w3-white w3-padding notranslate">
+                        El area de un triangulo es : 1/2 x <var>b</var> x <var>h</var>, donde <var>b</var> es la base, y <var>h</var> es la altura vertical.
+                    </div>
+
+                    <div class="botonContenedor" style="margin-top: 15px;">
+                        <button class="botonChatGpt css-button-shadow-border-sliding--green">Chat GPT</button>
+                        <div class="contenidoChatGpt">
+                            <p>
+                                "<span class="blue">&lt;var&gt;</span> se utiliza para representar una variable o una expresión matemática en un contexto de texto.<br> 
+                                Esta etiqueta se utiliza para indicar que un fragmento de texto dentro de una página web representa una variable o una expresión matemática.<br>
+                                Por lo general, el texto dentro de <span class="blue">&lt;var&gt;</span> se muestra en cursiva para distinguirlo del texto circundante.<br> <br>
+                                Es útil en situaciones donde deseas resaltar que ciertos elementos en tu texto son variables, como en explicaciones matemáticas o cientificas.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <h3>Resumen del capítulo</h3>
+
+                <ul class="lista">
+                    <li><span class="blue-text">&lt;kbd&gt;</span> define una entrada de teclado</li>
+                    <li><span class="blue-text">&lt;samp&gt;</span> define una salida de muestra de un programa de computadora </li>
+                    <li><span class="blue-text">&lt;code&gt;</span> define un fragmento de código de programación</li>
+                    <li><span class="blue-text">&lt;var&gt;</span> define una variable en programación o en una expresión matemática</li>
+                    <li><span class="blue-text">&lt;pre&gt;</span> define texto preformateado</li>
+                </ul>
 
 
         </div>
+
+        <!-- Semantics -->
+        <div class="Estilo_negro1" id="p1">
+
+            <h2 title="Semantic Elements">Elementos semánticos</h2>
+
+            <p>
+                <em>Elementos semánticos = Elementos con significado.</em>
+            </p>
+
+            <h3>¿Qué son los elementos semánticos?</h3>
+
+            <p>Un elemento semántico describe claramente su significado tanto para el navegador como para el desarrolador.</p>
+
+            <ul class="lista">
+                <li>Ejemplos de elementos <strong>no semánticos</strong>: <code><span class="blue-text">&lt;div&gt;</span></code> y <code><span class="blue-text">&lt;span&gt;</span></code> - No dicen nada sobre su contenido.</li>
+                <li>Ejemplos de elementos <strong>semánticos</strong>: <code><span class="blue-text">&lt;form&gt;</span></code>, <code><span class="blue-text">&lt;table&gt;</span></code>, y <code><span class="blue-text">&lt;article&gt;</span></code> - Definen claramente su contenido.</li>
+            </ul>
+
+            <h3>Elementos semánticos en HTML</h3>
+
+            <p>
+                Muchos sitios web contienen código HTML como : <code>&lt;div id="nav"&gt; &lt;div class="header"&gt; &lt;div id="footer"&gt;</code><br>
+                para indicar navegación, encabezado y pie de página.
+            </p>
+
+            <p>
+                En HTML existen algunos elementos semánticos que se pueden utilizar para definir diferentes partes de una página web:
+            </p>
+
+            <table class="table6">
+                <tbody>
+                    <tr>
+                        <td>
+                            <ul class="lista2" style="color: white;">
+                                <li><code>&lt;article&gt;</code></li>
+                                <li><code>&lt;aside&gt;</code></li>
+                                <li><code>&lt;details&gt;</code></li>
+                                <li><code>&lt;figcaption&gt;</code></li>
+                                <li><code>&lt;figure&gt;</code></li>
+                                <li><code>&lt;footer&gt;</code></li>
+                                <li><code>&lt;header&gt;</code></li>
+                                <li><code>&lt;main&gt;</code></li>
+                                <li><code>&lt;mark&gt;</code></li>
+                                <li><code>&lt;nav&gt;</code></li>
+                                <li><code>&lt;section&gt;</code></li>
+                                <li><code>&lt;summary&gt;</code></li>
+                                <li><code>&lt;time&gt;</code></li>
+                            </ul>
+                        </td>
+                        <td>
+                            <img alt="HTML5 Semantic Elements" src="imagenes/img_sem_elements.gif">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>&lt;section&gt;</h3>
+
+            <p>
+                El elemento <code><span class="blue">&lt;section&gt;</span></code> define una sección en un documento. <br><br>
+                <em>"Una seccion es una agrupacioón temática de contenido, normalmente con un encabezado"</em> <br>
+                Ejemplos dónde el elemento <code><span class="blue">&lt;section&gt;</span></code> se puede utilizar:
+            </p>
+
+            
+            <ul class="lista">
+                <li>Capítulos</li>
+                <li>Introducciónes</li>
+                <li>Noticias</li>
+                <li>Información de contacto</li>
+            </ul>
+
+            <p>
+                Normalmente, una página web se puede dividir en secciones para introducción, contenido e información de contacto.
+            </p>
+
+
+            <article class="ejemplo">
+                Ejemplo
+
+                <p>Dos secciones en un documento:</p>
+
+                <div style="background-color: white;">
+                    <section>
+                        <h1 style="text-align: center;">WWF</h1>
+                        <p>
+                            El Fondo Mundial para la Naturaleza (WWF) es una organización internacional que trabaja en temas relacionados<br>
+                            con la conservación, investigación y restauración del medio ambiente, anteriormente llamado<br>
+                            Fondo Mundial para la Naturaleza. WWF fue fundada en 1961.
+                        </p>
+                      </section>
+                      
+                    <section>
+                        <h1 style="text-align: center;">WWF's Símbolo Panda</h1>
+                        <p>
+                            El Panda se ha convertido en el símbolo de WWF. El conocido logotipo del panda de WWF se originó<br>
+                            a partir de un panda llamado Chi Chi que fue transferido del Zoológico de Beijing al Zoológico de Londres<br>
+                            el mismo año de la creación de WWF.
+                        </p>
+                    </section>
+                </div>
+
+                
+                <pre style="text-align: left; background-color: black; color: white;">
+                    <code>
+&lt;section&gt;
+    &lt;h1&gt;WWF&lt;/h1&gt;
+    &lt;p&gt;
+        El Fondo Mundial para la Naturaleza (WWF) es una organización internacional que trabaja en temas relacionados
+        con la conservación, investigación y restauración del medio ambiente, anteriormente llamado
+        Fondo Mundial para la Naturaleza. WWF fue fundada en 1961.
+    &lt;/p&gt;
+    &lt;/section&gt;
+    
+&lt;section&gt;
+    &lt;h1&gt;WWF's Símbolo Panda&lt;/h1&gt;
+    &lt;p&gt;
+        El Panda se ha convertido en el símbolo de WWF. El conocido logotipo del panda de WWF se originó
+        a partir de un panda llamado Chi Chi que fue transferido del Zoológico de Beijing al Zoológico de Londres
+        el mismo año de la creación de WWF.
+    &lt;/p&gt;
+&lt;/section&gt;
+                    </code>
+                </pre>
+                
+
+
+            </article>
+
+        </div>
+
 
     </div>
 

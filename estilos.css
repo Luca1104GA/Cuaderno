@@ -281,13 +281,14 @@ blockquote h2#c2 {
 
 .ejemplo {
     background: #9096a3;
+    font-weight: bold;
     color: #1E1E1E;
     text-align: left;
     border: #1b1d1e 10px solid;
     margin: 15px;
 }
 
-.ejemplo > p:not(.codigo) {
+.ejemplo > p:not(.codigo) p:not(.codigolargo) {
     font-weight: bold; /* Hace que el texto sea más grueso */
     color: #333;
 }
@@ -395,11 +396,20 @@ blockquote h2#c2 {
     border-radius: 5px;
     padding: 10px;
     margin: 10px 0;
-    font-family: Consolas, monospace;
     white-space: pre-wrap;
     text-align: left; 
 }
 
+.codigolargo {
+    background-color: #1E1E1E; 
+    color: #FFFFFF; 
+    border: 1px solid #333; 
+    border-radius: 5px;
+    padding: 15px 0px 15px 0px;
+    margin: 40px 0px 20px 0px;
+    font-family: Consolas, monospace;
+    text-align: left; 
+}
 
 .seccionestilo {
     background-image: url("https://img.freepik.com/free-vector/abstract-business-blue-circle_1182-693.jpg?w=740&t=st=1694028042~exp=1694028642~hmac=e734ef8da347069526a301c6a8e8b02933c3702c4411b4f95e9df9d2a63c2fb9");
@@ -1075,5 +1085,25 @@ blockquote h2#c2 {
     /* Pata telefonos celulares: */
     .menuejcomp, .mainejcomp, .rightejcomp {
       width: 100%;
+    }
+}
+
+.iframe-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; /* Proporción 16:9 (9 / 16 * 100%) */
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .iframe-container {
+        padding-top: 75%; /* Proporción diferente para pantallas más pequeñas */
     }
 }
