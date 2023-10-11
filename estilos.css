@@ -156,6 +156,16 @@ body {
     text-align: left;
 }
 
+.listacentrada { 
+    padding-left: 45%;
+}
+
+.listacentrada li {
+    margin: 5px 0;
+    padding-left: 10px;
+    text-align: left;
+}
+
 .lista2 { 
     padding-left: 50px;
 }
@@ -486,6 +496,15 @@ blockquote h2#c2 {
 .Estilo_blanco4 {
     color: black;
     background-image: url("imagenes/white-cubes-3d-background.jpg");
+    background-size: contain;
+    padding: 1px;
+    border-radius: 5%;
+    margin-bottom: 50px;
+}
+
+.Estilo_blanco5 {
+    color: black;
+    background-image: url("imagenes/Fondo-blanco-heredado.jpg");
     background-size: contain;
     padding: 1px;
     border-radius: 5%;
