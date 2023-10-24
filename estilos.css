@@ -581,6 +581,28 @@ blockquote h2#c2 {
     top: 2px;
   }
 
+  .css-button-neumorphic {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background: #baf3f3;
+    box-shadow: 2px 2px 4px #c8d0e7, -1px -1px 3px #fff;
+    color: #585858;
+  }
+  .css-button-neumorphic:active {
+    box-shadow: inset 1px 1px 3px #c8d0e7, inset -1px -1px 3px #fff;
+  }
+
+
 #botonIrAbajo {
     min-width: 130px;
     height: 40px;
@@ -977,6 +999,26 @@ blockquote h2#c2 {
     background-color: rgba(150, 212, 212, 0.4);
 }
 
+
+.tablecebra4 {
+    background-color: #000;
+    border-collapse: collapse;
+    text-align: left;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.tablecebra4 th, .tablecebra4 td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    width: 1fr;
+}
+
+.tablecebra4 tr:nth-child(even) {
+    background-color: #D6EEEE;
+    color: #1E1E1E;
+}
+
 .tabletest {
     border-collapse: collapse;
     text-align: left;
@@ -1124,4 +1166,19 @@ blockquote h2#c2 {
     .iframe-container {
         padding-top: 75%; /* Proporción diferente para pantallas más pequeñas */
     }
+}
+
+/* Ocultar la lista desordenada por defecto */
+.desplegable {
+    display: none;
+}
+
+/* Estilizar el botón de desplegar */
+.button {
+    cursor: pointer;
+}
+
+/* Estilo para cuando la lista está desplegada */
+.desplegado {
+    display: block;
 }
