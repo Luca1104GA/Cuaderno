@@ -1019,6 +1019,25 @@ blockquote h2#c2 {
     color: #1E1E1E;
 }
 
+.tablecebra4blanco {
+    background-color: #ffffff;
+    border-collapse: collapse;
+    text-align: left;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.tablecebra4blanco th, .tablecebra4blanco td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    width: 1fr;
+}
+
+.tablecebra4blanco tr:nth-child(even) {
+    background-color: #D6EEEE;
+    color: #1E1E1E;
+}
+
 .tabletest {
     border-collapse: collapse;
     text-align: left;
