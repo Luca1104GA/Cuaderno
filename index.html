@@ -10296,6 +10296,569 @@
                 </div>
             </article>
 
+            <h2><code>height width</code></h2>
+            <p>
+                <code class="red-text">height widht</code> Especifican la altura y ancho de un elemento 
+                <code class="blue-text">&lt;input type="image"&gt;</code>
+            </p>
+
+            <p class="advertencia">
+                <b>Consejo:</b> Especifique siempre los atributos de alto y ancho de las imágenes. Si se configuran el alto y el<br>
+                ancho, el espacio requerido para la imagen se reserva cuando se carga la página. Sin estos atributos, el <br>
+                navegador no conoce el tamaño de la imagen y no puede reservarle el espacio adecuado. El efecto será <br>
+                que el diseño de la página cambiará durante la carga (mientras se cargan las imágenes).
+            </p>
+
+            <article class="ejemplo">
+                Ejemplo
+                <p>Defina una imagen como botón de envio, con atributos de alto y ancho:</p>
+
+                <div style="text-align: center; background-color: #a4b0be; padding: 5px 0px 10px 0px;">
+                    <form>
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="lmane">Last name:</label><br>
+                        <input type="text" id="lname" name="lname"><br><br>
+                        <input type="image" src="imagenes/img_submit.gif" alt="Submit" width="48" height="48">
+                    </form>
+                </div>
+
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor"
+                            style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span>First name:<span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span
+                                class="attributevaluecolor" style="color:mediumblue">="fname"</span> name<span
+                                class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red">
+                            for<span class="attributevaluecolor" style="color:mediumblue">="lname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>Last
+                    name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span
+                                class="attributevaluecolor" style="color:mediumblue">="lname"</span> name<span
+                                class="attributevaluecolor" style="color:mediumblue">="lname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp;
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span
+                            class="attributecolor" style="color:red"> type<span class="attributevaluecolor"
+                                style="color:mediumblue">="image"</span> src<span class="attributevaluecolor"
+                                style="color:mediumblue">="img_submit.gif"</span> alt<span class="attributevaluecolor"
+                                style="color:mediumblue">="Submit"</span> width<span class="attributevaluecolor"
+                                style="color:mediumblue">="48"</span> height<span class="attributevaluecolor"
+                                style="color:mediumblue">="48"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>
+                    <br><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                </div>
+            </article>
+
+            <h2><code>datalist</code></h2>
+            <p>
+                El atributo <code class="red-text">list</code> de un input, hace referencia a un elemento <code class="red-text">datalist</code>
+                que contiene <br> opciones predefinidas para un elemento <code class="blue-text">&lt;input&gt;</code>.
+            </p>
+
+            <article class="ejemplo">
+                Ejemplo
+                <p>Un elemento <code class="blue-text">&lt;input&gt;</code> con valores predefinidos en una <code class="blue-text">&lt;datalist&gt;</code></p>
+
+                <div style="text-align: center; background-color: #a4b0be; padding: 5px 0px 10px 0px;">
+                    <form>
+                        <input list="browsers">
+                    </form>
+                </div>
+
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span
+                            class="attributecolor" style="color:red"> list<span class="attributevaluecolor"
+                                style="color:mediumblue">="browsers"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp;
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>datalist<span class="attributecolor" style="color:red"> id<span
+                                class="attributevaluecolor" style="color:mediumblue">="browsers"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>
+                    &nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red"> value<span
+                                class="attributevaluecolor" style="color:mediumblue">="Edge"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>
+                    &nbsp;
+                    &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red"> value<span
+                                class="attributevaluecolor" style="color:mediumblue">="Firefox"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>
+                    &nbsp;
+                    &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red"> value<span
+                                class="attributevaluecolor" style="color:mediumblue">="Chrome"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>
+                    &nbsp;
+                    &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red"> value<span
+                                class="attributevaluecolor" style="color:mediumblue">="Opera"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>
+                    &nbsp;
+                    &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red"> value<span
+                                class="attributevaluecolor" style="color:mediumblue">="Safari"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>
+                    &nbsp;
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/datalist<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>
+                </div>
+            </article>
+
+            <h2><code>autocomplete</code></h2>
+            <p>
+                <code class="red-text">autocomplete</code> Especifica si un formulario o un campo de entrada debe tener <br>
+                activado o desactivado el autocompletado. <br><br>
+                Autocompletar permute al navegador predecir el valor. Cuando un usuario comienza a escribir en un <br>
+                campo, el navegador debería mostrar opciones para completar el campo, según los valores escritos anteriormente. <br><br>
+                Este atributo funciona con los siguientes tipos de <code class="blue-text">&lt;form&gt;</code> e <code class="blue-text">input</code>: <br>
+                <i>text, search, url, tel, email, password, datepickers, range, y color.</i>
+            </p>
+
+            <article class="ejemplo">
+                <div style="text-align: center; background-color: #a4b0be; padding: 5px 0px 10px 0px;">
+                    <form action="" autocomplete="on">
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="lname">Last name:</label><br>
+                        <input type="text" id="lname" name="lname"><br><br>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" autocomplete="off"><br><br>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span
+                            class="attributecolor" style="color:red"> action<span class="attributevaluecolor"
+                                style="color:mediumblue">="/action_page.php"</span> autocomplete<span class="attributevaluecolor"
+                                style="color:mediumblue">="on"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red">
+                            for<span class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>First
+                    name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span
+                                class="attributevaluecolor" style="color:mediumblue">="fname"</span> name<span
+                                class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp;
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span
+                            class="attributecolor" style="color:red"> for<span class="attributevaluecolor"
+                                style="color:mediumblue">="lname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>Last name:<span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span
+                                class="attributevaluecolor" style="color:mediumblue">="lname"</span>
+                            name<span class="attributevaluecolor" style="color:mediumblue">="lname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red">
+                            for<span class="attributevaluecolor" style="color:mediumblue">="email"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>Email:<span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp;
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span
+                            class="attributecolor" style="color:red"> type<span class="attributevaluecolor"
+                                style="color:mediumblue">="email"</span> id<span class="attributevaluecolor"
+                                style="color:mediumblue">="email"</span> name<span class="attributevaluecolor"
+                                style="color:mediumblue">="email"</span> autocomplete<span class="attributevaluecolor"
+                                style="color:mediumblue">="off"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp;
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span
+                            class="attributecolor" style="color:red"> type<span class="attributevaluecolor"
+                                style="color:mediumblue">="submit"</span> value<span class="attributevaluecolor"
+                                style="color:mediumblue">="Submit"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>
+                </div>
+
+                <p class="advertencia">
+                    <b>Consejo:</b> En algunos navegadores es posible que necesites activar una función de autocompletado para <br>
+                    que esto funciones (busca en "Preferencias" en el menú del navegador).
+                </p>
+            </article>
+
+
+
+        </div>
+
+        <!-- HTML Input form* Attributes -->
+        <div class="Estilo_blanco3" id="ad1">
+
+            <h1>HTML Input form* Attributes</h1>
+            <p>
+                <i>Este capítulo describe los diferentes atributos</i> <code class="red-text">form*</code> <i>del elemento 
+                HTML</i><code class="blue-text">&lt;input&gt;</code>
+            </p>
+
+            <h2><code>form</code></h2>
+            <p>
+                El atributo de entrada <code class="blue-text">form</code> especifica la forma a la que pertenece el elemento 
+                <code class="blue-text">&lt;input&gt;</code>. <br><br> El valor de este atributo debe ser igual al atributo 
+                <code class="red-text">id</code> del elemento <code class="blue-text">&lt;form&gt;</code> al que pertenece.
+            </p>
+
+            <article class="ejemplo">
+                Ejemplo
+                <p>Un campo de entrada ubicado fuera del formulario HTML (pero que aún forma parte del formulario)</p>
+
+                <div style="text-align: center; background-color: #a4b0be; padding: 5px 0px 10px 0px;">
+                    <form action="action_page.php" id="form1">
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <input type="submit" value="Submit">
+                    </form>
+
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" form="form1">
+                </div>
+
+                <div class="w3-code notranslate htmlHigh">
+                
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span
+                            class="attributecolor" style="color:red"> action<span class="attributevaluecolor"
+                                style="color:mediumblue">="/action_page.php"</span> id<span class="attributevaluecolor"
+                                style="color:mediumblue">="form1"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red">
+                            for<span class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>First
+                    name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span
+                                class="attributevaluecolor" style="color:mediumblue">="fname"</span> name<span
+                                class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp;
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span
+                            class="attributecolor" style="color:red"> type<span class="attributevaluecolor"
+                                style="color:mediumblue">="submit"</span> value<span class="attributevaluecolor"
+                                style="color:mediumblue">="Submit"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red">
+                            for<span class="attributevaluecolor" style="color:mediumblue">="lname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>Last
+                    name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span
+                                class="attributevaluecolor" style="color:mediumblue">="lname"</span>
+                            name<span class="attributevaluecolor" style="color:mediumblue">="lname"</span> form<span
+                                class="attributevaluecolor" style="color:mediumblue">="form1"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>
+                </div>
+            </article>  
+
+            <h2><code>formaction</code></h2>
+            <p>
+                <code class="red-text">formaction</code> Especifica la URL del archivo que procesará la entrada cuando se <br>
+                envíe el formulario. <br><br> <b>Nota:</b> Este atributo anula el atribito <code class="red-text">action</code>
+                del elemento <code class="blue-text">&lt;form&gt;</code>. <br><br>
+                El atributo <code class="red-text">formaction</code> funciona con los siguientes tipos de entrada: <br>
+                <i>submit</i> e <i>image</i>.
+            </p>
+
+            <article class="ejemplo">
+                Ejemplo
+                <p>Un formulario con dos botones de envío, con diferentes acciones:</p>
+
+                <div style="text-align: center; background-color: #a4b0be; padding: 5px 0px 10px 0px;">
+                    <form action="">
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="lname">Last name:</label><br>
+                        <input type="text" id="lname" name="lname"><br><br>
+                        <input type="submit" value="Submit">
+                        <input type="submit" formaction="" value="Submit as Admin">
+                    </form>
+                </div>
+
+                <div class="w3-code notranslate htmlHigh">
+                
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span
+                            class="attributecolor" style="color:red"> action<span class="attributevaluecolor"
+                                style="color:mediumblue">="/action_page.php"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red">
+                            for<span class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>First
+                    name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span
+                                class="attributevaluecolor" style="color:mediumblue">="fname"</span> name<span
+                                class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp;
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span
+                            class="attributecolor" style="color:red"> for<span class="attributevaluecolor"
+                                style="color:mediumblue">="lname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>Last name:<span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span
+                                class="attributevaluecolor" style="color:mediumblue">="lname"</span>
+                            name<span class="attributevaluecolor" style="color:mediumblue">="lname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span> value<span
+                                class="attributevaluecolor" style="color:mediumblue">="Submit"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp;
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span
+                            class="attributecolor" style="color:red"> type<span class="attributevaluecolor"
+                                style="color:mediumblue">="submit"</span> formaction<span class="attributevaluecolor"
+                                style="color:mediumblue">="/action_page2.php"</span> value<span class="attributevaluecolor"
+                                style="color:mediumblue">="Submit as Admin"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                </div>
+            </article>
+
+            <h2><code>formenctype</code></h2>
+            <p>
+               <code class="red-text">formenctype</code> Especifica cómo se deben codificar los datos del formulario cuando se envían
+               <br> (solo para formularios con <code class="red-text">method="post"</code>. ) <br><br>
+               <b>Nota:</b> Este atributo anula el atributo <code class="red-text">enctype</code> del elemento <code class="blue-text">&lt;form&gt;</code>. 
+               <br><br>El atributo <code class="red-text">formentype</code> funciona con los giuientes tipos de entrada: <br>
+               <i>submit</i> e <i>image</i>. 
+            </p>
+
+            <article class="ejemplo">
+                Ejemplo
+                <p>
+                    Un formulario con dos botones de envío. El primero envía los datos del formulario con codificación <br>
+                    predeterminada, el segundo envía los datos del formulario codificados como "multipart/form-data":
+                </p>
+
+                <div style="text-align: center; background-color: #a4b0be; padding: 5px 0px 10px 0px;">
+                    <form action="" method="post">
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <input type="submit" value="Submit">
+                        <input type="submit" formenctype="multipart/form-data" value="Submit as Multipart/form-data">
+                    </form>
+                </div>
+
+                <div class="w3-code notranslate htmlHigh">
+                
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span
+                            class="attributecolor" style="color:red"> action<span class="attributevaluecolor"
+                                style="color:mediumblue">="/action_page_binary.asp"</span> method<span class="attributevaluecolor"
+                                style="color:mediumblue">="post"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red">
+                            for<span class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>First
+                    name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span
+                                class="attributevaluecolor" style="color:mediumblue">="fname"</span> name<span
+                                class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp;
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span
+                            class="attributecolor" style="color:red"> type<span class="attributevaluecolor"
+                                style="color:mediumblue">="submit"</span> value<span class="attributevaluecolor"
+                                style="color:mediumblue">="Submit"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span>
+                            formenctype<span class="attributevaluecolor"
+                                style="color:mediumblue">="multipart/form-data"</span><br>&nbsp; value<span class="attributevaluecolor"
+                                style="color:mediumblue">="Submit as
+                                Multipart/form-data"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>
+                </div>
+            </article>
+
+            <h2><code>formmethod</code></h2>
+            <p>
+                <code class="red-text">formmethod</code> Define el método HTTP para enviar datos del formulario a la URL de acción.
+                <br><br> <b>Nota:</b> Este atributo anula el atributo <code class="red-text">method</code> del elemento <code class="blue-text">&lt;form&gt;</code>
+                <br><br>El atributo <code class="red-text">formmethod</code> funciona con los siguientes tipos de entrada: <br>
+                <i>submit</i> e <i>image</i>. <br><br>
+                Los datos del formulario se pueden enviar como vartiables de URL (method="get") o como una <br>
+                transacción posterior HTTP (method="post").
+            </p>
+
+            <caption><b>Notas sobre el metodo "get":</b></caption>
+            <ul class="lista2">
+                <li>Este método agrega los datos del formulario a la URL en pares de nombre/valor.</li>
+                <li>Este método es útil para envíos de formularios en los que un usuario desea marcar el resultado como favorito.</li>
+                <li>Existe un límite en la cantidad de datos que puede colocar en una URL (varía según el navegador), <br>
+                por lo tanto, no puede estar seguro de que todos los datos del formulario se transferirán correctamente.</li>
+                <li>¡Nunca utilice el método "get" para pasar información confidencial! (La contraseña u otra <br>
+                información confidencial será visible en la barra de direcciones del navegador)</li>
+            </ul>
+
+            <caption><b>Notas sobre el método "post":</b></caption>
+            <ul class="lista2">
+                <li>Este método envía los datos del formulario como una transacción posterior HTTP.</li>
+                <li>Los envíos de formularios con el método "post" no se pueden marcar como favoritos.</li>
+                <li>El método "post" es más robusto y seguro que "get" y "post" no tiene limitaciones de tamaño.</li>
+            </ul>
+
+            <article class="ejemplo">
+                Ejemplo
+                <p>
+                    Un formulario con dos botones de envío. El primero envía los datos del formulario com method="get". <br>
+                    El segundo envía los datos del formulario con method="post":
+                </p>
+
+                <div style="text-align: center; background-color: #a4b0be; padding: 5px 0px 10px 0px;">
+                    <form action="" method="get">
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="lname">Last name:</label><br>
+                        <input type="text" id="lname" name="lname"><br><br>
+                        <input type="submit" value="Submit using GET">
+                        <input type="submit" formmethod="post" value="Submit using POST">
+                    </form>
+                </div>
+
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span
+                            class="attributecolor" style="color:red"> action<span class="attributevaluecolor"
+                                style="color:mediumblue">="/action_page.php"</span> method<span class="attributevaluecolor"
+                                style="color:mediumblue">="get"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red">
+                            for<span class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>First
+                    name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span
+                                class="attributevaluecolor" style="color:mediumblue">="fname"</span> name<span
+                                class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp;
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span
+                            class="attributecolor" style="color:red"> for<span class="attributevaluecolor"
+                                style="color:mediumblue">="lname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>Last name:<span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span
+                                class="attributevaluecolor" style="color:mediumblue">="lname"</span>
+                            name<span class="attributevaluecolor" style="color:mediumblue">="lname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span> value<span
+                                class="attributevaluecolor" style="color:mediumblue">="Submit using
+                                GET"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span
+                        class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span
+                            class="attributecolor" style="color:red"> type<span class="attributevaluecolor"
+                                style="color:mediumblue">="submit"</span> formmethod<span class="attributevaluecolor"
+                                style="color:mediumblue">="post"</span> value<span class="attributevaluecolor"
+                                style="color:mediumblue">="Submit using
+                                POST"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span
+                        class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                </div>
+            </article>
+
+            <h2><code>formtarget</code></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
