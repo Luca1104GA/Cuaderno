@@ -7628,10 +7628,10 @@
                 Ejemplo
                 <p>Un formulario con botones de radio:</p>
 
-                <div style="background-color: #fff;">
-                    <p style="text-align: left;">Elije tu idioma de programación favorito:</p>
+                <div style="text-align: center; background-color: #a4b0be; padding: 5px 0px 10px 0px;">
+                    <p>Elije tu idioma de programación favorito:</p>
 
-                    <form>
+                    <form style="display: inline-block; text-align: left;">
                         <input type="radio" id="html" name="fav_language" value="HTML">
                         <label for="html">HTML</label><br>
                         <input type="radio" id="css" name="fav_language" value="CSS">
@@ -7660,16 +7660,18 @@
 
             <article class="ejemplo">
                 Ejemplo
-                <p style="text-align: left;">Un formulario con casillas de verificación</p>
+                <p style="text-align: left;">Un formulario con casillas de verificación:</p>
 
-                <form style="background-color: #fff;">
-                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                    <label for="vehicle1"> I have a bike</label><br>
-                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                    <label for="vehicle2"> I have a car</label><br>
-                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-                    <label for="vehicle3"> I have a boat</label>
-                </form>
+                <div style="text-align: center; background-color: #a4b0be; padding: 5px 0px 10px 0px;">
+                    <form style="display: inline-block; text-align: left;">
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                        <label for="vehicle1"> I have a bike</label><br>
+                        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                        <label for="vehicle2"> I have a car</label><br>
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <label for="vehicle3"> I have a boat</label>
+                    </form>
+                </div>
 
                 <div class="w3-code notranslate htmlHigh">
                     <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="checkbox"</span> id<span class="attributevaluecolor" style="color:mediumblue">="vehicle1"</span> name<span class="attributevaluecolor" style="color:mediumblue">="vehicle1"</span> value<span class="attributevaluecolor" style="color:mediumblue">="Bike"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; 
@@ -7694,13 +7696,15 @@
                 Ejemplo
                 <p>Un formulario con un botón de enviar</p>
 
-                <form action="/action_page.php" target="_blank" style="background-color: #fff; text-align: center;">
-                    <label for="fname">Nombre:</label><br>
-                    <input type="text" id="fname" name="fname" value="John"><br>
-                    <label for="lname">Apellido:</label><br>
-                    <input type="text" id="lname" name="lname" value="Salchichon"><br><br>
-                    <input type="submit" value="Submit">
-                </form>
+                <div style="text-align: center; background-color: #a4b0be; padding: 5px 0px 10px 0px;">
+                    <form action="/action_page.php" target="_blank">
+                        <label for="fname">Nombre:</label><br>
+                        <input type="text" id="fname" name="fname" value="John"><br>
+                        <label for="lname">Apellido:</label><br>
+                        <input type="text" id="lname" name="lname" value="Salchichon"><br><br>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
 
                 <div class="w3-code notranslate htmlHigh">
                     <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> action<span class="attributevaluecolor" style="color:mediumblue">="/action_page.php"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Nombre:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span class="attributevaluecolor" style="color:mediumblue">="fname"</span> name<span class="attributevaluecolor" style="color:mediumblue">="fname"</span> 
@@ -8235,7 +8239,9 @@
             
             <article class="ejemplo">
                 
-                <textarea name="message" rows="10" cols="30">El gato estaba jugando en el jardín.</textarea>
+                <div style="text-align: center; background-color: #a4b0be; padding: 5px 0px 10px 0px;">
+                    <textarea name="message" rows="10" cols="30">El gato estaba jugando en el jardín.</textarea>
+                </div>
 
                 <div class="w3-code notranslate htmlHigh">
                     <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
@@ -8296,16 +8302,19 @@
             </p>
 
             <article class="ejemplo">
-                <form action="/action_page.php" target="_blank">
-                    <fieldset>
-                      <legend>Personalia:</legend>
-                      <label for="fname">First name:</label><br>
-                      <input type="text" id="fname" name="fname" value="John"><br>
-                      <label for="lname">Last name:</label><br>
-                      <input type="text" id="lname" name="lname" value="Salchichon"><br><br>
-                      <input type="submit" value="Enviar">
-                    </fieldset>
-                </form>
+
+                <div style="text-align: center; background-color: #a4b0be; padding: 5px 0px 10px 0px;">
+                    <form action="/action_page.php" target="_blank">
+                        <fieldset>
+                          <legend>Personalia:</legend>
+                          <label for="fname">First name:</label><br>
+                          <input type="text" id="fname" name="fname" value="John"><br>
+                          <label for="lname">Last name:</label><br>
+                          <input type="text" id="lname" name="lname" value="Salchichon"><br><br>
+                          <input type="submit" value="Enviar">
+                        </fieldset>
+                    </form>
+                </div>
 
                 <div class="w3-code notranslate htmlHigh">
                     <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span
@@ -10833,49 +10842,259 @@
             </article>
 
             <h2><code>formtarget</code></h2>
+            <p>
+                <code class="red-text">formtarget</code> Especifica un nombre o un palabra clave que indica dónde mostrar la <br>
+                respuesta que se recibe después de enviar el formulario. <br><br>
+                <b>Nota:</b> Este atributo anula el atributo de destino del elemento <code class="blue-text">&lt;form&gt;</code>
+                <br><br>Este atributyo funciona con los siguientes tipos de entrada: <br>
+                <i>submit</i> e <i>image</i>.
+            </p>
 
+            <article class="ejemplo">
+                Ejemplo
+                <p>Un formulario con dos botones de envío, con diferentes ventanas de destino:</p>
 
+                <div style="text-align: center; background-color: #a4b0be; padding: 5px 0px 10px 0px;">
+                    <form action="">
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="lname">Last name:</label><br>
+                        <input type="text" id="lname" name="lname"><br><br>
+                        <input type="submit" value="Submit">
+                        <input type="submit" formtarget="_blank" value="Submit to a new window/tab">
+                    </form>
+                </div>
 
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span
+                            class="attributecolor" style="color:red"> action<span class="attributevaluecolor"
+                                style="color:mediumblue">="/action_page.php"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red">
+                            for<span class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>First
+                    name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span
+                                class="attributevaluecolor" style="color:mediumblue">="fname"</span> name<span
+                                class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp;
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span
+                            class="attributecolor" style="color:red"> for<span class="attributevaluecolor"
+                                style="color:mediumblue">="lname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>Last name:<span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span
+                                class="attributevaluecolor" style="color:mediumblue">="lname"</span>
+                            name<span class="attributevaluecolor" style="color:mediumblue">="lname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span> value<span
+                                class="attributevaluecolor" style="color:mediumblue">="Submit"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp;
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span
+                            class="attributecolor" style="color:red"> type<span class="attributevaluecolor"
+                                style="color:mediumblue">="submit"</span> formtarget<span class="attributevaluecolor"
+                                style="color:mediumblue">="_blank"</span> value<span class="attributevaluecolor"
+                                style="color:mediumblue">="Submit to a new window/tab"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                </div>
+            </article>
 
+            <h2><code>formnovalidate</code></h2>
+            <p>
+                <code class="red-text">formnovalidate</code> Especifica que un elemento <code class="blue-text">&lt;input&gt;</code>
+                no debe validarse cuando se envía. <br><br>
+                <b>Nota:</b> Este atributo anula el atrubuto <i>novalidate</i> del elemento <code class="blue-text">&lt;form&gt;</code> 
+                <br><br> El atributo <code class="red-text">formnovalidate</code> funciona con los siguientes tipos de entrada: <br>
+                <i>submit</i>.
+            </p>
 
+            <article class="ejemplo">
+                Ejemplo
+                <p>Un formulario con dos botones de envío (con y sin validación)</p>
 
+                <div style="text-align: center; background-color: #a4b0be; padding: 5px 0px 10px 0px;">
+                    <form action="">
+                        <label for="email">Enter you email:</label><br>
+                        <input type="email" id="email" name="email"><br><br>
+                        <input type="submit" value="Submit">
+                        <input type="submit" formnovalidate="formnovalidate" value="Submit whithout validation">
+                    </form>
+                </div>
 
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span
+                            class="attributecolor" style="color:red"> action<span class="attributevaluecolor"
+                                style="color:mediumblue">="/action_page.php"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red">
+                            for<span class="attributevaluecolor" style="color:mediumblue">="email"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>Enter your
+                    email:<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="email"</span> id<span
+                                class="attributevaluecolor" style="color:mediumblue">="email"</span> name<span
+                                class="attributevaluecolor" style="color:mediumblue">="email"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp;
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span
+                            class="attributecolor" style="color:red"> type<span class="attributevaluecolor"
+                                style="color:mediumblue">="submit"</span> value<span class="attributevaluecolor"
+                                style="color:mediumblue">="Submit"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span>
+                            formnovalidate<span class="attributevaluecolor" style="color:mediumblue">="formnovalidate"</span><br>&nbsp;
+                            value<span class="attributevaluecolor" style="color:mediumblue">="Submit without
+                                validation"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                </div>
+            </article>
 
+            <h2><code>novalidate</code></h2>
+            <p>
+                <code class="red-text">novalidate</code> Es un atributo <code class="blue-text">&lt;form&gt;</code> <br><br>
+                Cuando está presente, especifica que todos los datos del formulario no deben validarse cuando se envían. 
+            </p>
 
+            <article class="ejemplo">
+                Ejemplo
+                <p>Especifique que no se deben validar datos del formulario al enviar:</p>
 
+                <div style="text-align: center; background-color: #a4b0be; padding: 5px 0px 10px 0px;">
+                    <form action="">
+                        <label for="email">Enter your email:</label><br>
+                        <input type="email" id="email" name="email"><br><br>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                <div class="w3-code notranslate htmlHigh">
+                
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span
+                            class="attributecolor" style="color:red"> action<span class="attributevaluecolor"
+                                style="color:mediumblue">="/action_page.php"</span> novalidate</span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red">
+                            for<span class="attributevaluecolor" style="color:mediumblue">="email"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>Enter your email:<span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="email"</span>
+                            id<span class="attributevaluecolor" style="color:mediumblue">="email"</span> name<span
+                                class="attributevaluecolor" style="color:mediumblue">="email"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span>
+                            value<span class="attributevaluecolor" style="color:mediumblue">="Submit"</span></span><span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>
+                </div>
+            </article>
 
 
 
         </div>
+
+        <!-- HTML Canvas Graphics -->
+
+        <div class="Estilo_blanco2" id="ae1">
+
+            <h1>Gráficos de canvas HTML</h1>
+            <p>
+                <code class="blue-text">&lt;canvas&gt;</code> <i>se utiliza para dibujar gráficos en una página web</i>.
+            </p>
+
+            <h2>¿Qué es HTML Canvas?</h2>
+            <p>
+                Este elemento se utiliza para dubujar gráficos, sobre la marcha, mediante JavaScript. <br>
+                Este elemento es sólo un contenedor de gráficos. Debes usar JavaScript para dibujar los gráficos. <br>
+                <code>canvas</code> tiene varios métodos para dibujar trazados, cuadros, texto y agregar imágenes.
+            </p>
+
+            <h3>Soporte del navegador</h3>
+            <p>
+                El núemero en la tabla especifica la primera versión del navegador que soporta el elemento <code>&lt;canvas&gt;</code>
+            </p>
+
+            <table class="tablecebra4blanco">
+                <tbody>
+                    <tr class="w3-blue-grey">
+                        <th>Navegador</th>
+                        <th><img src="imagenes/chrome.png" alt="Chrome"></th>
+                        <th><img src="imagenes/compatible_edge.png" alt="Internet Explorer / Edge"></th>
+                        <th><img src="imagenes/compatible_firefox.png" alt="Firefox"></th>
+                        <th><img src="imagenes/compatible_safari.png" alt="Safari"></th>
+                        <th><img src="imagenes/compatible_opera.png" alt="Opera"></th>
+                    </tr>
+                    <tr class="w3-pale-green">
+                        <td><code>&lt;canvas&gt;</code></td>
+                        <td>4.0</td>
+                        <td>9.0</td>
+                        <td>2.0</td>
+                        <td>3.1</td>
+                        <td>9.0</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Ejemplos de <code>canvas</code></h2>
+            <p>
+                Un <code class="red-text">canvas</code> es un área rectangular en una página HTML. <br>
+                De forma predeterminada, un <code class="red-text">canvas</code> no tiene borde ni contenido. <br><br>
+                El marcado se ve así:
+            </p>
+                
+            <div class="w3-code w3-border notranslate htmlHigh" style="margin-left: 5%; margin-right: 5%;">
+                <div>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>canvas<span class="attributecolor" style="color:red"> id<span
+                                class="attributevaluecolor" style="color:mediumblue">="myCanvas"</span> width<span
+                                class="attributevaluecolor" style="color:mediumblue">="200"</span> height<span
+                                class="attributevaluecolor" style="color:mediumblue">="100"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>/canvas<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>
+                </div>
+            </div>
+
+            <p>
+                <b>Nota: Especifique siempre un atributo <code class="red-text">id</code></b> (al que se hará referencia en un script)
+                y un atritubo <br> <code class="red-text">width</code> y <code class="red-text">height</code> para definir el tamaño
+                del <code></code>
+            </p>
+
+        </div>
+
+
+
 
     </div>
 
