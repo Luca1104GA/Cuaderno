@@ -1,8 +1,10 @@
 const btnMenu = document.querySelector("#btnMenu");
 const menu = document.querySelector("#menu");
-btnMenu.addEventListener("click", function(){
-    menu.classList.toggle("mostrar");
-});
+if(btnMenu !== null && menu !== null){
+    btnMenu.addEventListener("click", function(){
+        menu.classList.toggle("mostrar");
+    });
+}
 
 const subMenuBtn = document.querySelectorAll(".submenu-btn");
 for(let i=0; i<subMenuBtn.length; i++) {
@@ -25,30 +27,33 @@ for(let i=0; i<subMenuBtn.length; i++) {
 }
 
 
-const botonVolverArriba = document.getElementById("botonVolverArriba");
-const botonIrAbajo = document.getElementById("botonIrAbajo");
+document.addEventListener("DOMContentLoaded", function() {
+    const botonVolverArriba = document.getElementById("botonVolverArriba");
+    const botonIrAbajo = document.getElementById("botonIrAbajo");
 
-botonVolverArriba.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    botonVolverArriba.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    botonIrAbajo.addEventListener("click", () => {
+        window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+    });
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 200) {
+            botonVolverArriba.style.display = "block";
+        } else {
+            botonVolverArriba.style.display = "none";
+        }
+
+        if (window.scrollY < document.body.scrollHeight - window.innerHeight) {
+            botonIrAbajo.style.display = "block";
+        } else {
+            botonIrAbajo.style.display = "none";
+        }
+    });
 });
 
-botonIrAbajo.addEventListener("click", () => {
-    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
-});
-
-window.addEventListener("scroll", () => {
-    if (window.scrollY > 200) {
-        botonVolverArriba.style.display = "block";
-    } else {
-        botonVolverArriba.style.display = "none";
-    }
-
-    if (window.scrollY < document.body.scrollHeight - window.innerHeight) {
-        botonIrAbajo.style.display = "block";
-    } else {
-        botonIrAbajo.style.display = "none";
-    }
-});
 
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -60,6 +65,20 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+const botonesChatGpt = document.getElementsByClassName("botonChatGpt");
+const contenidosChatGpt = document.getElementsByClassName("contenidoChatGpt");
+
+for (let i = 0; i < botonesChatGpt.length; i++) {
+    botonesChatGpt[i].addEventListener("click", function() {
+        const contenido = contenidosChatGpt[i];
+        if (contenido.style.display === "none" || contenido.style.display === "") {
+            contenido.style.display = "block";
+        } else {
+            contenido.style.display = "none";
+        }
+    });
+}
 
 const botonTop = document.getElementById("botonTop");
 botonTop.addEventListener("click", () => {
@@ -117,19 +136,7 @@ function displayResult() {
 }
   
 
-const botonesChatGpt = document.getElementsByClassName("botonChatGpt");
-const contenidosChatGpt = document.getElementsByClassName("contenidoChatGpt");
 
-for (let i = 0; i < botonesChatGpt.length; i++) {
-    botonesChatGpt[i].addEventListener("click", function() {
-        const contenido = contenidosChatGpt[i];
-        if (contenido.style.display === "none" || contenido.style.display === "") {
-            contenido.style.display = "block";
-        } else {
-            contenido.style.display = "none";
-        }
-    });
-}
 
 
 
