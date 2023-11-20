@@ -289,13 +289,18 @@ blockquote h2#c2 {
 
 
 .ejemplo {
-    background: #9096a3;
+    background: #6c7178;
     font-weight: bold;
-    color: #1E1E1E;
+    color: #FFFFFF;
     text-align: left;
     border: #1b1d1e 10px solid;
     margin: 15px;
 }
+
+.w3-code {
+    color: #1E1E1E;
+}
+
 
 .ejemplo > p:not(.codigo) p:not(.codigolargo) {
     font-weight: bold; /* Hace que el texto sea más grueso */
