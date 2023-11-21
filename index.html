@@ -8057,6 +8057,81 @@
                     dibuja un rectángulo relleno en el lienzo usando ese degradado como color de fondo. <br>
                     El resultado será un rectángulo con un degradado radial de color. <hr>
                 </p>
+
+                <h3>Dibujar una imagen</h3>
+                <div style="text-align: center; background-color: #fff; padding: 5px 0px 10px 0px; color: black;">
+                    <p>Imagen a usar:</p>
+                    <img id="scream" src="imagenes/img_the_scream.jpg" alt="scream">
+
+                    <p>Canvas a rellenar:</p>
+                    <canvas id="myCanvas8" width="250" height="300"style="border:1px solid #d3d3d3;"></canvas>
+                    <p><button onclick="myCanvas8()">Inténtalo</button></p>     
+                </div>
+
+                <div class="w3-code notranslate jsHigh">
+                    <span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
+                        </span> &lt;script&gt;<br><span class="jskeywordcolor" style="color:mediumblue">var</span> c = document.<span
+                            class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor"
+                            style="color:brown">"myCanvas"</span>);<br><span class="jsnumbercolor" style="color:red">
+                        </span> <span class="jskeywordcolor" style="color:mediumblue">var</span> ctx = c.<span class="jspropertycolor"
+                            style="color:black">getContext</span>(<span class="jsstringcolor" style="color:brown">"2d"</span>);<br><span
+                            class="jsnumbercolor" style="color:red">
+                        </span> <span class="jskeywordcolor" style="color:mediumblue">var</span> img = document.<span
+                            class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor"
+                            style="color:brown">"scream"</span>);<br><span class="jsnumbercolor" style="color:red">
+                        </span> ctx.<span class="jspropertycolor" style="color:black">drawImage</span>(img, <span class="jsnumbercolor"
+                            style="color:red">10</span>, <span class="jsnumbercolor" style="color:red">10</span>);<br>&lt;/script&gt;
+                    </span>
+                </div>
+
+                <div style="text-align: left; background-color: #2c3e50; padding: 5px 0px 10px 0px;">
+                    <ol>
+                        <li>
+                            <b>var c = document.getElementById("myCanvas");</b>
+                            <ul>
+                                <li>
+                                    Al igual que en los ejemplos anteriores, selecciona el elemento HTML con el atributo <b>'id'</b> <br>
+                                    igual a "myCanvas" y lo almacena en la variable <b>'c'</b>.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>var ctx = c.getContext("2d");</b>
+                            <ul>
+                                <li>
+                                    Obtiene el contexto de renderizado 2D del <code>canvas</code> y lo almacena en la variable <b>'ctx'</b>.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>var img = document.getElementById("scream");</b>
+                            <ul>
+                                <li>
+                                    Selecciona un elemento de imagen del documento HTML con el atibuto <b>'id'</b> igual a <br>
+                                    "scream" y lo almacena en la variable <b>'img'</b>.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>ctx.drawImage(img, 10, 10);</b>
+                            <ul>
+                                <li>
+                                    Dibuja la imagen en el <code>canvas</code>, los parámetros son:
+                                    <ul>
+                                        <li><b>'img'</b>: La imagen a dibujar, en este caso, la imagen con el id "scream".</li>
+                                        <li><b>'10'</b>: La posición X en el <code>canvas</code> donde comenzará la imagen.</li>
+                                        <li><b>'10'</b>: La posición Y en el <code>canvas</code> donde comenzará la imagen.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+                <p style="text-align: left;">
+                    En resumen, este código utiliza la función <code><b>'drawImage'</b></code> para dibujar la imagen en el lienzo en la posición especificada. <br>
+                    El resultado será que la imagen con el id "scream" se mostrará en el lienzo en la posición (10, 10). <hr>
+                </p>
+
             </article>
 
 

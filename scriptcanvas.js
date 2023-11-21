@@ -39,3 +39,10 @@ grd.addColorStop(1, "white");
 
 ctx.fillStyle = grd;
 ctx.fillRect(10, 10, 150, 80);
+
+function myCanvas8() {
+    var c = document.getElementById("myCanvas8");
+    var ctx = c.getContext("2d");
+    var img = document.getElementById("scream");
+    ctx.drawImage(img,10,10);
+  }
